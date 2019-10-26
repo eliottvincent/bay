@@ -1,0 +1,60 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1 social-links">
+        <h4>CONTACT</h4>
+
+        {% for contact in site.footer.contact %}
+          <img
+            src="/img/icons/{{ contact.name | downcase }}.png"
+            alt="{{ contact.name | downcase }}"
+          />
+          <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link">
+            {% if contact.value and contact.value != "" and contact.value != nil %}
+              {{ contact.value }}
+            {% else %}
+              {{ contact.name }}
+            {% endif %}
+          </a>
+          <br />
+
+        {% endfor %}
+      </div>
+
+      <div class="footer-col footer-col-2 social-links">
+        <h4>FOLLOW</h4>
+
+        {% for follow in site.footer.follow %}
+          <span class="wrap-link">
+            <img
+              src="/img/icons/{{ follow.name | downcase }}.png"
+              alt="{{ follow.name | downcase }}"
+            />
+            <a href="{{ follow.link }}">
+              {% if follow.value and follow.value != "" and follow.value != nil %}
+                {{ follow.value }}
+              {% else %}
+                {{ follow.name }}
+              {% endif %}
+            </a>
+          </span>
+
+          {% assign mod = forloop.index | modulo: 2 %} {% if mod == 0 %}
+            <br />
+          {% endif %}
+
+        {% endfor %}
+      </div>
+
+      {% if site.footer.show_powered_by == true %}
+        <div class="footer-col footer-col-3 powered-by">
+          <p>
+            powered by <a href="https://github.com/eliottvincent/bay">Bay</a> | 2019
+          </p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</footer>
+
+{% include wechat-widget.html %}

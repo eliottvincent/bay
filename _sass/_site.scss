@@ -1,0 +1,68 @@
+.profilepic {
+  float: right;
+  border: #ccc 1px solid;
+  margin-left: 20px;
+
+  @include media-query($on-palm) {
+    float: none;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+}
+
+.social-links {
+  font-size: 12px;
+  line-height: 30px;
+
+  @include media-query($on-palm) {
+    font-size: 14px;
+    line-height: 38px;
+  }
+
+  img {
+    margin-right: 3px;
+    vertical-align: middle;
+    margin-top: -2px;
+  }
+
+  h4 {
+    margin-bottom: 0;
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  span.wrap-link {
+    width: 45%;
+    float: left;
+    display: block;
+    margin-right: 2px;
+    text-wrap: none;
+    min-width: 7em;
+  }
+}
+
+#wechat-widget {
+  display: none;
+  position: absolute;
+  background: #fff;
+  border: #ddd 1px solid;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+
+  padding: 24px;
+  text-align: center;
+
+  p {
+    font-size: 11px;
+    line-height: 16px;
+    font-family: Helvetica, sans-serif;
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+  }
+
+  #qr-code {
+    width: 160px;
+    height: 160px;
+    border: none;
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="work">
+          <h1 class="page-heading">{{ page.title }}</h1>
+          {{ content }}
+
+          {% for item in page.items %}
+          <p class="work-item">
+            <img
+              src="{{ item.image.src }}"
+              alt="{{ item.image.alt }}"
+              class="work-bubble"
+            />
+            <strong>{{ item.title }}</strong>
+            &mdash;
+            {{ item.description }}
+          </p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% include foot.html %}
+  </body>
+</html>
