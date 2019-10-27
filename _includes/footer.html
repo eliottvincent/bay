@@ -5,8 +5,10 @@
         <h4>CONTACT</h4>
 
         {% for contact in site.footer.contact %}
+
+          {% assign contact_icon_path = "/assets/img/icons/" | append: contact.name | downcase | append: ".png" | absolute_url %}
           <img
-            src="/assets/img/icons/{{ contact.name | downcase }}.png"
+            src="{{ contact_icon_path }}"
             alt="{{ contact.name | downcase }}"
           />
           <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link">
@@ -26,8 +28,10 @@
 
         {% for follow in site.footer.follow %}
           <span class="wrap-link">
+
+            {% assign follow_icon_path = "/assets/img/icons/" | append: follow.name | downcase | append: ".png" | absolute_url %}
             <img
-              src="/assets/img/icons/{{ follow.name | downcase }}.png"
+              src="{{ follow_icon_path }}"
               alt="{{ follow.name | downcase }}"
             />
             <a href="{{ follow.link }}">
