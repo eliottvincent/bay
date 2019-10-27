@@ -1,8 +1,8 @@
 ---
 layout: home
 profile_picture:
-  src: /img/profile-pic.jpg
-  alt: Dan Grover
+  src: /assets/img/profile-pic.jpg
+  alt: website picture
 ---
 
 <p>

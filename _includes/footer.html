@@ -6,7 +6,7 @@
 
         {% for contact in site.footer.contact %}
           <img
-            src="/img/icons/{{ contact.name | downcase }}.png"
+            src="/assets/img/icons/{{ contact.name | downcase }}.png"
             alt="{{ contact.name | downcase }}"
           />
           <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link">
@@ -27,7 +27,7 @@
         {% for follow in site.footer.follow %}
           <span class="wrap-link">
             <img
-              src="/img/icons/{{ follow.name | downcase }}.png"
+              src="/assets/img/icons/{{ follow.name | downcase }}.png"
               alt="{{ follow.name | downcase }}"
             />
             <a href="{{ follow.link }}">
