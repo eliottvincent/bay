@@ -12,7 +12,7 @@
           {% if page.slug and page.slug != "" and page.slug != nil %}
             {% assign page_link = page.slug %}
           {% else %}
-            {% assign page_link = "/" | append: page.name | downcase | append: "/" %}
+            {% assign page_link = "/" | append: page.name | downcase %}
           {% endif %}
           {% assign page_link = page_link | prepend: site.baseurl | prepend: site.url %}
           <a class="page-link" href="{{ page_link }}">
