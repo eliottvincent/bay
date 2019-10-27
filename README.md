@@ -20,7 +20,7 @@ gem "minima"
 ```
 with:
 ```
-gem "bay_jekyll_theme", "~> 1.0.7"
+gem "bay_jekyll_theme", "~> 1.0.8"
 ```
 
 Open `_config.yml` and replace the line:
