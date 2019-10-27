@@ -3,8 +3,7 @@
 
 A simple theme for Jekyll. Inspired by http://dangrover.com/.
 
-
-### [View Live &rarr;](https://bay.github.io)  
+### [View Live &rarr;](https://eliottvincent.github.io/bay)  
 
 ![](/screenshot.png)
 
