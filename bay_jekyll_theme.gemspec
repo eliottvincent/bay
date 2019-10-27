@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "bay_jekyll_theme"
-  spec.version       = "1.0.6"
+  spec.version       = "1.0.7"
   spec.authors       = ["Eliott Vincent"]
   spec.email         = ["hello@eliottvincent.com"]
 
