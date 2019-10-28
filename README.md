@@ -1,9 +1,8 @@
 # bay
-------
 
-A simple theme for Jekyll. Inspired by http://dangrover.com/. Current theme used at https://eliottvincent.com.
+Bay is a simple theme for Jekyll. [[view live]](https://eliottvincent.github.io/bay)
 
-### [View Live &rarr;](https://eliottvincent.github.io/bay)  
+Inspired by [dangrover.com](by http://dangrover.com/). Current theme used at https://eliottvincent.com.
 
 ![](/screenshot.png)
 
