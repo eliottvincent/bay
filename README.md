@@ -2,7 +2,7 @@
 
 Bay is a simple theme for Jekyll. [[view live]](https://eliottvincent.github.io/bay)
 
-Inspired by [dangrover.com](http://dangrover.com/). Current theme used at https://eliottvincent.com.
+Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliottvincent.com](http://eliottvincent.com/).
 
 ![](/screenshot.png)
 
@@ -19,7 +19,7 @@ gem "minima"
 ```
 with:
 ```
-gem "bay_jekyll_theme", "~> 1.0.8"
+gem "bay_jekyll_theme"
 ```
 
 Open `_config.yml` and replace the line:
