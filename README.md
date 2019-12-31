@@ -113,3 +113,15 @@ This is an example of a "Blog" page, displaying a list of posts.
 
 
 Your website is ready!
+
+
+### Development
+
+#### Build and publish the gem
+```sh
+gem build bay_jekyll_theme.gemspec
+```
+
+```sh
+gem push bay_jekyll_theme-1.x.x.gem
+```
