@@ -9,7 +9,7 @@
 
   font-family: $base-font-family;
 
-  @include media-query($on-palm) {
+  @include media-query($on-mobile) {
     font-size: 34px;
   }
 }
@@ -24,7 +24,7 @@
   position: relative;
   top: -0.3em;
 
-  @include media-query($on-palm) {
+  @include media-query($on-mobile) {
     font-size: 24px;
   }
 }
@@ -40,7 +40,7 @@
   h2 {
     font-size: 32px;
 
-    @include media-query($on-palm) {
+    @include media-query($on-mobile) {
       font-size: 28px;
     }
   }
@@ -48,7 +48,7 @@
   h3 {
     font-size: 26px;
 
-    @include media-query($on-palm) {
+    @include media-query($on-mobile) {
       font-size: 22px;
     }
   }
@@ -56,7 +56,7 @@
   h4 {
     font-size: 20px;
 
-    @include media-query($on-palm) {
+    @include media-query($on-mobile) {
       font-size: 18px;
     }
   }

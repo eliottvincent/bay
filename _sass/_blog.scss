@@ -5,7 +5,7 @@
     display: block;
     float: left;
 
-    @include media-query($on-palm) {
+    @include media-query($on-mobile) {
       display: block;
       float: none;
       color: #333;

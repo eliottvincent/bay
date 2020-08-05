@@ -1,11 +1,28 @@
+/**
+ * Menu
+ */
+ $("a.menu-icon").on("click", function(event) {
+   var w = $(".menu");
+
+   w.css({
+     display: w.css("display") === "none"
+      ? "block"
+      : "none"
+   });
+ });
+
+/**
+ * Wechat widget
+ */
 function moveWidget(event) {
-  var w = $("#wechat-widget");
-  w.css({ left: event.pageX - 25, top: event.pageY - w.height() - 60 });
+  $("#wechat-widget").css({
+    left: event.pageX - 25,
+    top: event.pageY - w.height() - 60
+  });
 }
 
 $("a#wechat-link").on("mouseenter", function(event) {
-  var w = $("#wechat-widget");
-  w.css({ display: "block" });
+  $("#wechat-widget").css({ display: "block" });
   moveWidget(event);
 });
 
