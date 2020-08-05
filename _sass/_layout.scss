@@ -69,7 +69,7 @@
       padding-top: 4px;
       text-align: center;
 
-      background: #ffffff url(/assets/img/menu.png) 6px 4px no-repeat;
+      background: #ffffff url($base-url + '/assets/img/menu.png') 6px 4px no-repeat;
     }
 
     .trigger {

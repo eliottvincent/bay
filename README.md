@@ -117,6 +117,11 @@ Your website is ready!
 
 ### Development
 
+#### Run development instance (with hot-reload)
+```sh
+bundle exec jekyll serve
+```
+
 #### Build and publish the gem
 ```sh
 gem build bay_jekyll_theme.gemspec
