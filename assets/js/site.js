@@ -15,7 +15,9 @@
  * Wechat widget
  */
 function moveWidget(event) {
-  $("#wechat-widget").css({
+  var w = $("#wechat-widget");
+
+  w.css({
     left: event.pageX - 25,
     top: event.pageY - w.height() - 60
   });
