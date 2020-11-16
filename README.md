@@ -8,6 +8,9 @@ Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliot
 
 ### Installation
 
+The easiest solution is to **fork this repo**.
+If you want to start from a clean website, follow the steps bellow.
+
 Create a new Jekyll website:
 ```
 jekyll new mysite
@@ -29,6 +32,10 @@ theme: minima
 with:
 ```
 theme: bay_jekyll_theme
+```
+or, for GitHub Pages:
+```
+remote_theme: eliottvincent/bay_jekyll_theme
 ```
 
 Finally, install the dependencies:
