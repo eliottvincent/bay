@@ -35,7 +35,7 @@ theme: bay_jekyll_theme
 ```
 or, for GitHub Pages:
 ```
-remote_theme: eliottvincent/bay_jekyll_theme
+remote_theme: eliottvincent/bay
 ```
 
 Finally, install the dependencies:
