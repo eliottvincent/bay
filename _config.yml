@@ -35,8 +35,8 @@ footer:
       link: http://linkedin.com/in/YourLinkedInUsername
     - name: GitHub
       link: http://github.com/YourGitHubUsername
-    - name: Weibo
-      link: http://weibo.com/u/YourWeiboUsername
+    - name: Dribbble
+      link: https://dribbble.com/YourDribbbleUsername
     - name: RSS
       link: /feed.xml
 
