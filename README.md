@@ -8,8 +8,9 @@ Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliot
 
 ### Installation
 
-The easiest solution is to **fork this repo**.
-If you want to start from a clean website, follow the steps bellow.
+
+The easiest solution is to [fork this repo](https://github.com/eliottvincent/bay/fork).
+If you want to start from a clean website, follow the steps bellow:
 
 Create a new Jekyll website:
 ```
@@ -85,8 +86,12 @@ footer:
       link: http://linkedin.com/in/YourLinkedInUsername
     - name: GitHub
       link: http://github.com/YourGitHubUsername
+    - name: Dribbble
+      link: https://dribbble.com/YourDribbbleUsername
     - name: Weibo
       link: http://weibo.com/u/YourWeiboUsername
+    - name: RSS
+      link: /feed.xml
 ```
 Re-run `jekyll serve` to see the footer updated.
 
