@@ -4,8 +4,8 @@
 title: Dúalta Ó Fionnagáin
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website of Dúalta Ó Fionnagáin
-baseurl: "/bay" # the subpath of the site
-url: "https://dualta.github.io" # the base hostname & protocol for the site
+baseurl: "" # the subpath of the site
+url: "https://ofionnad.github.io" # the base hostname & protocol for the site
 og_image: /assets/img/website_profile.jpg
 google_analytics: "UA-262620694-1"
 
