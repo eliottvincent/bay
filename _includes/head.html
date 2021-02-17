@@ -3,6 +3,11 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
+  {% if page.layout == "post" %}
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  {% endif %}
   {% assign page_is_article = false %}
   {% if page.layout == "post" %}{% assign page_is_article = true %}{% endif %}
 

@@ -8,15 +8,15 @@
 $base-url: "{{ site.baseurl }}";
 
 $base-font-family: Charter, Georgia, Helvetica, Arial, sans-serif;
-$base-font-size: 14px;
+$base-font-size: 18px;
 $small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.7;
 
-$spacing-unit: 30px;
+$spacing-unit:15px;
 
 $text-color: #111;
-$background-color: #fdfdfd;
-$brand-color: #2a7ae2;
+$background-color: #f1f1f1;
+$brand-color: #EC4838;
 
 $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);

@@ -1,44 +1,54 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: Bay Jekyll Theme
+title: Dúalta Ó Fionnagáin
 description: >- # this means to ignore newlines until "baseurl:"
-  Bay is a minimal Jekyll Theme.
+  Personal website of Dúalta Ó Fionnagáin
 baseurl: "/bay" # the subpath of the site
-url: "https://eliottvincent.github.io" # the base hostname & protocol for the site
-og_image: /assets/img/profile-pic.jpg
-google_analytics: "UA-121636368-3"
+url: "https://dualta.github.io" # the base hostname & protocol for the site
+og_image: /assets/img/website_profile.jpg
+google_analytics: "UA-262620694-1"
+
+theme: bay_jekyll_theme
 
 header:
   pages:
     - name: Home
       slug: /
-    - name: Work
+    - name: Research
     - name: Blog
+    - name: Work
 
 footer:
   show_powered_by: true
   contact:
     - name: Email
-      value: yourmail@domain.com
-      link: mailto:yourmail@domain.com
-    - name: WeChat
-      value: YourWeChatUsername
-      link: "#"
+      value: ofionnad@tcd.ie
+      link: mailto:ofionnad@tcd.ie
+    - name: id-card
+      value: CV
+      link: assets/img/MyCV_Academic_Feb2021.pdf
+    - name: ads
+      value: ADS
+      link: > 
+          "https://ui.adsabs.harvard.edu/search/       p_=0&q=%20%20author%3A%22%5E%C3%93%20Fionnag%C3%A1in%22&sort=date%20desc%2C%20bibcode%20desc"
+    #- name: WeChat
+      #value: YourWeChatUsername
+      #link: "#"
   follow:
     - name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - name: Facebook
-      link: http://facebook.com/YourFacebookUsername
+      link: http://twitter.com/dualta93
+      username: "@dualta93"
+      #- name: Facebook
+      #link: http://facebook.com/YourFacebookUsername
     - name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
+      link: http://linkedin.com/in/ofionnad
     - name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - name: RSS
-      link: /feed.xml
+      link: http://github.com/ofionnad
+      #- name: Dribbble
+      #link: https://dribbble.com/YourDribbbleUsername
+      #- name: RSS
+      #link: /feed.xml
 
 # Build settings
 markdown: kramdown

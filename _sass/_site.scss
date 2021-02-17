@@ -2,11 +2,13 @@
   float: right;
   border: #ccc 1px solid;
   margin-left: 20px;
+  max-height: 200px;
 
   @include media-query($on-mobile) {
     float: none;
     margin-bottom: 20px;
     margin-left: 0px;
+    max-height: 200px
   }
 }
 

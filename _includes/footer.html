@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1 social-links">
-        <h4>CONTACT</h4>
+          <h4><b>Dúalta Ó Fionnagáin</b></h4>
 
         {% for contact in site.footer.contact %}
 
@@ -43,9 +43,7 @@
             </a>
           </span>
 
-          {% assign mod = forloop.index | modulo: 2 %} {% if mod == 0 %}
             <br />
-          {% endif %}
 
         {% endfor %}
       </div>
@@ -53,7 +51,7 @@
       {% if site.footer.show_powered_by == true %}
         <div class="footer-col footer-col-3 powered-by">
           <p>
-            powered by <a href="https://github.com/eliottvincent/bay">Bay</a> | {{ 'now' | date: "%Y" }}
+            powered by <a href="https://github.com/ofionnad/bay">Bay</a> | {{ 'now' | date: "%Y" }}
           </p>
         </div>
       {% endif %}

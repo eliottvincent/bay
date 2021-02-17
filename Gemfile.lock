@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    bay_jekyll_theme (1.0.15)
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
     em-websocket (0.5.1)
@@ -69,6 +70,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bay_jekyll_theme
   jekyll (~> 4.0.0)
   jekyll-feed (~> 0.12)
   tzinfo (~> 1.2)
@@ -76,4 +78,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.0.2
+   2.2.10
