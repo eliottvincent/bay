@@ -21,8 +21,8 @@
 
   <!-- For styles with static names... 
   <link href="{{ 'assets/css/main.css' | relative_url }}" rel="stylesheet">
-  For documents/pages whose URLs can change... -->
-  [{{ page.title }}]("{{ page.url | relative_url }}")
+  For documents/pages whose URLs can change... 
+  [{{ page.title }}]("{{ page.url | relative_url }}")-->
 
   {% assign page_description = "" %}
   {% if page.draft %}{% assign page_description = page_description | append: "[DRAFT] " %}{% endif %}
