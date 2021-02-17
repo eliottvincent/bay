@@ -15,7 +15,6 @@ items:
       alt: sand
     description: Planets in our solar system have exhibited lightning many times in the past (e.g. Saturn, Uranus, Jupiter). Lightning emits very strong radio signals, which could be detectable from Earth. I am using the worlds most sensitive low-frequency radio telescopes to try detect these transient events.
 ---
-
 # Research Interests
 <br/><br/>
  
