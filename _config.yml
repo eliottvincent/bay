@@ -17,7 +17,6 @@ header:
       slug: /
     - name: Research
     - name: Blog
-    - name: Work
 
 footer:
   show_powered_by: true
