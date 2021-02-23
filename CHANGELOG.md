@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.16](https://github.com/eliottvincent/bay/compare/v1.0.15...v1.0.16) (2021-02-23)
+
+### Bug Fixes
+
+- Rework footer's elements sizing ([638970b](https://github.com/eliottvincent/bay/commit/638970bf93ee6567f05cbcd92037bc92cebc3550)), closes [#2](https://github.com/eliottvincent/bay/issues/2)
+
 ### [1.0.15](https://github.com/eliottvincent/bay/compare/v1.0.14...v1.0.15) (2020-12-21)
 
 ### Features
