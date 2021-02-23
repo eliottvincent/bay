@@ -132,8 +132,12 @@
   width: calc(33% - (#{$spacing-unit} / 2));
 }
 
+.follow-links > .social-link {
+  flex: 0 50%;
+}
+
 .powered-by {
-  font-size: 13px;
+  font-size: 13px !important;
   color: $grey-color;
 }
 
