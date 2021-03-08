@@ -27,8 +27,8 @@ footer:
     - name: id-card
       value: CV
       link: assets/img/MyCV_Academic_Feb2021.pdf
-    - name: NASA_ADS
-      value: NASA_ADS
+    - name: ADS
+      value: ADS
       link: > 
           https://ui.adsabs.harvard.edu/search/p_=0&q=%20%20author%3A%22%5E%C3%93%20Fionnag%C3%A1in%22&sort=date%20desc%2C%20bibcode%20desc
     - name: arXiv
