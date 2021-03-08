@@ -3,7 +3,7 @@
     width: 6em;
     color: #777;
     display: block;
-    float: left;
+    float: none;
 
     @include media-query($on-mobile) {
       display: block;
@@ -15,7 +15,7 @@
   }
 
   .blog-post-title {
-    font-size: 150%;
+    font-size: 120%;
     letter-spacing: normal;
   }
 }
