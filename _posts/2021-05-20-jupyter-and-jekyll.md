@@ -7,25 +7,27 @@
 ---
 This is a quick test on how to implement jupyter notebooks into a static jekyll site!
 
-```python
+{%highlight python%}
 import numpy as np
 import plotly.express as px
 import pandas as pd
-```
+{%endhighlight%}
 
 
-```python
+
+{%highlight python%}
 x = np.linspace(0,2*np.pi,100)
 y = np.sin(x)
-```
+{%endhighlight%}
 
 
-```python
+
+{%highlight python%}
 %matplotlib inline
 f = plt.figure(figsize=(8,4))
 plt.plot(x, y)
 plt.grid(ls=':')
-```
+{%endhighlight%}
 
 
 ![svg](/assets/img/jupyter/test_2_0.svg)
@@ -38,5 +40,5 @@ Convert the notebook to markdown using nbconvert
 jupyter nbconvert my_notebook.ipynb --to markdown
 ```
 
-Move it into the jekyll ```_posts``` directory and rename to the same syntax as the other posts.
+Move it into the jekyll `_posts` directory and rename to the same syntax as the other posts.
 Then just fix all the image paths and you're done!

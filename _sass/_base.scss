@@ -148,16 +148,18 @@ code {
   font-size: 15px;
   border: 1px solid $grey-color-light;
   border-radius: 3px;
-  background-color: #eef;
+  //background-color: #f2f2f2;
+  //background-color: #003366;
+  //color: #ffffff;
 }
 
 code {
-  padding: 1px 5px;
+  padding: 2px 6px;
 }
 
 pre {
   padding: 8px 12px;
-  overflow-x: scroll;
+  overflow-x: auto;
 
   > code {
     border: 0;
@@ -170,8 +172,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(700px - (#{$spacing-unit} * 2));
-  max-width:         calc(700px - (#{$spacing-unit} * 2));
+  max-width: -webkit-calc(1000px - (#{$spacing-unit} * 2));
+  max-width:         calc(1000px - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
@@ -179,8 +181,8 @@ pre {
   @extend %clearfix;
 
   @include media-query($on-laptop) {
-    max-width: -webkit-calc(800px - (#{$spacing-unit}));
-    max-width:         calc(800px - (#{$spacing-unit}));
+    max-width: -webkit-calc(1000px - (#{$spacing-unit}));
+    max-width:         calc(1000px - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
   }
@@ -205,8 +207,8 @@ pre {
 .icon {
   > svg {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 50px;
+    height: 50px;
     vertical-align: middle;
 
     path {

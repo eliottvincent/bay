@@ -55,10 +55,15 @@ footer:
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 sass:
     style: :compressed
 plugins:
   - jekyll-feed
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 # Excluded items
 exclude:
