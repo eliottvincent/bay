@@ -6,14 +6,14 @@
  header: test
 ---
 
-A random walk is a concept I first encountered during my undergraduate, in regards to the Sun. While it was a relatively brief encounter, the concept is actually quite interesting and warrants a futher look. In the case of astrophysics, photons that are produced in the center of the Sun through fusion, undergo random walks to get to the solar surface. As they move randomly, it takes them some 30,000 years on average to travel from the center of the Sun to the surface and then only 8 minutes or so to travel from the solar surface to the Earth!
+In the Sun, photons that are produced in the center of the Sun through fusion, undergo random walks to get to the solar surface. As they move randomly, it takes them some 30,000 years on average to travel from the center of the Sun to the surface and then only 8 minutes or so to travel from the solar surface to the Earth!
 
 It also turns out that random walks are applicable to many other areas of maths, physics, statistics/probability, and finance. For example, the stock markets can be considered to take random walks as they change, in a continuous fashion. There are many problems in statistics that deal with similar issues.
 
 # **Monkey on a Cliff**
-So how do we define a random walk? Wikipedia defines it as a mathematical object, a stochastic process, that describes a path that consists of a succession of random steps on some mathematical space. That is fairly vague. Let's make it a bit more real. There are two common problems I want to have a look at here: The monkey on the cliff, and the drunk on his way home.
+So how do we define a random walk? Wikipedia defines it as a mathematical object, a stochastic process, that describes a path that consists of a succession of random steps on some mathematical space. That is fairly vague. Let's make it a bit more real. Imagine a discrete monkey on a cliff:
 
-![Monkey image](/bay/assets/img/content/rwalks/monkey.png "Monkey on a cliff!")
+![Monkey image](/assets/img/content/rwalks/monkey.png "Monkey on a cliff!")
 
 A monkey stands at distance $$x = 1$$ from the edge of a cliff on his left, at $$x = 0$$. He takes steps randomly in each direction, with probability of $$p$$ away from the cliff, and $$q$$ towards the cliff. In this case, we really don't need to know what $$p$$ is. The probability that the monkey steps off the cliff from $$x = 1$$ is $$P_1$$. So the probability that it walks off the cliff in the first step is $$q$$, easy. But what is the probability it will fall off the cliff any time in the future? In this case, the probability increases, as it can take any number of random steps but if the sum of steps ever reaches -1, the monkey falls off the cliff.
 
