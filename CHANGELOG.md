@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.17](https://github.com/eliottvincent/bay/compare/v1.0.16...v1.0.17) (2021-06-05)
+
+### Features
+
+- Remove support for Retina-sized images
+
 ### [1.0.16](https://github.com/eliottvincent/bay/compare/v1.0.15...v1.0.16) (2021-02-23)
 
 ### Bug Fixes
