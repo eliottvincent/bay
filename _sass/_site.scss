@@ -1,5 +1,6 @@
-.profilepic {
+.profile-pic {
   float: right;
+  width: 202px;
   border: #ccc 1px solid;
   margin-left: 20px;
 
@@ -30,6 +31,11 @@
       line-height: 16px;
       margin-top: 6.5px;
       margin-bottom: 10px;
+
+      img {
+        width: 16px;
+        height: 16px;
+      }
 
       a {
         margin-left: 6px;

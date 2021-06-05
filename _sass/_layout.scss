@@ -21,8 +21,11 @@
   font-size: 26px;
   line-height: 56px;
   letter-spacing: -1px;
-
   float: left;
+
+  img {
+    height: 28px;
+  }
 
   &,
   &:visited {
