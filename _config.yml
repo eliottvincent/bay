@@ -39,6 +39,8 @@ footer:
 #      link: https://dribbble.com/YourDribbbleUsername
 #    - name: RSS
 #      link: /feed.xml
+     - name: GoogleScholar
+       link: https://scholar.google.com/citations?user=iforsrgAAAAJ&hl=ko
 
 # Build settings
 markdown: kramdown
