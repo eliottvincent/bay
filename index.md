@@ -16,7 +16,7 @@ profile_picture:
   Main Methodology:  Network analysis, Game theory, Natural language processing, etc.
 </p>
 <p>
-  Download CV
+  Download CV (last update: Jun.09.2021)
 </p>
 <hr>
 
