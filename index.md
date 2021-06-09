@@ -15,3 +15,4 @@ profile_picture:
 <p>
   Main Methodology:  Network analysis, Game theory, Natural language processing, etc.
 </p>
+<hr>
