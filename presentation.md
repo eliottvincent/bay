@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: presentation
 title: Presentation
 slug: /presentation
 items:
