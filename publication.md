@@ -2,19 +2,32 @@
 layout: publication
 title: Publication
 slug: /publication
-items:
-  - title: My Interest 1
-    image:
-      src: /assets/img/work/water.png
-      alt: water
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  - title: My Interest 2
-    image:
-      src: /assets/img/work/sand.png
-      alt: sand
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 ---
 
-This is an example of a "Publication" page, displaying your work, your interests, your projects.
-<br />
-<br />
+<ul>
+  <li> 
+    <a href="https://link.springer.com/article/10.1007/s40042-020-00051-5">Tracing the evolution of physics with a keyword co-occurrence network</a><br> 
+    <b>You, T.</b>, Yoon, J., Kwon, O. H., & Jung, W. S. (2021). Tracing the evolution of physics with a keyword co-occurrence network. <i>Journal of the Korean Physical Society, 78</i>(3), 236-243.
+  </li>
+  <li> 
+    <a href="http://www.iemsjl.org/journal/article.php?code=64941">A system dynamics analysis of national R&D performance measurement system in Korea</a><br> 
+    <b>You, T.</b>, & Jung, W. S. (2018). A System Dynamics Analysis of National R&D Performance Measurement System in Korea. <i>Industrial Engineering & Management Systems, 17</i>(4), 833-839.
+  </li>
+  <li> 
+    <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.96.062310">Chaos and unpredictability in evolution of cooperation in continuous time</a><br> 
+    <b>You, T.</b>, Kwon, M., Jo, H. H., Jung, W. S., & Baek, S. K. (2017). Chaos and unpredictability in evolution of cooperation in continuous time. <i>Physical Review E, 96</i>(6), 062310.
+  </li>
+  <li> 
+    <a href="https://www.inderscienceonline.com/doi/abs/10.1504/IJKBD.2016.076464">Embracing networks of national policy research infuture foresight</a><br> 
+    Kim, H., <b>You, T.</b>, Ahn, S. J., & Jung, W. S. (2016). Embracing networks of national policy research in future foresight. <i>International Journal of Knowledge-Based Development, 7</i>(2), 107-124.
+  </li>
+  <li> 
+    <a href="https://www.koreascience.or.kr/article/CFKO201231748030874.page">A taxonomy of eco-design checklists</a><br> 
+  Masoudi, A., You, H. C., Park, H. J., <b>You, T. H.</b>, Kim, E. H., & Suh, S. H. (2012). A Taxonomy of Eco-Design Checklists. <i>In Proceedings of the Korean Society of Precision Engineering Conference</i> (pp. 1293-1294). Korean Society for Precision Engineering.
+  </li>
+  <li> 
+    <a href="https://www.koreascience.or.kr/article/JAKO201205061572878.page">A characteristic analysis of ergonomic console layout studies using optimization techniques</a><br>
+    Jung, K., Kim, J., <b>You, T.</b>, Lee, B., Lee, W., Park, S., ... & You, H. (2012). A characteristic analysis of ergonomic console layout studies using optimization techniques. <i>Journal of the Ergonomics Society of Korea, 31</i>(6), 733-740.
+  </li>
+</ul>
+
