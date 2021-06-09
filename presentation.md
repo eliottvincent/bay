@@ -18,7 +18,7 @@ slug: /presentation
 <ul>
   <li> 
     Alliance structure between UN Security Councilmembers with debates<br> 
-    <b>You, T., Kwon, O.-H., Hong, I., Jung, W.-S. (2020). <i>NetSci 2020</i>
+    <b>You, T.</b>, Kwon, O.-H., Hong, I., Jung, W.-S. (2020). <i>NetSci 2020</i>
   </li>
   <li> 
     Comparing quality of questionable journalin academic ecosystem<br> 
