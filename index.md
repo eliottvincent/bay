@@ -18,10 +18,14 @@ profile_picture:
 <hr>
 
 <h3> Education </h3>
-<dl>
-  <dt> <b>Ph.D. in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2021<b></dt>
-    <dd>- Complex System (advisor: Woo-Sung Jung) - <a href="http://complex.postech.ac.kr">Complexity in Social System Lab.</a></dd>
-  <dt> M.S. in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2014</dt>
-    <dd>- Ergonomics (advisor: Heecheon You) - <a href="http://edt.postech.ac.kr">EDT lab.</a></dd>
-  <dt> B.S. in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2012</dt>
-</dl>
+<ul>
+  <li> <b>Ph.D. in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2021<b></li>
+    <ul>
+    <li>- Complex System (advisor: Woo-Sung Jung) - <a href="http://complex.postech.ac.kr">Complexity in Social System Lab.</a></li>
+    </ul>
+  <li> M.S. in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2014</li>
+    <ul>
+    <li>- Ergonomics (advisor: Heecheon You) - <a href="http://edt.postech.ac.kr">EDT lab.</a></il>
+    </ul>
+  <li> B.S. in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2012</li>
+</ul>
