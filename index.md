@@ -74,3 +74,12 @@ profile_picture:
   </li>
 </ul>
 <hr>
+
+<h3> Patent </h3>
+<ul>
+  <li> 
+    Method and system for representative keywords in research field using keyword cooccurrence analysis<br>
+    <b>T. You</b>, O.-H. Kwon, J. Yoon, W.-S. Jung, Korean Patent No.10-2020-0039380. (Pending)
+  </li>
+</ul>
+<hr>
