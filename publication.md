@@ -20,6 +20,8 @@ slug: /publication
     <b>You, T.</b>, Kwon, M., Jo, H. H., Jung, W. S., & Baek, S. K. (2017). Chaos and unpredictability in evolution of cooperation in continuous time. <i>Physical Review E, 96</i>(6), 062310.
   </li>  
 </ul>
+<hr>
+<br>
 
 <h3> International Publications </h3>
 <ul>
