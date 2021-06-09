@@ -46,3 +46,31 @@ profile_picture:
 </ul>
 <hr>
 
+<h3> Publications </h3>
+<ul>
+  <li> 
+    Tracing the evolution of physics with a keywordco-occurrence network<br> 
+    <b>You, T.</b>, Yoon, J., Kwon, O. H., & Jung, W. S. (2021). Tracing the evolution of physics with a keyword co-occurrence network. </i>Journal of the Korean Physical Society, 78</i>(3), 236-243.
+  </li>
+  <li> 
+    A system dynamics analysis of national R&D performance measurement system in Korea<br> 
+    <b>You, T.</b>, & Jung, W. S. (2018). A System Dynamics Analysis of National R&D Performance Measurement System in Korea. <i>Industrial Engineering & Management Systems, 17</i>(4), 833-839.
+  </li>
+  <li> 
+    Chaos and unpredictability in evolutionof cooperation in continuous time<br> 
+    <b>You, T.</b>, Kwon, M., Jo, H. H., Jung, W. S., & Baek, S. K. (2017). Chaos and unpredictability in evolution of cooperation in continuous time. <i>Physical Review E, 96</i>(6), 062310.
+  </li>
+  <li> 
+    Embracing networks of national policy research infuture foresight<br> 
+    Kim, H., <b>You, T.</b>, Ahn, S. J., & Jung, W. S. (2016). Embracing networks of national policy research in future foresight. <i>International Journal of Knowledge-Based Development, 7</i>(2), 107-124.
+  </li>
+  <li> 
+    A Taxonomy of Eco-Design Checklists<br> 
+  Masoudi, A., You, H. C., Park, H. J., <b>You, T. H.</b>, Kim, E. H., & Suh, S. H. (2012). A Taxonomy of Eco-Design Checklists. <i>In Proceedings of the Korean Society of Precision Engineering Conference</i> (pp. 1293-1294). Korean Society for Precision Engineering.
+  </li>
+  <li> 
+    A characteristic analysis of ergonomic console layout studies using optimization techniques<br>
+    Jung, K., Kim, J., <b>You, T.</b>, Lee, B., Lee, W., Park, S., ... & You, H. (2012). A characteristic analysis of ergonomic console layout studies using optimization techniques. <i>Journal of the Ergonomics Society of Korea, 31</i>(6), 733-740.
+  </li>
+</ul>
+<hr>
