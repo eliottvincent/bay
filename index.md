@@ -19,8 +19,9 @@ profile_picture:
 
 <h3> Education </h3>
 <p>
-  - Ph.D. in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2021
-    - Complex System (advisor: Woo-Sung Jung) - <a href="complex.postech.ac.kr>Complexity in Social System Lab.</a>
-  - M.S. in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2014
-    - Ergonomics (advisor: Heecheon You) - <a href="edt.postech.ac.kr">EDT lab.</a>
+  - Ph.D. in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2021<br>
+    - Complex System (advisor: Woo-Sung Jung) - <a href="complex.postech.ac.kr>Complexity in Social System Lab.</a><br>
+  - M.S. in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2014<br>
+    - Ergonomics (advisor: Heecheon You) - <a href="edt.postech.ac.kr">EDT lab.</a><br>
   - B.S. in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2012
+</p>
