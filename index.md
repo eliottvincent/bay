@@ -50,7 +50,7 @@ profile_picture:
 <ul>
   <li> 
     Tracing the evolution of physics with a keywordco-occurrence network<br> 
-    <b>You, T.</b>, Yoon, J., Kwon, O. H., & Jung, W. S. (2021). Tracing the evolution of physics with a keyword co-occurrence network. </i>Journal of the Korean Physical Society, 78</i>(3), 236-243.
+    <b>You, T.</b>, Yoon, J., Kwon, O. H., & Jung, W. S. (2021). Tracing the evolution of physics with a keyword co-occurrence network. <i>Journal of the Korean Physical Society, 78</i>(3), 236-243.
   </li>
   <li> 
     A system dynamics analysis of national R&D performance measurement system in Korea<br> 
