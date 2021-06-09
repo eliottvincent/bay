@@ -21,7 +21,7 @@ profile_picture:
 <ul>
   <li><b>Ph.D.</b> in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2021</li>
     <ul>
-    <li>Complex System (advisor: Woo-Sung Jung) - <a href="http://complex.postech.ac.kr">Complexity in Social System Lab.</a></li>
+      <li>Complex System (advisor: <a href="https://www.wsjung.net">Woo-Sung Jung</a>) - <a href="http://complex.postech.ac.kr">Complexity in Social System Lab.</a></li>
     </ul>
   <li><b>M.S.</b> in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2014</li>
     <ul>
