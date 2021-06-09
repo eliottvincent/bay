@@ -22,23 +22,23 @@ footer:
     - name: Email
       value: taekho.you@ssu.ac.kr
       link: mailto:taekho.you@ssu.ac.kr
-    - name: WeChat
-      value: YourWeChatUsername
-      link: "#"
+#    - name: WeChat
+#      value: YourWeChatUsername
+#      link: "#"
   follow:
     - name: Twitter
       link: http://twitter.com/thyou14
       username: "@thyou14"
-    - name: Facebook
-      link: http://facebook.com/YourFacebookUsername
+#    - name: Facebook
+#      link: http://facebook.com/YourFacebookUsername
     - name: LinkedIn
       link: http://linkedin.com/in/taekho-you-0883b0122
-    - name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - name: RSS
-      link: /feed.xml
+#    - name: GitHub
+#      link: http://github.com/YourGitHubUsername
+#    - name: Dribbble
+#      link: https://dribbble.com/YourDribbbleUsername
+#    - name: RSS
+#      link: /feed.xml
 
 # Build settings
 markdown: kramdown
