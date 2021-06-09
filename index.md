@@ -25,7 +25,7 @@ profile_picture:
     </ul>
   <li><b>M.S.</b> in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2014</li>
     <ul>
-    <li>Ergonomics (advisor: Heecheon You) - <a href="http://edt.postech.ac.kr">EDT lab.</a></il>
+    <li>Ergonomics (advisor: Heecheon You) - <a href="http://edt.postech.ac.kr">EDT lab.</a></li>
     </ul>
   <li><b>B.S.</b> in Industrial and Management Engineering, Pohang University of Science and Technology (POSTECH), Feb. 2012</li>
 </ul>
