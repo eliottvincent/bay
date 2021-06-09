@@ -56,9 +56,5 @@ slug: /publication
     <a href="https://www.koreascience.or.kr/article/CFKO201231748030874.page">A taxonomy of eco-design checklists</a><br> 
   Masoudi, A., You, H. C., Park, H. J., <b>You, T. H.</b>, Kim, E. H., & Suh, S. H. (2012). A Taxonomy of Eco-Design Checklists. <i>In Proceedings of the Korean Society of Precision Engineering Conference</i> (pp. 1293-1294). Korean Society for Precision Engineering.
   </li>
-  <li> 
-    <a href="https://www.koreascience.or.kr/article/JAKO201205061572878.page">A characteristic analysis of ergonomic console layout studies using optimization techniques</a><br>
-    Jung, K., Kim, J., <b>You, T.</b>, Lee, B., Lee, W., Park, S., ... & You, H. (2012). A characteristic analysis of ergonomic console layout studies using optimization techniques. <i>Journal of the Ergonomics Society of Korea, 31</i>(6), 733-740.
-  </li>
 </ul>
 
