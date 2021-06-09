@@ -36,12 +36,12 @@ profile_picture:
   <li> <a href="http://aix.ssu.ac.kr">School of AI Convergence</a> in <a href="http://ssu.ac.kr">Soongsil University</a>, Republic of Korea
   <ul>
     <li> Postdoctoral Fellow, May. 2021 - Present </li>
-    <li> <a href="http://adsl.ssu.ac.kr">Advanced Data Science Lab.</a> </li> (Director: <a href="https://bluekura.github.io">Jinhyuk Yun</a>)
+    <li> <a href="http://adsl.ssu.ac.kr">Advanced Data Science Lab.</a> (Director: <a href="https://bluekura.github.io">Jinhyuk Yun</a>) </li>
   </ul>
   <li> <a href="http://aix.ssu.ac.kr">Department of Smart System Software</a> in <a href="http://ssu.ac.kr">Soongsil University</a>, Republic of Korea
   <ul>
     <li> Visiting Scholar, Oct. 2020 - Feb. 2021 </li>
-    <li> <a href="http://adsl.ssu.ac.kr">Advanced Data Science Lab.</a> </li> (Director: <a href="https://bluekura.github.io">Jinhyuk Yun</a>)
+    <li> <a href="http://adsl.ssu.ac.kr">Advanced Data Science Lab.</a>  (Director: <a href="https://bluekura.github.io">Jinhyuk Yun</a>)</li>
   </ul>
 </ul>
 <hr>
