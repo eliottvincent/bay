@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://th-and-you.github.io/sitemap.xml
