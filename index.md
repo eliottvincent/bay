@@ -65,7 +65,7 @@ profile_picture:
     Kim, H., <b>You, T.</b>, Ahn, S. J., & Jung, W. S. (2016). Embracing networks of national policy research in future foresight. <i>International Journal of Knowledge-Based Development, 7</i>(2), 107-124.
   </li>
   <li> 
-    <a href="https://www.koreascience.or.kr/article/CFKO201231748030874.page">A Taxonomy of Eco-Design Checklists</a><br> 
+    <a href="https://www.koreascience.or.kr/article/CFKO201231748030874.page">A taxonomy of eco-design checklists</a><br> 
   Masoudi, A., You, H. C., Park, H. J., <b>You, T. H.</b>, Kim, E. H., & Suh, S. H. (2012). A Taxonomy of Eco-Design Checklists. <i>In Proceedings of the Korean Society of Precision Engineering Conference</i> (pp. 1293-1294). Korean Society for Precision Engineering.
   </li>
   <li> 
