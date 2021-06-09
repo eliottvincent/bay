@@ -5,7 +5,7 @@ title: Taekho You
 description: >- # this means to ignore newlines until "baseurl:"
   Taekho You's webpage.
 baseurl: "/bay" # the subpath of the site
-url: "https://eliottvincent.github.io" # the base hostname & protocol for the site
+url: "https://th-and-you.github.io" # the base hostname & protocol for the site
 og_image: /assets/img/profile-pic.jpg
 google_analytics: "UA-121636368-3"
 
@@ -20,19 +20,19 @@ footer:
   show_powered_by: true
   contact:
     - name: Email
-      value: yourmail@domain.com
-      link: mailto:yourmail@domain.com
+      value: taekho.you@ssu.ac.kr
+      link: mailto:taekho.you@ssu.ac.kr
     - name: WeChat
       value: YourWeChatUsername
       link: "#"
   follow:
     - name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
+      link: http://twitter.com/thyou14
+      username: "@thyou14"
     - name: Facebook
       link: http://facebook.com/YourFacebookUsername
     - name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
+      link: http://linkedin.com/in/taekho-you-0883b0122
     - name: GitHub
       link: http://github.com/YourGitHubUsername
     - name: Dribbble
