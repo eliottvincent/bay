@@ -50,8 +50,8 @@ slug: /publication
     Jung, K., Kim, J., Lee, W., <b>You, T.</b>, Lee, B., Jeong, J., ... & You, H. (2018). 순위 기반 분기한정법과 군집분석을 활용한 인간공학적 콘솔 배치 최적화 방법 개발/Development of an Ergonomic Console Layout Optimization Method Using Priority-Based Branch-and-Bound Algorithm and Clustering Analysis. <i>Journal of the Korean Institute of Industrial Engineers, 44</i>(3).
   </li>
   <li>
-  <a href="https://kiss.kstudy.com/thesis/thesis-view.asp?key=3278175">전과정평가를 통한 핸디형 청소기의 친환경적 디자인 개발</a><br>
-  <b>유택호</b>, 이지형, & 유희천. (2014). 전과정평가를 통한 핸디형 청소기의 친환경적 디자인 개발. <i>한국전과정평가학회지, 15</i>(1), 71-82.
+    <a href="https://kiss.kstudy.com/thesis/thesis-view.asp?key=3278175">전과정평가를 통한 핸디형 청소기의 친환경적 디자인 개발</a><br>
+    <b>유택호</b>, 이지형, & 유희천. (2014). 전과정평가를 통한 핸디형 청소기의 친환경적 디자인 개발. <i>한국전과정평가학회지, 15</i>(1), 71-82.
   <li> 
     <a href="https://www.koreascience.or.kr/article/CFKO201231748030874.page">A taxonomy of eco-design checklists</a><br> 
   Masoudi, A., You, H. C., Park, H. J., <b>You, T. H.</b>, Kim, E. H., & Suh, S. H. (2012). A Taxonomy of Eco-Design Checklists. <i>In Proceedings of the Korean Society of Precision Engineering Conference</i> (pp. 1293-1294). Korean Society for Precision Engineering.
