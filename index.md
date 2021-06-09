@@ -6,9 +6,11 @@ profile_picture:
 ---
 
 <p>
-  Welcome! This site serves as an example for the Bay Jekyll theme. Bay is a very simple and minimal theme, directly inspired by Dan Grover's <a href="http://dangrover.com">website</a>.
+  I am a posdoctoral fellow at <a href="http://adsl.ssu.ac.kr">ADSL</a>, School of AI Convergence in Soongsil University, Republic of Korea. I am interested in a broad range of academic and social phenomena. Now I am trying to answer how the academic system is organized, how the researchers grow up and survive in academia, and how do we use these understandings to make decision  making. To do this, I use methodologies in complex system, network science, and machine learning.
 </p>
-
 <p>
-  You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
+  Main Research Interest: Complex System, Computational Social Science, Science of Science, and its applications.
+</p>
+<p>
+  Main Methodology:  Network analysis, Game theory, Natural language processing, etc.
 </p>
