@@ -47,7 +47,7 @@ slug: /publication
 <ul>
   <li>
     <a href="https://www.researchgate.net/profile/Wonsup-Lee/publication/326091067_Development_of_an_Ergonomic_Console_Layout_Optimization_Method_Using_Priority-Based_Branch-and-Bound_Algorithm_and_Clustering_Analysis/links/5bdb96fd92851c6b27a05b68/Development-of-an-Ergonomic-Console-Layout-Optimization-Method-Using-Priority-Based-Branch-and-Bound-Algorithm-and-Clustering-Analysis.pdf">순위 기반 분기한정법과 군집분석을 활용한 인간공학적 콘솔 배치 최적화 방법 개발/Development of an Ergonomic Console Layout Optimization Method Using Priority-Based Branch-and-Bound Algorithm and Clustering Analysis</a><br>
-    Jung, K., Kim, J., Lee, W., <b>You, T.</b>, Lee, B., Jeong, J., ... & You, H. (2018). 순위 기반 분기한정법과 군집분석을 활용한 인간공학적 콘솔 배치 최적화 방법 개발/Development of an Ergonomic Console Layout Optimization Method Using Priority-Based Branch-and-Bound Algorithm and Clustering Analysis. </i>Journal of the Korean Institute of Industrial Engineers, 44</i>(3).
+    Jung, K., Kim, J., Lee, W., <b>You, T.</b>, Lee, B., Jeong, J., ... & You, H. (2018). 순위 기반 분기한정법과 군집분석을 활용한 인간공학적 콘솔 배치 최적화 방법 개발/Development of an Ergonomic Console Layout Optimization Method Using Priority-Based Branch-and-Bound Algorithm and Clustering Analysis. <i>Journal of the Korean Institute of Industrial Engineers, 44</i>(3).
   </li>
   <li>
   <a href="https://kiss.kstudy.com/thesis/thesis-view.asp?key=3278175">전과정평가를 통한 핸디형 청소기의 친환경적 디자인 개발</a><br>
