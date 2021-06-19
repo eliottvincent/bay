@@ -73,7 +73,9 @@ The website will look somewhat empty at first. That's normal. Follow the instruc
 
 ### Header
 
-Open the `_config.yml` file and add the following:
+Open the `_config.yml` file.
+
+Add the following:
 
 ```yaml
 header:
@@ -88,7 +90,9 @@ Stop and start `jekyll serve` to see the header updated.
 
 ### Footer
 
-Open the `_config.yml` file and add the following:
+Open the `_config.yml` file.
+
+Add the following:
 
 ```yaml
 footer:
@@ -122,7 +126,9 @@ Stop and start `jekyll serve` to see the footer updated.
 
 ### Homepage
 
-Create (or edit) the `index.markdown` file and add the following:
+Create (or edit) the homepage (`index.md` or `index.markdown`).
+
+Add the following:
 
 ```yml
 ---
@@ -139,7 +145,9 @@ profile_picture:
 
 ### Blog page
 
-Create `blog.markdown` file and add the following:
+Create a `blog.md` page.
+
+Add the following:
 
 ```yaml
 ---
