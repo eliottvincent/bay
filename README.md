@@ -7,57 +7,71 @@ Bay is a simple theme for Jekyll. [[view live]](https://eliottvincent.github.io/
 
 Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliottvincent.com](http://eliottvincent.com/).
 
-![](/screenshot.png)
+![Sample screenshot](/screenshot.png)
 
-### Installation
+## Requirements 
 
+- [Ruby](https://www.ruby-lang.org/)
+
+## Installation
 
 The easiest solution is to [fork this repo](https://github.com/eliottvincent/bay/fork).
-If you want to start from a clean website, follow the steps bellow:
+
+If you want to start from a clean website, follow the steps below. These assume you have Jekyll installed globally.
 
 Create a new Jekyll website:
-```
+
+```sh
 jekyll new mysite
 ```
 
 Open `Gemfile` and replace the line:
-```
+
+```ruby
 gem "minima"
 ```
 with:
-```
+```ruby
 gem "bay_jekyll_theme"
 ```
 
 Open `_config.yml` and replace the line:
-```
+```yaml
 theme: minima
 ```
 with:
-```
+```yaml
 theme: bay_jekyll_theme
 ```
 or, for GitHub Pages:
-```
+```yaml
 remote_theme: eliottvincent/bay
 ```
 
 Finally, install the dependencies:
-```
+
+```sh
+bundle config set --local path vendor/bundle
 bundle install
 ```
 
-and build the website!
-```
+And serve the website!
+
+```sh
 jekyll serve
 ```
 
+Open in the browser at the URL shown.
 
-The website will look somewhat empty at first. That's normal. Follow the next instructions to complete the header and footer components, and the home and blog pages.
+## Customization
+
+The website will look somewhat empty at first. That's normal. Follow the instructions below to complete the header and footer components, and the home and blog pages.
 
 ### Header
+
 Open the `_config.yml` file and add the following:
-```yml
+
+```yaml
 header:
   pages:
     - name: Home
@@ -65,11 +79,14 @@ header:
     - name: Blog  # <-- blog.md
     - name: Whatever  # <-- whatever.md
 ```
-Re-run `jekyll serve` to see the header updated.
+
+Stop and start `jekyll serve` to see the header updated.
 
 ### Footer
+
 Open the `_config.yml` file and add the following:
-```yml
+
+```yaml
 footer:
   show_powered_by: true
   contact:
@@ -96,10 +113,13 @@ footer:
     - name: RSS
       link: /feed.xml
 ```
-Re-run `jekyll serve` to see the footer updated.
 
-### Home page
+Stop and start `jekyll serve` to see the footer updated.
+
+### Homepage
+
 Create (or edit) the `index.markdown` file and add the following:
+
 ```yml
 ---
 layout: home
@@ -114,8 +134,10 @@ profile_picture:
 ```
 
 ### Blog page
+
 Create `blog.markdown` file and add the following:
-```yml
+
+```yaml
 ---
 layout: blog
 title: Blog
@@ -126,18 +148,23 @@ This is an example of a "Blog" page, displaying a list of posts.
 <br />
 ```
 
-
 Your website is ready!
 
 
-### Development
+## Development
 
-#### Run development instance (with hot-reload)
+### Run development server
+
+Jekyll will watch for file changes and rebuild by default. Add a flag to push the browser to reload too. The trace flag makes errors a lot more verbose.
+
 ```sh
-bundle exec jekyll serve
+bundle exec jekyll serve --trace --livereload
 ```
 
-#### Build and publish the gem
+### Build and publish the gem
+
+For maintaining this theme as published on RubyGems.
+
 ```sh
 gem build bay_jekyll_theme.gemspec
 ```
@@ -145,3 +172,7 @@ gem build bay_jekyll_theme.gemspec
 ```sh
 gem push bay_jekyll_theme-1.x.x.gem
 ```
+
+## License
+
+Licensed under [ISC](/LICENSE.md) by [eliottvincent](https://github.com/eliottvincent).
