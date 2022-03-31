@@ -53,3 +53,7 @@ exclude:
 
 # Used for defeating caching
 version: 1
+
+# timezone
+timezone: Asia/Seoul
+future: true

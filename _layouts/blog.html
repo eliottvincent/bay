@@ -12,15 +12,69 @@
           {{ content }}
 
           <p class="blog-post-list">
+            <h3>Statstics</h3>
             {% for post in site.posts %}
 
               {% if post.draft != true %}
-                <span class="blog-post-date">{{ post.date | date: "%-m/%-d/%y" }}</span>
-                <a href="{{ post.url | replace:".html","" | prepend: site.baseurl }}" class="blog-post-title">
-                  {{ post.title }}
-                </a>
-                <br />
+                {% if post.topic == 'Stat' %}
+                  <span class="blog-post-date">{{ post.date | date: "%-m/%-d/%y" }}</span>
+                  <a href="{{ post.url | replace:".html","" | prepend: site.baseurl }}" class="blog-post-title">
+                    {{ post.title }}
+                  </a>
+                  <br />
+                {% endif %}
+              {% endif %}
 
+            {% endfor %}
+          </p>
+
+
+          <p class="blog-post-list">
+            <h3>Machine Learning</h3>
+            {% for post in site.posts %}
+
+              {% if post.draft != true %}
+                {% if post.topic == 'ML' %}
+                  <span class="blog-post-date">{{ post.date | date: "%-m/%-d/%y" }}</span>
+                  <a href="{{ post.url | replace:".html","" | prepend: site.baseurl }}" class="blog-post-title">
+                    {{ post.title }}
+                  </a>
+                  <br />
+                {% endif %}
+              {% endif %}
+
+            {% endfor %}
+          </p>
+
+          <p class="blog-post-list">
+            <h3>Computer Vision</h3>
+            {% for post in site.posts %}
+
+              {% if post.draft != true %}
+                {% if post.topic == 'CV' %}
+                  <span class="blog-post-date">{{ post.date | date: "%-m/%-d/%y" }}</span>
+                  <a href="{{ post.url | replace:".html","" | prepend: site.baseurl }}" class="blog-post-title">
+                    {{ post.title }}
+                  </a>
+                  <br />
+                {% endif %}
+              {% endif %}
+
+            {% endfor %}
+          </p>
+
+          <p class="blog-post-list">
+            <h3>Mathematics</h3>
+            {% for post in site.posts %}
+
+              {% if post.draft != true %}
+                {% if post.topic == 'Math' %}
+                  <span class="blog-post-date">{{ post.date | date: "%-m/%-d/%y" }}</span>
+                  <a href="{{ post.url | replace:".html","" | prepend: site.baseurl }}" class="blog-post-title">
+                    {{ post.title }}
+                  </a>
+                  <br />
+                {% endif %}
               {% endif %}
 
             {% endfor %}
