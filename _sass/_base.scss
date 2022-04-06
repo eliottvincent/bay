@@ -214,3 +214,16 @@ pre {
     }
   }
 }
+
+table, th, td {
+  border: 1px solid;
+}
+
+th, td {
+  padding: 5px 15px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px;
+}
