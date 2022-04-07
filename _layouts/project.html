@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="work">
+          <h1 class="page-heading">{{ page.title }}</h1>
+          {{ content }}
+
+          <!-- Data Science Section -->
+          <h2>Data Science</h2>
+          {% for item in page.items %}
+            {% if item.category == "Data Science" %}
+            <div class="project-item">
+              <div class="project-text-title">
+                <strong>[{{item.subcategory}}]</strong>
+              </div>
+              <div class="project-text-title">
+                <strong>{{ item.title }}</strong>
+              </div>
+              <figure class="project-figure">
+                <img
+                  src="{{ item.image.src | absolute_url }}"
+                  alt="{{ item.image.alt }}"
+                  class="project-picture"
+                />
+              </figure>
+              <span class="project-text">
+                <div>
+                  {{ item.description }}
+                </div>
+              </span>
+            </div>
+            {% endif %}
+          {% endfor %}
+
+          <!-- Computer Science Section -->
+          <!-- Others(Non Project) Section -->
+
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% include foot.html %}
+  </body>
+</html>

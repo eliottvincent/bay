@@ -1,0 +1,28 @@
+.project-item {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.project-picture {
+  float: left;
+  padding-right: 20px;
+  // width: 500px;
+  height: 200px;
+}
+
+.project-text-title {
+  font-weight: 300;
+  font-family: "Futura", sans-serif;
+  font-size: 13px;
+}
+

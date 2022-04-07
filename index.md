@@ -3,6 +3,14 @@ layout: home
 profile_picture:
   src: /assets/img/profile-pic.jpg
   alt: website picture
+items:
+  - category: dissertation
+    date: Sep, 2021
+    text:
+      subtitle: Unsupervised Face Clustering via Adversarial Variational Graph Auto-Encoder and Similarity Density
+      content: 
+      pdflink: 
+  
 ---
 
 <p>
