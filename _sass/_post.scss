@@ -103,51 +103,65 @@ div.footnotes {
 }
 
 body {
-counter-reset : h2;
+counter-reset : h1;
   }
+
+h1 {
+ counter-reset: h2;
+ font-size: 2em;
+}
 
 h2 {
 counter-reset : h3;
-  }
+  font-size: 1.7em !important;
+}
 
 h3 {
 counter-reset : h4;
-  }
+  font-size: 1.3em !important;
+}
 
 h4 {
 counter-reset : h5;
-  }
+font-size: 1.1em !important;
+  
+}
 
 h5 {
 counter-reset : h6;
+}
+
+article h1:before {
+  content : counter(h1,decimal) ". ";
+  counter-increment : h1;
   }
 
 article h2:before {
-  content : counter(h2,decimal) ". ";
+  content : counter(h1,decimal) "." counter(h2, decimal) ". ";
   counter-increment : h2;
   }
 
 article h3:before {
-  content : counter(h2,decimal) "." counter(h3,decimal) ". ";
+  content : counter(h1,decimal) "." counter(h2,decimal) "." counter(h3,decimal) ". ";
   counter-increment : h3;
   }
 
 article h4:before {
-  content : counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) ". ";
+  content : counter(h1,decimal) "." counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) ". ";
   counter-increment : h4;
   }
 
 article h5:before {
-  content : counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) "." counter(h5,decimal) ". ";
+  content : counter(h1,decimal) "." counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) "." counter(h5,decimal) ". ";
   counter-increment : h5;
   }
 
 article h6:before {
-  content : counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) "." counter(h5,decimal) "." counter(h6,decimal) ". ";
+  content : counter(h1,decimal) "." counter(h2,decimal) "." counter(h3,decimal) "." counter(h4,decimal) "." counter(h5,decimal) "." counter(h6,decimal) ". ";
   counter-increment : h6;
   }
 
-h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before {
+h1.nocount:before, h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before {
   content : "";
   counter-increment : none;
   }
