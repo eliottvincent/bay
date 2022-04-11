@@ -216,7 +216,7 @@ pre {
 }
 
 table, th, td {
-  border: 3px solid rgba(145, 223, 218, 1);
+  border: 5px solid rgba(145, 223, 218, 1);
   border-radius: 5px;
 }
 
@@ -236,15 +236,16 @@ table {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
+  grid-gap: 10px;
   background-color: rgba(145, 223, 218, 1);
-  border: 3px solid rgba(145, 223, 218, 1);
-  border-radius: 5px;
+  border: 0px solid rgba(145, 223, 218, 1);
+  border-radius: 3px;
   padding: 10px;
   // align-items: center;
   // justify-items: center;
 }
 .grid-item {
-  // background-color: rgba(168, 214, 193, 0.8);
+  background-color: white;
   border-radius: 5px;
   padding: 10px;
   height: 100px;
@@ -257,8 +258,55 @@ table {
 .grid-item > .subtitle {
   font-size: 16px;
   font-weight: bold;
+  margin: 10px 0px;
 }
 
 .grid-item > .content {
   font-size: 14px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(62, 223, 212);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.link {
+  color: black
 }

@@ -7,17 +7,44 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <h1>Kyungsu Choi</h1>
+
+      {% for section in page.sections %}
+        {% if section.category == "main" %}
         <div class="home">
           <img
-            src="{{ page.profile_picture.src | absolute_url }}"
-            alt="{{ page.profile_picture.alt }}"
-            class="profile-pic"
+          src="{{ section.profile_picture.src | absolute_url }}"
+          alt="{{ section.profile_picture.alt }}"
+          class="profile-pic"
           />
-          {{ content }}
+          <div class="main-content">
+            <h1>Kyungsu Choi</h1>
+            {{ section.maincontent }} <br/>
+            <button class="button" style="vertical-align:middle" onclick="location.href='{{ "" | prepend: site.baseurl | prepend: site.url }}/project/'"> <span>MY PROJECTS</span></button>
+          </div>
         </div>
+      
+        {% endif %}
+      {% endfor %}
+
       </div>
     </div>
+
+    <div class="page-content">
+      <div class="wrapper">
+
+      {% for section in page.sections %}
+        {% if section.category == "myself" %}
+        <div class="home">
+          <h1 style="text-align: center">LET ME INTRODUCE MYSELF</h1>
+          {{ section.content }}
+        </div>
+      
+        {% endif %}
+      {% endfor %}
+
+      </div>
+    </div>
+
 
     <div class="page-content">
       <div class="wrapper">
@@ -30,7 +57,7 @@
             <div class="grid-item">5</div>
             <div class="grid-item">6</div>   -->
 
-            {% for section in page.sections %}
+          {% for section in page.sections %}
             {% if section.category == "interest" %}
               {% for item in section.items %}
               <div class="grid-item">
