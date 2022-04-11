@@ -19,6 +19,40 @@
       </div>
     </div>
 
+    <div class="page-content">
+      <div class="wrapper">
+        <h1 style="text-align: center">AREAS OF INTEREST</h1>
+        <div class="home">
+          <div class="grid-container">
+            <!-- <div class="grid-item">2</div>
+            <div class="grid-item">3</div>  
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>   -->
+
+            {% for section in page.sections %}
+            {% if section.category == "interest" %}
+              {% for item in section.items %}
+              <div class="grid-item">
+                <div class="subtitle">
+                  <img
+                  src="{{ item.image.src | absolute_url }}"
+                  alt="{{ item.image.alt }}"
+                  width="30" height="30"
+                  />
+                  {{ item.subtitle }}
+                </div>
+                <div class="content">{{ item.description }}</div>
+              </div>
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 style="text-align: center">ABOUT ME</h1>
 
     <div class="page-content">
       <div class="wrapper">
@@ -29,8 +63,8 @@
               <th scope="row">Sep, 2021</th>
               <td>
                 Unsupervised Face Clustering via Adversarial Variational Graph Auto-Encoder and Similarity Density<br>
-                <a href="{{ ""/site.url}}/assets/pdf/dissertation.pdf">
-                  To add pdf icon img
+                <a href="{{site.url}}/assets/pdf/dissertation.pdf">
+                  pdf file
                 </a>
               </td>
             </tr>
@@ -104,14 +138,24 @@
       <div class="wrapper">
         <h1>Experience</h1>
         <div class="home">
-          <table>
-            <tr>
-              <th scope="row">Sep, 2021</th>
-              <td>
-                Unsupervised Face Clustering via Adversarial Variational Graph Auto-Encoder and Similarity Density<br>
-              </td>
-            </tr>
-          </table>
+          {% for section in page.sections %}
+            {% if section.category == "experience" %}
+            <table>
+              {% for item in section.items %}
+                <tr>
+                  <th scope="row">{{ item.date }}</th>
+                  <td>
+                    <b style="font-size: 16px">{{ item.content.organisation }}</b>
+                    <b>{{ item.content.jobtitle }}</b>
+                    {% for list in item.content.roles %}
+                      - {{ list.role }} <br/>
+                    {% endfor %}
+                  </td>
+                </tr>
+              {% endfor %}
+            </table>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>

@@ -214,3 +214,51 @@ pre {
     }
   }
 }
+
+table, th, td {
+  border: 3px solid rgba(145, 223, 218, 1);
+  border-radius: 5px;
+}
+
+th, td {
+  padding: 5px 15px;
+}
+
+th {
+  width: 70px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: rgba(145, 223, 218, 1);
+  border: 3px solid rgba(145, 223, 218, 1);
+  border-radius: 5px;
+  padding: 10px;
+  // align-items: center;
+  // justify-items: center;
+}
+.grid-item {
+  // background-color: rgba(168, 214, 193, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item > .subtitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.grid-item > .content {
+  font-size: 14px;
+}

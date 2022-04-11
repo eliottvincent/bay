@@ -6,7 +6,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is about Kyungsu Choi
 baseurl: "/kc.github.io" # the subpath of the site
 url: "https://ksuchoi216.github.io" # the base hostname & protocol for the site
-markdown: GFM
 highlighter: rouge
 og_image: /assets/img/profile-pic.jpg
 google_analytics: "UA-121636368-3"
@@ -15,7 +14,7 @@ header:
   pages:
     - name: Home
       slug: /
-    - name: Work
+    - name: Project
     - name: Blog
 
 footer:
@@ -23,15 +22,15 @@ footer:
   contact:
     - name: Email
       value: kc.kyungsu.choi@gmail.com
-      link: kc.kyungsu.choi@gmail.com
+      link: mailto:kc.kyungsu.choi@gmail.com
   follow:
     - name: Twitter
       link: http://twitter.com/ksuchoi216
       username: "@ksuchoi216"
     - name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
+      link: http://linkedin.com/in/ksuchoi216
     - name: GitHub
-      link: http://github.com/YourGitHubUsername
+      link: http://github.com/ksuchoi216
 
 # Build settings
 markdown: kramdown
