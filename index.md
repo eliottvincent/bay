@@ -1,14 +1,15 @@
 ---
 layout: home
-profile_picture:
-  src: /assets/img/profile-pic.jpg
-  alt: website picture
-dissertation:
-  - category: dissertation
-    date: Sep, 2021
-    text:
-      subtitle: Unsupervised Face Clustering via Adversarial Variational Graph Auto-Encoder and Similarity Density
 sections:
+  - category: main
+    maincontent: I am a <b>enjoyable and progmatic Data Scientist</b> inspired by though problems in real business.
+    profile_picture:
+      src: /assets/img/profile-pic.jpg
+      alt: website picture
+  
+  - category: myself
+    content: I can offer your firm extensive knowledge about data science because I had experience in developing various programs such as project microscopy image clustering, tweet sentiment classification, and machine learning. During my master, I was completely obsessed with up-to-date data science technologies such as deep learning techniques, so my thesis project is about image clustering using a generative model. Through the project, I realised that it is very important to deal with preprocessing data and feature engineering, and now that I have been dedicating my entire time to learning databases and backend programming. I can show you my ability in data science for contributing to your company growth.
+    
   - category: experience
     items:
       - date: Dec 2015 <br/> - Oct 2019
@@ -56,8 +57,11 @@ sections:
           src: /assets/img/interest/prototype.png
           alt: engineering   
 ---
+# Kyungsu Choi
 
-## THIS
+I am a <b>enjoyable and progmatic Data Scientist</b> inspired by though problems in real business.
+
+## Let me introduce myself
 I can offer your firm extensive knowledge about data science because I had experience in developing various programs such as project microscopy image clustering, tweet sentiment classification, and machine learning. During my master, I was completely obsessed with up-to-date data science technologies such as deep learning techniques, so my thesis project is about image clustering using a generative model. Through the project, I realised that it is very important to deal with preprocessing data and feature engineering, and now that I have been dedicating my entire time to learning databases and backend programming. I can show you my ability in data science for contributing to your company growth.
 
 
