@@ -5,9 +5,13 @@ profile_picture:
   alt: website picture
 ---
 
-<p>
-  Welcome! This site serves as an example for the Bay Jekyll theme. Bay is a very simple and minimal theme, directly inspired by Dan Grover's <a href="http://dangrover.com">website</a>.
-</p>
+<p>Hi! I'm Changyeon Lee.</p>
+
+<p> I'm a junior undergraduate student in Computer Science at Yonsei University.</p>
+
+<p>My research interests are Reinforcement Learning, Robotics, Computer Vision, and Data Science. </p>
+
+<p>If you want to know more about me, please read my <a href="https://drive.google.com/file/d/1ymIt70ZrxSzSLsHNOh866T49cvRO4wRE/view?usp=sharing">CV</a>.</p>
 
 <p>
   You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
