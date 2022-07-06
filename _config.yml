@@ -11,10 +11,10 @@ google_analytics: "G-DCG1K28777"
 
 header:
   pages:
-   # - name: Home
+   - name: Home
    #   slug: /
    # - name: Work
-   # - name: Blog
+   - name: Blog
 
 footer:
   show_powered_by: true
@@ -27,8 +27,6 @@ footer:
       link: http://linkedin.com/in/changyeon2
     - name: GitHub
       link: http://github.com/changyeon2
-    - name: Blog
-      link: https://changyeon2.tistory.com
 
 # Build settings
 markdown: kramdown
