@@ -5,14 +5,10 @@ profile_picture:
   alt: website picture
 ---
 
-<p>Hi! I'm Changyeon Lee.</p>
+<p><font size=13>Hi! I'm Changyeon Lee.</font></p>
 
-<p> I'm a junior undergraduate student in Computer Science at Yonsei University.</p>
+<p><font size=13>I'm a junior undergraduate student in Computer Science at Yonsei University.</font></p>
 
-<p>My research interests are Reinforcement Learning, Robotics, Computer Vision, and Data Science. </p>
+<p><font size=13>My research interests are Reinforcement Learning, Robotics, Computer Vision, and Data Science.</font></p>
 
-<p>If you want to know more about me, please read my <a href="https://drive.google.com/file/d/1ymIt70ZrxSzSLsHNOh866T49cvRO4wRE/view?usp=sharing">CV</a>.</p>
-
-<p>
-  You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
-</p>
+<p><font size=13>If you want to know more about me, please read my <a href="https://drive.google.com/file/d/1ymIt70ZrxSzSLsHNOh866T49cvRO4wRE/view?usp=sharing">CV</a>.</font></p>
