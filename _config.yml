@@ -11,10 +11,10 @@ google_analytics: "G-DCG1K28777"
 
 header:
   pages:
-   - name: Home
+   # - name: Home
    #   slug: /
    # - name: Work
-   - name: Blog
+   # - name: Blog
 
 footer:
   show_powered_by: true
