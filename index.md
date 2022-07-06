@@ -7,7 +7,7 @@ profile_picture:
 
 <p><font size=3>Hi! I'm Changyeon Lee.</font></p>
 
-<p><font size=3>I'm a junior undergraduate student in Computer Science at Yonsei University.</font></p>
+<p><font size=3>I'm a junior undergraduate student in Computer Science and Engineering at Yonsei University.</font></p>
 
 <p><font size=3>My research interests are Reinforcement Learning, Robotics, Computer Vision, and Data Science.</font></p>
 
