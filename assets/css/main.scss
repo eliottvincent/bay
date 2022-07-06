@@ -4,10 +4,12 @@
 
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 // Our variables
 $base-url: "{{ site.baseurl }}";
 
-$base-font-family: Helvetica, Charter, Georgia, Arial, sans-serif;
+$base-font-family: 'Open Sans', Helvetica, Charter, Georgia, Arial, sans-serif;
 $base-font-size: 16px;
 $small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.7;
