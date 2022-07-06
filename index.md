@@ -5,7 +5,7 @@ profile_picture:
   alt: website picture
 ---
 
-<p><font size=3>Hi! I'm <b>Changyeon Lee<b>.</font></p>
+<p><font size=3>Hi! I'm <b>Changyeon Lee</b>.</font></p>
 
 <p><font size=3>I'm a junior undergraduate student in Computer Science and Engineering at Yonsei University.</font></p>
 
