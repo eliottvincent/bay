@@ -6,7 +6,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Changyeon Lee's Github Blog.
 baseurl: "" # the subpath of the site
 url: "https://changyeon2.github.io" # the base hostname & protocol for the site
-og_image: "https://user-images.githubusercontent.com/47654007/177754774-7f84e128-bc0b-476c-a22c-b960af57fa85.jpeg"
+og_image: /assets/img/profile-pic.jpeg
 google_analytics: "G-DCG1K28777"
 
 #header:
