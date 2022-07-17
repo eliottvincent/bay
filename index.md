@@ -9,6 +9,6 @@ profile_picture:
 
 <p><font size=3>I'm a junior undergraduate student in Computer Science and Engineering at Yonsei University.</font></p>
 
-<p><font size=3>My research interests are Reinforcement Learning, Robotics, Computer Vision, and Data Science.</font></p>
+<p><font size=3>My research interests are Reinforcement Learning, Computer Vision, Data Science and Robotics.</font></p>
 
 <p><font size=3>If you want to know more about me, please read my <a href="https://drive.google.com/file/d/1kTWtxdw7JMvsrjT3NLA7ltlvU9l5Oi16/view?usp=sharing"><b>CV</b></a>.</font></p>
