@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.19](https://github.com/eliottvincent/bay/compare/v1.0.18...v1.0.19) (2022-10-19)
+
+### Bug Fixes
+
+- Ensure `<strong>` tags are correctly rendered in Firefox
+
 ### [1.0.18](https://github.com/eliottvincent/bay/compare/v1.0.17...v1.0.18) (2022-08-30)
 
 ### Bug Fixes

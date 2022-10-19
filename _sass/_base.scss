@@ -125,6 +125,13 @@ a {
 }
 
 /**
+ * Enforce bold (Firefox)
+ */
+strong {
+  font-weight: bold;
+}
+
+/**
  * Blockquotes
  */
 blockquote {
