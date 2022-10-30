@@ -21,10 +21,10 @@ footer:
   contact:
     - name: Email
       value: yuyuejiang@pku.edu.cn
-      link: mailto:yourmail@domain.com
+      link: mailto:yuyuejiang@pku.edu.cn
     - name: WeChat
       value: pkucs19yyj_1220
-      link: "#"
+      link: "#pkucs19yyj_1220"
 #   follow:
 #     - name: Twitter
 #       link: http://twitter.com/YourTwitterUsername
