@@ -45,7 +45,7 @@ sass:
     style: :compressed
 plugins:
   - jekyll-feed
-theme: bay_jekyll_theme
+theme: minimal-mistakes-jekylls
 
 # Excluded items
 exclude:
