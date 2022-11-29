@@ -24,7 +24,7 @@ footer:
       link: mailto:yuyuejiang@pku.edu.cn
     - name: WeChat
       value: pkucs19yyj_1220
-#   follow:
+  follow:
 #     - name: Twitter
 #       link: http://twitter.com/YourTwitterUsername
 #       username: "@YourTwitterUsername"
