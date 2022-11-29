@@ -3,7 +3,7 @@
 
 title: Homepage of Yuejiang Yu
 description: >- # this means to ignore newlines until "baseurl:"
-  Bay is a minimal Jekyll Theme.
+  Undergraduate Student at Peking University
 # baseurl: "/bay" # the subpath of the site
 url: "https://pkuyyj.github.io" # the base hostname & protocol for the site
 og_image: /assets/img/profile-pic.jpg
@@ -22,8 +22,8 @@ footer:
     - name: Email
       value: yuyuejiang@pku.edu.cn
       link: mailto:yuyuejiang@pku.edu.cn
-    - name: WeChat
-      value: pkucs19yyj_1220
+#    - name: WeChat
+#      value: pkucs19yyj_1220
 #   follow:
 #     - name: Twitter
 #       link: http://twitter.com/YourTwitterUsername
@@ -32,8 +32,8 @@ footer:
 #       link: http://facebook.com/YourFacebookUsername
 #     - name: LinkedIn
 #       link: http://linkedin.com/in/YourLinkedInUsername
-#     - name: GitHub
-#       link: http://github.com/YourGitHubUsername
+     - name: GitHub
+       link: http://github.com/pkuyyj
 #     - name: Dribbble
 #       link: https://dribbble.com/YourDribbbleUsername
 #     - name: RSS
