@@ -1,7 +1,7 @@
 ---
 layout: home
 profile_picture:
-  src: "https://user-images.githubusercontent.com/47654007/177572341-2dc65f50-4e88-4b14-9e82-fa8fdc4f8d10.JPG"
+  src: "https://user-images.githubusercontent.com/47654007/215379422-785fd628-a11c-4ad2-8ccc-3402aa291e50.jpg"
   alt: website picture
 ---
 
