@@ -5,4 +5,6 @@ profile_picture:
   alt: website picture
 ---
 
-Hi! I am an IRC postdoctoral fellow at <a href="https://en.wikipedia.org/wiki/NUI_Galway">NUI Galway</a>. My research interests include low-mass stars, their winds, CMEs, and exoplanets. I am currently working on detecting radio waves from these sources in space, and in particular planetary based electrostatic discharges.
+Hi! I am a postdoc working at the <a href="https://en.wikipedia.org/wiki/University_of_Galway">University of Galway</a>. I am an astronomer by trade, converted to a general data scientist. I am currently working on earth observation (EO) solutions to climate change, in particular the resiliance of agri-food supply chains to the ever-increasing threat of climate breakdown. 
+
+As an astronomer, my research interests include low-mass stars, stellar winds, coronal mass ejections, and exoplanets. I have recently completed an IRC postdoc on the study of electrostatic discharges on solar system planets (Saturn, Uranus). I have on-going radio observations of low-mass stars (interesting objects include $\lambda$ Andromedae and UV/BL Ceti!).
