@@ -18,8 +18,10 @@ header:
   pages:
     - name: Home
       slug: /
-    - name: Work
-    - name: Blog
+    - name: Research
+    - name: Publication
+    - name: CV
+    - name: Contact
 
 footer:
   show_powered_by: true
