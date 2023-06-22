@@ -25,27 +25,29 @@ footer:
   show_powered_by: true
   contact:
     - name: Email
-      value: yourmail@domain.com
-      link: mailto:yourmail@domain.com
-    - name: WeChat
-      value: YourWeChatUsername
+      value: yifei.violet.liu@wisc.edu
+      link: mailto:yifei.violet.liu@wisc.edu
+    # - name: WeChat
+    #   value: YourWeChatUsername
       link: "#"
     - name: Address
-      value: somewhere in madison
+      value: Taylor Hall, 427 Lorch Street, Madison, WI 53706
   follow:
-    - name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - name: Facebook
-      link: http://facebook.com/YourFacebookUsername
+    # - name: Twitter
+    #   link: http://twitter.com/YourTwitterUsername
+    #   username: "@YourTwitterUsername"
+    # - name: Facebook
+    #   link: http://facebook.com/YourFacebookUsername
     - name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
+      link: https://www.linkedin.com/in/yifei-liu-a56b67135/
     - name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - name: RSS
-      link: /feed.xml
+      link: https://github.com/yifei-liu-yl
+    # - name: Dribbble
+    #   link: https://dribbble.com/YourDribbbleUsername
+    # - name: RSS
+    #   link: /feed.xml
+    - name: Scholar
+      link: https://scholar.google.com/citations?hl=en&authuser=1&user=HXurJnUAAAAJ
 
 # Build settings
 markdown: kramdown
