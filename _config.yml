@@ -50,7 +50,7 @@ footer:
     #   link: /feed.xml
     - name: Orcid
       link: https://orcid.org/0000-0002-0103-2464
-    - name: Google Scholar
+    - name: Scholar
       link: https://scholar.google.com/citations?hl=en&authuser=1&user=HXurJnUAAAAJ
 
 # Build settings
