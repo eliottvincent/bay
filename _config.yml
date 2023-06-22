@@ -50,6 +50,8 @@ footer:
     #   link: /feed.xml
     - name: Scholar
       link: https://scholar.google.com/citations?hl=en&authuser=1&user=HXurJnUAAAAJ
+    - name: Orcid
+      link: https://orcid.org/0000-0002-0103-2464
 
 # Build settings
 markdown: kramdown
