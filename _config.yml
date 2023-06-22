@@ -30,6 +30,8 @@ footer:
     - name: WeChat
       value: YourWeChatUsername
       link: "#"
+    - name: Address
+      value: somewhere in madison
   follow:
     - name: Twitter
       link: http://twitter.com/YourTwitterUsername
