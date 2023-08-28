@@ -9,6 +9,8 @@ profile_picture:
 
 <p><font size=3>I'm a senior undergraduate student in Computer Science and Engineering at Yonsei University,<br> and currently working as a research intern at <a href="http://ciplab.github.io"><u>Computational Intelligence & Photography Lab</u></a>.</font></p>
 
-<p><font size=3>My research interests are Reinforcement Learning, Computer Vision, Data Science and Robotics.</font></p>
+<p><font size=3>I'm interested in research that models the sequential decision process of vision tasks using reinforcement learning, and also research on representation learning such as object-centric learning.
+
+</font></p>
 
 <p><font size=3>If you want to know more about me, please read my <a href="https://drive.google.com/file/d/1k3zVVL-X6BlA9iAFpZSQ6EOQ3ce9ZWTf/view?usp=sharing"><u>CV</u></a>.</font></p>
