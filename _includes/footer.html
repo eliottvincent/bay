@@ -27,28 +27,30 @@
       </div>
 
       <div class="footer-col footer-col-2">
-        <h4>FOLLOW</h4>
+        {% if site.footer.follow and site.footer.follow.size > 0 %}
+          <h4>FOLLOW</h4>
 
-        <div class="social-links follow-links">
-          {% for follow in site.footer.follow %}
-            <div class="social-link">
+          <div class="social-links follow-links">
+            {% for follow in site.footer.follow %}
+              <div class="social-link">
 
-              {% assign follow_icon_path = "/assets/img/icons/" | append: follow.name | downcase | append: ".png" | absolute_url %}
-              <img
-                src="{{ follow_icon_path }}"
-                alt="{{ follow.name | downcase }}"
-              />
-              <a href="{{ follow.link }}">
-                {% if follow.value and follow.value != "" and follow.value != nil %}
-                  {{ follow.value }}
-                {% else %}
-                  {{ follow.name }}
-                {% endif %}
-              </a>
-            </div>
+                {% assign follow_icon_path = "/assets/img/icons/" | append: follow.name | downcase | append: ".png" | absolute_url %}
+                <img
+                  src="{{ follow_icon_path }}"
+                  alt="{{ follow.name | downcase }}"
+                />
+                <a href="{{ follow.link }}">
+                  {% if follow.value and follow.value != "" and follow.value != nil %}
+                    {{ follow.value }}
+                  {% else %}
+                    {{ follow.name }}
+                  {% endif %}
+                </a>
+              </div>
 
-          {% endfor %}
-        </div>
+            {% endfor %}
+          </div>
+        {% endif %}
       </div>
 
       {% if site.footer.show_powered_by == true %}
