@@ -13,7 +13,7 @@ Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliot
 
 
 The easiest solution is to [fork this repo](https://github.com/eliottvincent/bay/fork).
-If you want to start from a clean website, follow the steps bellow:
+If you want to start from a clean website, follow the steps below:
 
 Create a new Jekyll website:
 ```
