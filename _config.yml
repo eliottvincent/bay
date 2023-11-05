@@ -1,44 +1,34 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: Bay Jekyll Theme
+title: Personal site
 description: >- # this means to ignore newlines until "baseurl:"
-  Bay is a minimal Jekyll Theme.
-baseurl: "/bay" # the subpath of the site
-url: "https://eliottvincent.github.io" # the base hostname & protocol for the site
-og_image: /assets/img/profile-pic.jpg
-google_analytics: "UA-121636368-3"
+  This is a simple personal site.
+baseurl: "/nhuynghu.github.io" # the subpath of the site
+url: "https://nhuynghu.github.io" # the base hostname & protocol for the site
+og_image: /assets/img/nhuy_sg.png
+google_analytics: ""
 
 header:
   pages:
     - name: Home
       slug: /
     - name: Work
-    - name: Blog
+
 
 footer:
   show_powered_by: true
   contact:
     - name: Email
-      value: yourmail@domain.com
-      link: mailto:yourmail@domain.com
-    - name: WeChat
-      value: YourWeChatUsername
-      link: "#"
+      value: nhuynghu.tgvn@gmail.com
+      link: mailto:nhuynghu.tgvn@gmail.com
+
   follow:
-    - name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - name: Facebook
-      link: http://facebook.com/YourFacebookUsername
     - name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
+      link: https://www.linkedin.com/in/nhuy-nguyen-0107ny0107/
     - name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - name: RSS
-      link: /feed.xml
+      link: http://github.com/nhuynghu
+
 
 # Build settings
 markdown: kramdown
