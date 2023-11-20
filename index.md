@@ -6,7 +6,7 @@ profile_picture:
 ---
 
 <p>
-  Welcome! This site serves as an example for the Bay Jekyll theme. Bay is a very simple and minimal theme, directly inspired by Dan Grover's <a href="http://dangrover.com">website</a>.
+  Welcome! This site serves is Cindy Xiao's personal website <a href="(https://cindyxiao1.github.io/)">website</a>.
 </p>
 
 <p>
