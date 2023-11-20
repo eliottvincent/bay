@@ -4,7 +4,7 @@
 title: Cindy Xiao
 description: Cindy Xiao's Personal Website
 baseurl: "/bay" # the subpath of the site
-url: "https://eliottvincent.github.io" # the base hostname & protocol for the site
+url: "https://github.com/CindyXiao1/CindyXiao1.github.io" # the base hostname & protocol for the site
 og_image: /assets/img/profile-pic.jpg
 google_analytics: "UA-121636368-3"
 
