@@ -1,11 +1,11 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: Bay Jekyll Theme
+title: Sungbin Park
 description: >- # this means to ignore newlines until "baseurl:"
   Bay is a minimal Jekyll Theme.
-baseurl: "/bay" # the subpath of the site
-url: "https://eliottvincent.github.io" # the base hostname & protocol for the site
+baseurl: "/spark" # the subpath of the site
+url: "https://sungbinp.github.io" # the base hostname & protocol for the site
 og_image: /assets/img/profile-pic.jpg
 google_analytics: "UA-121636368-3"
 
@@ -14,31 +14,31 @@ header:
     - name: Home
       slug: /
     - name: Work
-    - name: Blog
+    - name: Webpage
 
 footer:
   show_powered_by: true
   contact:
     - name: Email
-      value: yourmail@domain.com
-      link: mailto:yourmail@domain.com
-    - name: WeChat
-      value: YourWeChatUsername
-      link: "#"
+      value: spark224@gmu.edu
+      link: mailto:spark224@gmu.edu
+   # - name: WeChat
+   #   value: YourWeChatUsername
+   #   link: "#"
   follow:
     - name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - name: Facebook
-      link: http://facebook.com/YourFacebookUsername
+      link: http://twitter.com/sungbin_park_
+      username: "@sungbin_park_"
+   # - name: Facebook
+   #   link: http://facebook.com/YourFacebookUsername
     - name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
-    - name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - name: RSS
-      link: /feed.xml
+      link: http://linkedin.com/in/spark01/
+    - name: Google Scholar
+      link: https://scholar.google.com/citations?user=rd0BrEwAAAAJ&hl=ko&authuser=3
+   # - name: Dribbble
+   #   link: https://dribbble.com/YourDribbbleUsername
+   # - name: RSS
+   #   link: /feed.xml
 
 # Build settings
 markdown: kramdown
