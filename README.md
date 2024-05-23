@@ -76,7 +76,6 @@ footer:
     - type: email
       name: Email
       value: yourmail@domain.com
-      cloak: true
     - type: wechat
       value: YourWeChatUsername
       link: "#"

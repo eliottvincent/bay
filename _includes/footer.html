@@ -15,7 +15,7 @@
               />
 
               {% if contact.type == "email" %}
-                {% if contact.cloak == true %}
+                {% if contact.cloak != false %}
                   {% assign email_parts = contact.value | split: "@" %}
                   {% assign user = email_parts[0] %}
                   {% assign domain = email_parts[1] | split: "." %}
