@@ -1,18 +1,25 @@
 /**
  * Menu
  */
- $("a.menu-icon").on("click", function(event) {
-   var w = $(".menu");
+$("a.menu-icon").on("click", function(event) {
+  var w = $(".menu");
 
-   w.css({
-     display: w.css("display") === "none"
+  w.css({
+    display: (w.css("display") === "none")
       ? "block"
       : "none"
-   });
- });
+  });
+});
 
 /**
- * Wechat widget
+ * Footer year
+ */
+$().ready(function() {
+  $("#year").text(new Date().getFullYear());
+});
+
+/**
+ * WeChat widget
  */
 function moveWidget(event) {
   var w = $("#wechat-widget");
@@ -25,6 +32,7 @@ function moveWidget(event) {
 
 $("a#wechat-link").on("mouseenter", function(event) {
   $("#wechat-widget").css({ display: "block" });
+
   moveWidget(event);
 });
 

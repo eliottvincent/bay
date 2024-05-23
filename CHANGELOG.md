@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.21](https://github.com/eliottvincent/bay/compare/v1.0.20...v1.0.21) (2024-05-23)
+
+### Features
+
+- Year displayed in footer is now truly dynamic (no need to re-deploy)
+
 ### [1.0.20](https://github.com/eliottvincent/bay/compare/v1.0.19...v1.0.20) (2023-10-19)
 
 ### Features
