@@ -113,10 +113,17 @@ h4 {
 a {
   color: $brand-color;
   text-decoration: none;
-  //
-  // &:visited {
-  //   color: darken($brand-color, 15%);
-  // }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
+span.link {
+  cursor: pointer;
+  color: $brand-color;
+  text-decoration: none;
 
   &:hover {
     color: $text-color;

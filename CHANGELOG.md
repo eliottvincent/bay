@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.1.0](https://github.com/eliottvincent/bay/compare/v1.0.21...v1.1.0) (2024-05-23)
+
+### Features
+
+- Email address is now cloaked by default (prevents spam)
+
 ### [1.0.21](https://github.com/eliottvincent/bay/compare/v1.0.20...v1.0.21) (2024-05-23)
 
 ### Features

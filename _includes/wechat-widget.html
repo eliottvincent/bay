@@ -1,5 +1,5 @@
 {% for contact in site.footer.contact %}
-  {% if contact.name == 'WeChat' %}
+  {% if contact.type == 'wechat' %}
     {% assign wechat_username = contact.value %}
     {% break %}
   {% endif %}

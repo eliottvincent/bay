@@ -13,13 +13,41 @@
                 src="{{ contact_icon_path }}"
                 alt="{{ contact.name | downcase }}"
               />
-              <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link">
-                {% if contact.value and contact.value != "" and contact.value != nil %}
-                  {{ contact.value }}
+
+              {% if contact.type == "email" %}
+                {% if contact.cloak == true %}
+                  {% assign email_parts = contact.value | split: "@" %}
+                  {% assign user = email_parts[0] %}
+                  {% assign domain = email_parts[1] | split: "." %}
+                  {% assign domain_name = domain[0] %}
+                  {% assign domain_tld = domain[1] %}
+
+                  {% assign reversed_user = user | split: "" | reverse | join: "" %}
+                  {% assign reversed_domain_name = domain_name | split: "" | reverse | join: "" %}
+                  {% assign reversed_domain_tld = domain_tld | split: "" | reverse | join: "" %}
+                  <span
+                    data-resu="{{ reversed_user }}"
+                    data-eman-niamod="{{ reversed_domain_name }}"
+                    data-dlt-niamod="{{ reversed_domain_tld }}"
+                    id="{{ contact.name | downcase }}-link"
+                    class="link email-link-cloaked"
+                  >
+                    {{ contact.name }}
+                  </span>
                 {% else %}
-                  {{ contact.name }}
+                  <a href="mailto:{{ contact.value }}" id="{{ contact.name | downcase }}-link">
+                    {{ contact.value }}
+                  </a>
                 {% endif %}
-              </a>
+              {% else %}
+                <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link">
+                  {% if contact.value and contact.value != "" and contact.value != nil %}
+                    {{ contact.value }}
+                  {% else %}
+                    {{ contact.name }}
+                  {% endif %}
+                </a>
+              {% endif %}
             </div>
 
           {% endfor %}
