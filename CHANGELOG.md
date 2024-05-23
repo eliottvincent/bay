@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.1.1](https://github.com/eliottvincent/bay/compare/v1.1.0...v1.1.1) (2024-05-23)
+
+### Bug Fixes
+
+- Fix images path
+
 ### [1.1.0](https://github.com/eliottvincent/bay/compare/v1.0.21...v1.1.0) (2024-05-23)
 
 ### Features

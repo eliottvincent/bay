@@ -8,10 +8,10 @@
           {% for contact in site.footer.contact %}
             <div class="social-link contact-links">
 
-              {% assign contact_icon_path = "/assets/img/icons/" | append: contact.name | downcase | append: ".png" | absolute_url %}
+              {% assign contact_icon_path = "/assets/img/icons/" | append: contact.type | downcase | append: ".png" | absolute_url %}
               <img
                 src="{{ contact_icon_path }}"
-                alt="{{ contact.name | downcase }}"
+                alt="{{ contact.type }}"
               />
 
               {% if contact.type == "email" %}
@@ -29,18 +29,18 @@
                     data-resu="{{ reversed_user }}"
                     data-eman-niamod="{{ reversed_domain_name }}"
                     data-dlt-niamod="{{ reversed_domain_tld }}"
-                    id="{{ contact.name | downcase }}-link"
+                    id="{{ contact.type }}-link"
                     class="link email-link-cloaked"
                   >
                     {{ contact.name }}
                   </span>
                 {% else %}
-                  <a href="mailto:{{ contact.value }}" id="{{ contact.name | downcase }}-link">
+                  <a href="mailto:{{ contact.value }}" id="{{ contact.type }}-link">
                     {{ contact.value }}
                   </a>
                 {% endif %}
               {% else %}
-                <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link">
+                <a href="{{ contact.link }}" id="{{ contact.type }}-link">
                   {% if contact.value and contact.value != "" and contact.value != nil %}
                     {{ contact.value }}
                   {% else %}
