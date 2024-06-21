@@ -26,23 +26,17 @@ footer:
   follow:
     - type: twitter
       name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
+      link: https://x.com/YaroKazakov
+      username: "@YaroKazakov"
     - type: facebook
       name: Facebook
       link: http://facebook.com/YourFacebookUsername
     - type: linkedin
       name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
+      link: https://www.linkedin.com/in/yarokazakov/
     - type: github
       name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - type: dribbble
-      name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - type: rss
-      name: RSS
-      link: /feed.xml
+      link: http://github.com/YaroKazakov
 
 # Build settings
 markdown: kramdown

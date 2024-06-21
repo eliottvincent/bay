@@ -1,7 +1,7 @@
 ---
-layout: work
-title: Work
-slug: /work
+layout: veritas
+title: Veritas
+slug: /veritas
 items:
   - title: My Interest 1
     image:
