@@ -10,3 +10,9 @@
   width: 100px;
   height: 100px;
 }
+
+.work-text {
+  display: block;
+  overflow-wrap: break-word;
+  margin-left: 120px; /* Adjust according to the total width of the image plus padding */
+}
