@@ -13,11 +13,6 @@
 
           {% for item in page.items %}
           <div class="work-item">
-            <img
-              src="{{ item.image.src | absolute_url }}"
-              alt="{{ item.image.alt }}"
-              class="work-bubble"
-            />
             <span class="work-text">
               <strong>{{ item.title }}</strong>
               &mdash;
