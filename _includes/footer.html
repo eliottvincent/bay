@@ -81,15 +81,33 @@
         {% endif %}
       </div>
 
-      {% if site.footer.show_powered_by == true %}
-        <div class="footer-col footer-col-3 powered-by">
-          <p>
-            powered by <a href="https://github.com/eliottvincent/bay">Bay</a> | <span id="year"></span>
-          </p>
-        </div>
-      {% endif %}
+      <div class="footer-col footer-col-3">
+        {% if site.footer.startup and site.footer.startup.size > 0 %}
+          <h4>STARTUP</h4>
+
+          <div class="social-links startup-links">
+            {% for startup in site.footer.startup %}
+              <div class="social-link">
+
+                {% assign startup_icon_path = "/assets/img/icons/" | append: startup.name | downcase | append: ".png" | absolute_url %}
+                <img
+                  src="{{ startup_icon_path }}"
+                  alt="{{ startup.name | downcase }}"
+                />
+                <a href="{{ startup.link }}">
+                  {% if startup.value and startup.value != "" and startup.value != nil %}
+                    {{ startup.value }}
+                  {% else %}
+                    {{ startup.name }}
+                  {% endif %}
+                </a>
+              </div>
+
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+
     </div>
   </div>
 </footer>
-
-{% include wechat-widget.html %}
