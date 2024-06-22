@@ -6,7 +6,7 @@ profile_picture:
 ---
 
 <p>
-  Hey everyone, I'm Yaro! I live in Austin, TX, and I'm the founder of Veritas, an AI prospecting platform for financial advisors designed to supercharge growth. I transitioned from engineering to quant work, driven by a strong passion for building algorithms and utilizing AI. I hold an MEng in Aerospace and Aeronautics from Imperial College London and an MSc in Financial Mathematics from the University of Chicago. Until May 2024, I worked at Dimensional Fund Advisors on the strategy research desk before deciding to start my own venture.
+  Hey everyone, I'm Yaro! I live in Austin, TX, and I'm the founder of Veritas, an AI prospecting platform for financial advisors designed to supercharge growth. In 2021, I transitioned from engineering to quant finance, driven by a strong passion for building algorithms, stochasting modeling and AI applications. I hold an MEng in Aerospace and Aeronautics from Imperial College London and an MSc in Financial Mathematics from the University of Chicago. Until May 2024, I worked at Dimensional Fund Advisors on the strategy research desk before deciding to start my own venture.
 </p>
 
 <p>
