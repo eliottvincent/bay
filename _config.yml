@@ -37,7 +37,7 @@ footer:
       link: http://github.com/YaroKazakov
   startup:
     - type: website
-      name: website
+      name: Website
       link: https://www.use-veritas.com
 
 # Build settings
