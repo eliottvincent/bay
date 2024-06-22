@@ -17,7 +17,13 @@ items:
 
 
 ---
+<p>
+Veritas is a startup I began working on full-time in May '24. The philosophy behind the startup is influenced by three books: The Four Steps to the Epiphany by Steve Blank, The Lean Startup by Eric Ries, and The Mom Test by Rob Fitzpatrick. 
 
-Veritas is a startup I began working on full-time in May '24. The philosophy behind the startup is influenced by three books: The Four Steps to the Epiphany by Steve Blank, The Lean Startup by Eric Ries, and The Mom Test by Rob Fitzpatrick. As of June '24, I have pivoted twice from the original idea due to a lack of product-market fit. With each new pivot, I strive to follow a lean approach—validating the idea first and gaining traction without committing months to a product that no one will end up paying for. In this section, I want to share my startup milestones, mistakes I've made, and the ideas behind each iteration, pivot, product, and customer segment.
+</p>
+
+<p>As of June '24, I have pivoted twice from the original idea due to a lack of product-market fit. With each new pivot, I strive to follow a lean approach—validating the idea first and gaining traction without committing months to a product that no one will end up paying for. In this section, I want to share my startup milestones, mistakes I've made, and the ideas behind each iteration, pivot, product, and customer segment.
+</p>
+
 <br />
 <br />
