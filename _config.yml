@@ -35,6 +35,10 @@ footer:
     - type: github
       name: GitHub
       link: http://github.com/YaroKazakov
+  startup:
+    - type: website
+      name: website
+      value: https://www.use-veritas.com
 
 # Build settings
 markdown: kramdown
