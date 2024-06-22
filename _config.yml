@@ -38,7 +38,7 @@ footer:
   startup:
     - type: website
       name: website
-      value: https://www.use-veritas.com
+      link: https://www.use-veritas.com
 
 # Build settings
 markdown: kramdown
