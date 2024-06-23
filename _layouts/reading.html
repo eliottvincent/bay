@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="work">
+          <h1 class="page-heading">{{ page.title }}</h1>
+          {{ content }}
+
+          {% for item in page.items %}
+          <div class="work-item">
+            <span class="work-text">
+              <strong class="work-title">{{ item.title }}</strong>
+              {{ item.description }}
+              {% if item.pdf_report %}
+              <br>
+              <a href="{{ item.pdf_report }}" target="_blank">PDF Report</a>
+              </br>
+              <img src="{{ item.image }}" alt="Image" style="max-width: 70%; height: auto;">
+              {% endif %}
+            </span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+    {% include foot.html %}
+  </body>
+</html>
+
