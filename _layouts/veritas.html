@@ -17,10 +17,10 @@
               <strong class="work-title">{{ item.title }}</strong>
               {{ item.description }}
               {% if item.pdf_report %}
+              <br>
               <a href="{{ item.pdf_report }}" target="_blank">PDF Report</a>
-              {% endif %}
-              {% if item.youtube_video %}
-              <iframe width="560" height="315" src="{{ item.youtube_video }}" frameborder="0" allowfullscreen></iframe>
+              </br>
+              <img src="{{ item.image }}" alt="Image" style="max-width: 100%; height: auto;">
               {% endif %}
             </span>
           </div>
