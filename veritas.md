@@ -7,8 +7,7 @@ items:
     image:
       src: /assets/img/work/water.png
       alt: water
-    description: After a short trip to Europe to see my family in January 2024, I came back to Austin thinking about the future of domain knowledge LLMs. At a very early stage of Veritas (back then Pulse), I concluded that general-purpose LLMs were not great at answering domain-specific questions and accessing niche information online. In my view, the future lay in fine-tuning/retraining on data from specific tasks, rather than on scraped data from all over the Internet.
-
+    description: After a short trip to Europe to see my family in January 2024, I came back to Austin thinking about the future of domain knowledge LLMs. At a very early stage of Veritas (back then Pulse), I concluded that general-purpose LLMs were not great at answering domain-specific questions and accessing niche information online. In my view, the future lay in fine-tuning/retraining on data from specific tasks, rather than on scraped data from all over the Internet. Since I was mainly interested in Quant Finance, I started testing open-source models to see how they'd answer questions on portfolio allocation, stochastic 
     
 ---
 
