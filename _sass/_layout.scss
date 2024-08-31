@@ -24,7 +24,7 @@
   float: left;
 
   img {
-    height: 28px;
+    height: 23px;
   }
 
   &,
@@ -40,6 +40,7 @@
   z-index: 10;
   float: right;
   line-height: 56px;
+  background-color: $background-color;
 
   .menu-icon {
     display: none;
@@ -67,20 +68,21 @@
     .menu-icon {
       display: block;
       float: right;
+      border-radius: 5px;
       width: 36px;
       height: 26px;
       line-height: 0;
       padding-top: 4px;
       text-align: center;
 
-      background: #ffffff url($base-url + '/assets/img/menu.png') 6px 4px no-repeat;
+      background: $background-color url($base-url + '/assets/img/menu.png') 6px 4px no-repeat;
       background-size: 26px 26px;
     }
 
     .menu {
       clear: both;
       display: none;
-      background-color: #ffffff;
+      background-color: $background-color;
       min-width: 10em;
       padding-bottom: 5px;
     }
