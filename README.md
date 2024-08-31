@@ -9,6 +9,16 @@ Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliot
 
 ![](/screenshot.png)
 
+
+## Table of contents
+1. [Installation](#installation)
+2. [Updating sections]
+    1. [Header](#header)
+    2. [Footer](#footer)
+    3. [Home page](#home-page)
+    4. [Blog page](#blog-page)
+
+
 ### Installation
 
 
