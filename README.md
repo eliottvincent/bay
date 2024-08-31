@@ -12,11 +12,12 @@ Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliot
 
 ## Table of contents
 1. [Installation](#installation)
-2. [Updating sections]
+2. Website sections
     1. [Header](#header)
     2. [Footer](#footer)
     3. [Home page](#home-page)
     4. [Blog page](#blog-page)
+5. [Development instructions](#development)
 
 
 ### Installation
