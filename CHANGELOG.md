@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.1.4](https://github.com/eliottvincent/bay/compare/v1.1.3...v1.1.4) (2024-09-01)
+
+### Bug Fixes
+
+- Change "Powered by" alignment
+
 ### [1.1.3](https://github.com/eliottvincent/bay/compare/v1.1.2...v1.1.3) (2024-08-31)
 
 ### Bug Fixes
