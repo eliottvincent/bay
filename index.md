@@ -6,13 +6,13 @@ profile_picture:
 ---
 
 <p>
-  Hey everyone, I'm Yaro! I live in Austin, TX, and I'm the founder of Veritas, an AI prospecting platform for financial advisors designed to supercharge growth. In 2021, I transitioned from engineering to quant finance, driven by a strong passion for building algorithms, stochasting modeling and AI applications. I hold an MEng in Aerospace and Aeronautics from Imperial College London and an MSc in Financial Mathematics from the University of Chicago. Until May 2024, I worked at Dimensional Fund Advisors on the strategy research desk before deciding to start my own venture.
+  Hey everyone, I'm Yaro! I live in Austin, TX, and I'm the ex-founder of Veritas, an AI prospecting platform for financial advisors designed to supercharge growth. I transitioned from engineering to quant finance to robotics and reinforcement learning, driven by a strong passion for understanding intelligence, building algorithms, and using stochastic modeling in unknown settings. I hold an MEng in Aerospace and Aeronautics from Imperial College London and an MSc in Financial Mathematics from the University of Chicago. I worked at Dimensional Fund Advisors on the strategy research desk until May 2024, when I decided to start my own venture
 </p>
 
 <p>
-  Currently, my main focus is on my startup, but I'm also very curious about Computer Science, LLM architectures, Constrained and Parallel Optimization, and Quantitative Finance. When I'm not learning or reading, I enjoy actively investing in the stock and options markets and exploring development property outside of the US. I also hope to start a blog to share my knowledge with other passionate investors and enthusiasts.
+  Currently, my main focus is on the intersection of robotics and reinforcement learning. Specifically, I'm curious about reinforcement learning (online/offline, Q-learning, PPO, SAC), long-term autonomy, knowledge representation, semantic mapping, motion planning, TAMP, optimal control, and perception. Outside of research, I enjoy actively investing in the stock and options markets as a hobby, and I'm considering building a tracker to share my thoughts on certain positions.
 </p>
 
 <p>
-  I'm looking forward to connecting with everyone!
+  Feel free to reach out if you want to connect! Links below.
 </p>
