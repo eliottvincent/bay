@@ -11,11 +11,11 @@ og_image: /assets/img/research/Mode_shape.png
 <br />
 <br />
 
-This is my work from 2018[^1] on vibrations analysis and the effects of resonant frequency on a structure. We explored the frequency response and the mode shape of the particular structure using Nyquist plots. 
+This is my 2018[^1] work on vibration analysis, focusing on the impact of resonant frequencies on structural integrity. We analyzed the frequency response and mode shapes of the structure, utilizing Nyquist plots for visualization.
 
 <br />
 
-[Click here to view the full report (PDF)]({{ "/assets/pdf/Mode_shapes_and_vibrations.pdf" | absolute_url }})
+[Click here to view the full report (PDF)]({{ "/assets/pdf/Mode_shapes_and_vibrations_Yaro.pdf" | absolute_url }})
 
 <br />
 

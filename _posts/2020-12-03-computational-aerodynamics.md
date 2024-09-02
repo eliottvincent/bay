@@ -11,8 +11,7 @@ og_image: /assets/img/research/Wing_mesh.png
 <br />
 <br />
 
-This is my work from 2020[^1] on applied computational aerodynamics and the effects of mesh design using Star-CCM+ and AVL.
-
+This is my 2020[^1] work on applied computational aerodynamics, focusing on the impact of mesh design using Star-CCM+ and AVL for simulation.
 <br />
 
 [Click here to view the full report (PDF)]({{ "/assets/pdf/Applied_Computational_Aerodynamics_Yaro.pdf" | absolute_url }})
