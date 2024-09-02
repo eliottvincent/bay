@@ -15,7 +15,7 @@ This is my group's 2019[^1] work on Aircraft Vehicle Design. Designing an aircra
 
 <br />
 
-[Click here to view the full report (PDF)]({{ "/assets/pdf/AVD_report_Yaro.pdf" | absolute_url }})
+[Click here to view the full report (PDF)]({{ "/assets/pdf/AVD_Report_Yaro.pdf" | absolute_url }})
 
 <br />
 ##### FOOTNOTES
