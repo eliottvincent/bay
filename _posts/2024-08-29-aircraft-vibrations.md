@@ -2,6 +2,7 @@
 layout: post
 title:  "Mode Shapes and Dynamic Response of a Structure"
 date:   2024-08-29 10:00:40
+research: true
 blurb: "A look at an example post using Bay Jekyll theme."
 og_image: /assets/img/content/post-example/Banner.jpg
 ---
