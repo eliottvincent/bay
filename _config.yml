@@ -13,6 +13,7 @@ header:
       slug: /
     - name: Veritas
     - name: Research
+    - name: Reading List
     - name: Blog
 
 footer:

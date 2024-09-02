@@ -1,8 +1,8 @@
 ---
-layout: research
-title: Research
-slug: /research
+layout: reading
+title: Reading List
+slug: /reading
 ---
 
-This is an example of a "Research" page, displaying all relevant research info.
+This page covers the literature I've read on topics of interest to me.
 <br />
