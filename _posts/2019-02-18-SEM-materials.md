@@ -4,10 +4,10 @@ title:  "Scanning Electron Microscopy of Carbon Fibres"
 date:   2019-02-18 10:00:40
 research: true
 blurb: "A look at an example post using Bay Jekyll theme."
-og_image: /assets/img/research/200_carbon_fibre.tif
+og_image: /assets/img/research/200_carbon_fibre.jpg
 ---
 
-<img src="{{ "/assets/img/research/200_carbon_fibre.tif" | absolute_url }}" alt="ACA" class="post-pic"/>
+<img src="{{ "/assets/img/research/200_carbon_fibre.jpg" | absolute_url }}" alt="ACA" class="post-pic"/>
 <br />
 <br />
 
@@ -15,7 +15,7 @@ This is my 2019[^1] work on failure modes and material loading using Scanning El
 
 <br />
 
-[Click here to view the full report (PDF)]({{ "/assets/pdf/SEM_Material_Yaro.pdf" | absolute_url }})
+[Click here to view the full report (PDF)]({{ "/assets/pdf/SEM_Materials_Yaro.pdf" | absolute_url }})
 
 <br />
 

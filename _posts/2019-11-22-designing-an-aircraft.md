@@ -11,7 +11,7 @@ og_image: /assets/img/research/Sr-71.jpg
 <br />
 <br />
 
-This is my group's work from 2019[^1] on Aircraft Vehicle Design. Designing an aircraft is not straightforward task and involves a multi-objective constrained optimization approach. 
+This is my group's 2019[^1] work on Aircraft Vehicle Design. Designing an aircraft is a complex task that involves a multi-objective constrained optimization approach.
 
 <br />
 
