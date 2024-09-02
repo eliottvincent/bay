@@ -4,7 +4,7 @@ title: Reading List
 slug: /reading
 ---
 
-This page covers the literature I've read on topics of interest to me.
+This page covers the literature I've read on topics that interest me.
 <br />
 
 <img src="{{ "/assets/img/books/Reinforcement_learning_book.jpg" | absolute_url }}" alt="strain" class="post-pic"/>
