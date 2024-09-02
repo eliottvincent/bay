@@ -7,7 +7,7 @@ blurb: "A look at an example post using Bay Jekyll theme."
 og_image: /assets/img/content/research/Mode_shape.jpg
 ---
 
-<img src="{{ "/assets/img/content/research/Mode_shape.jpg" | absolute_url }}" alt="bay" class="post-pic"/>
+<img src="{{ "/assets/img/research/Mode_shape.jpg" | absolute_url }}" alt="mode_shape" class="post-pic"/>
 <br />
 <br />
 
@@ -15,7 +15,7 @@ This is my work from 2018[^1] on vibrations analysis and the effects of resonant
 
 <br />
 
-[Click here to view the full report (PDF)]({{ "/assets/pdf/Aircraft_Vibrations_Yaro.pdf" | absolute_url }})
+[Click here to view the full report (PDF)]({{ "/assets/pdf/Mode_shapes_and_vibrations.pdf" | absolute_url }})
 
 <br />
 
