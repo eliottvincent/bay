@@ -7,25 +7,36 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="work">
-          <h1 class="page-heading">{{ page.title }}</h1>
-          {{ content }}
+        <div class="post">
 
-          {% for item in page.items %}
-          <div class="work-item">
-            <img
-              src="{{ item.image.src | absolute_url }}"
-              alt="{{ item.image.alt }}"
-              class="work-bubble"
-            />
-            <span class="work-text">
-              <strong>{{ item.title }}</strong>
-              &mdash;
-              {{ item.description }}
-            </span>
-          </div>
-          {% endfor %}
-        </div>
+          <header class="post-header">
+
+            {% if page.draft %}
+              {% include draft-banner.html %}
+            {% endif %}
+
+            <h1 class="post-title">
+            {% if page.headline_formatted_title %}
+              {{ page.headline_formatted_title | newline_to_br }}
+            {% else %}
+              {{ page.title }}
+            {% endif %}
+            </h1>
+
+            {% if page.subtitle %}<h1 class="post-subtitle">{{ page.subtitle }}</h1>{% endif %}
+            <p class="post-meta"><span class="post-date">{{ page.date | date: "%B %-d, %Y" }}
+            </span>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+          </header>
+
+          <article class="post-content">
+            {{ content }}
+          </article>
+
+          {% if page.draft %}
+              {% include draft-banner.html %}
+          {% endif %}
+
+      </div>
       </div>
     </div>
 

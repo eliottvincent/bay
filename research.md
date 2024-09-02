@@ -4,5 +4,5 @@ title: Research
 slug: /research
 ---
 
-This is an example of a "Research" page, displaying all relevant research info.
+This page covers my Research reports, papers and ideas. 
 <br />
