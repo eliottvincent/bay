@@ -12,7 +12,7 @@
           {{ content }}
 
           <p class="blog-post-list">
-            {% for post in site.researchposts %}
+            {% for post in site.posts %}
 
               {% if post.draft != true %}
                 <span class="blog-post-date">{{ post.date | date: "%-m/%-d/%y" }}</span>
