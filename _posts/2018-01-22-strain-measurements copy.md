@@ -15,7 +15,9 @@ This is my earliest work from 2018[^1], focusing on using electric strain gauges
 
 <br />
 
+[Click here to view the full report (PDF)]({{ "/assets/pdf/Strain_measurements_Yaro.pdf" | absolute_url }})
 
+<br />
 ##### FOOTNOTES
 
 [^1]: The research piece was supervised by <a href="https://profiles.imperial.ac.uk/v.tagarielli"> Prof. Vito Tagarielli.</a>

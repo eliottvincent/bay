@@ -1,21 +1,23 @@
 ---
 layout: post
 title:  "Designing an Aircraft"
-date:   2024-08-29 10:00:40
+date:   2019-11-22 10:00:40
 research: true
 blurb: "A look at an example post using Bay Jekyll theme."
-og_image: /assets/img/content/post-example/Banner.jpg
+og_image: /assets/img/research/Sr-71.png
 ---
 
-<img src="{{ "/assets/img/content/post-example/Banner.jpg" | absolute_url }}" alt="bay" class="post-pic"/>
+<img src="{{ "/assets/img/research/Sr-71.png" | absolute_url }}" alt="strain" class="post-pic"/>
 <br />
 <br />
 
-This is my work from 2018[^1] on vibrations analysis and the effects of resonant frequency on a structure. We explored the frequency response and the mode shape of the particular structure using Nyquist plots. 
+This is my group's work from 2019[^1] on Aircraft Vehicle Design. Designing an aircraft is not straightforward task and involves a multi-objective constrained optimization approach. 
 
 <br />
 
+[Click here to view the full report (PDF)]({{ "/assets/pdf/AVD_report_Yaro.pdf" | absolute_url }})
 
+<br />
 ##### FOOTNOTES
 
-[^1]: The research piece was part of the course on Structural Dynamics taught by <a href="https://profiles.imperial.ac.uk/silvestre.pinho"> Prof. Silvestre Taviera Pinho. </a> 
+[^1]: The research piece was supervised by <a href="https://profiles.imperial.ac.uk/v.tagarielli"> Prof. Errikos Levis.</a>
