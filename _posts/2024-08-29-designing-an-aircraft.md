@@ -20,4 +20,4 @@ This is my group's work from 2019[^1] on Aircraft Vehicle Design. Designing an a
 <br />
 ##### FOOTNOTES
 
-[^1]: The research piece was supervised by <a href="https://profiles.imperial.ac.uk/v.tagarielli"> Prof. Errikos Levis.</a>
+[^1]: The research piece was supervised by <a href="https://profiles.imperial.ac.uk/errikos.levis03"> Prof. Errikos Levis.</a>
