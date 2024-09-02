@@ -4,10 +4,10 @@ title:  "Designing an Aircraft"
 date:   2019-11-22 10:00:40
 research: true
 blurb: "A look at an example post using Bay Jekyll theme."
-og_image: /assets/img/research/Sr-71.png
+og_image: /assets/img/research/Sr-71.jpg
 ---
 
-<img src="{{ "/assets/img/research/Sr-71.png" | absolute_url }}" alt="strain" class="post-pic"/>
+<img src="{{ "/assets/img/research/Sr-71.jpg" | absolute_url }}" alt="strain" class="post-pic"/>
 <br />
 <br />
 
