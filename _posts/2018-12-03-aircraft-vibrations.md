@@ -4,10 +4,10 @@ title:  "Mode Shapes and Dynamic Response of a Structure"
 date:   2018-12-03 10:00:40
 research: true
 blurb: "A look at an example post using Bay Jekyll theme."
-og_image: /assets/img/content/research/Mode_shape.jpg
+og_image: /assets/img/research/Mode_shape.png
 ---
 
-<img src="{{ "/assets/img/research/Mode_shape.jpg" | absolute_url }}" alt="mode_shape" class="post-pic"/>
+<img src="{{ "/assets/img/research/Mode_shape.png" | absolute_url }}" alt="mode_shape" class="post-pic"/>
 <br />
 <br />
 
