@@ -11,9 +11,9 @@ header:
   pages:
     - name: Home
       slug: /
-    - name: Veritas
     - name: Research
     - name: Reading
+    - name: Veritas
     - name: Blog
 
 footer:
