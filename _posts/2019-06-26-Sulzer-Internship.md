@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  "Post example"
-date:   2019-10-26 10:00:40
+title:  "Sulzer Internship - Machine Learning for Damage Inspection in Gas Turbines"
+date:   2019-06-26 10:00:40
 research: false
 blurb: "A look at an example post using Bay Jekyll theme."
-og_image: /assets/img/content/post-example/Banner.jpg
+og_image: /assets/img/work/gas-turbine-gif.gif
 ---
 
-<img src="{{ "/assets/img/content/post-example/Banner.jpg" | absolute_url }}" alt="bay" class="post-pic"/>
+<img src="{{ "/assets/img/work/gas-turbine-gif.gif" | absolute_url }}" alt="bay" class="post-pic"/>
 <br />
 <br />
 
-This is an example of blog post.
-Picture by [Bethany Legg](https://unsplash.com/@bkotynski).
+
+Picture by [Process Tech Academy](https://www.processtechacademy.com/the-prime-movers-drivers-known-as-gas-turbines-suck-squeeze-bang-blow/).
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum[^1].
 
