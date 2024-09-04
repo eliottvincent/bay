@@ -12,6 +12,7 @@ header:
     - name: Home
       slug: /
     - name: Research
+    - name: Self-learning
     - name: Reading
     - name: Veritas
     - name: Blog
