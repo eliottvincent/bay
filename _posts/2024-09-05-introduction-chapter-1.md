@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Introduction into Reinforcement Learning - Chapter 1"
+title:  "Introduction to Reinforcement Learning - Chapter 1"
 date:   2024-09-05 10:00:40
 self_learning: true
 blurb: "A look at an example post using Bay Jekyll theme."
-og_image: /assets/img/research/Mode_shape.png
+og_image: /assets/img/learning/backflip.gif
 ---
 
 <img src="{{ "/assets/img/learning/backflip.gif" | absolute_url }}" alt="mode_shape" class="post-pic"/>
@@ -15,6 +15,6 @@ In these notes, I dive into the basics of reinforcement learning (RL) and how it
 
 <br />
 
-[Click here to view the acess my github notes]({{ "https://github.com/YaroKazakov/RL-phd/tree/main/RL%20book/chapter_notes" | absolute_url }})
+[Click here to access my GitHub code](https://github.com/YaroKazakov/RL-phd/blob/main/RL%20book/chapter_notes/Chapter1_notes.pdf)
 
 <br />

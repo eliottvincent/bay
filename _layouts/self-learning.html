@@ -7,29 +7,31 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="work">
+        <div class="blog">
           <h1 class="page-heading">{{ page.title }}</h1>
           {{ content }}
 
-          {% for item in page.items %}
-          <div class="work-item">
-            <span class="work-text">
-              <strong class="work-title">{{ item.title }}</strong>
-              {{ item.description }}
-              {% if item.pdf_report %}
-              <br>
-              <a href="{{ item.pdf_report }}" target="_blank">PDF Report</a>
-              </br>
-              <img src="{{ item.image }}" alt="Image" style="max-width: 70%; height: auto;">
+          <p class="blog-post-list">
+            {% for post in site.posts %}
+
+              {% if post.draft != true %}
+                {% if post.self_learning == true %}
+                  <span class="blog-post-date">{{ post.date | date: "%-m/%-d/%y" }}</span>
+                  <a href="{{ post.url | replace:".html","" | prepend: site.baseurl }}" class="blog-post-title">
+                    {{ post.title }}
+                  </a>
+                  <br />
+                {% endif %}
+
               {% endif %}
-            </span>
-          </div>
-          {% endfor %}
+
+            {% endfor %}
+          </p>
         </div>
       </div>
     </div>
 
     {% include footer.html %}
+
     {% include foot.html %}
   </body>
-</html>
