@@ -15,6 +15,16 @@ The most comprehensive book on reinforcement learning by Sutton and Barto. <a hr
 
 <br />
 
+<img src="{{ "/assets/img/books/robotics.jpg" | absolute_url }}" alt="strain" class="post-pic"/>
+
+<br />
+
+Great introduction into robotics (espeically planning and control) from Lynch and Park. <a href = "https://hades.mech.northwestern.edu/images/7/7f/MR.pdf"> Available for free. <a> <a href="https://www.amazon.com/Modern-Robotics-Mechanics-Planning-Control/dp/1107156300">Link to buy. </a>
+
+
+
+<br />
+
 <img src="{{ "/assets/img/books/Elements_of_statistical_learning.jpg" | absolute_url }}" alt="strain" class="post-pic"/>
 
 <br />
