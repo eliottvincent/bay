@@ -4,10 +4,10 @@ title:  "Topology and Representation - Chapter 2 - Lynch and Parker"
 date:   2024-09-11 10:00:40
 self_learning: true
 blurb: "A look at an example post using Bay Jekyll theme."
-og_image: /assets/img/learning/Mug_and_Torus_morph.png
+og_image: /assets/img/learning/Mug_and_Torus_morph.gif
 ---
 
-<img src="{{ "/assets/img/learning/Mug_and_Torus_morph.png" | absolute_url }}" alt="mode_shape" class="post-pic"/>
+<img src="{{ "/assets/img/learning/Mug_and_Torus_morph.gif" | absolute_url }}" alt="mode_shape" class="post-pic"/>
 <br />
 <br />
 
