@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introduction to Reinforcement Learning - Chapter 1"
+title:  "Introduction to Reinforcement Learning - Chapter 1 - Sutton and Barto"
 date:   2024-09-05 10:00:40
 self_learning: true
 blurb: "A look at an example post using Bay Jekyll theme."
