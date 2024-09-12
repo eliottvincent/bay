@@ -1,5 +1,6 @@
+---
 layout: post
-title:  "Foundations of Robot Motion - Chapter 2 - Lynch and Parker"
+title:  "Topology and Representation - Chapter 2 - Lynch and Parker"
 date:   2024-09-11 10:00:40
 self_learning: true
 blurb: "A look at an example post using Bay Jekyll theme."
