@@ -2,6 +2,7 @@
 layout: post
 title:  "Why RL Is Important and How It Is Different To Other AI Frameworks (CS 234)"
 date:   2024-09-16 10:00:40
+research: false
 blurb: "A look at an example post using Bay Jekyll theme."
 og_image: /assets/img/learning/cs234_lecture1.jpg
 ---
