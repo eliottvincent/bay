@@ -15,6 +15,6 @@ These study notes cover concepts from Chapter 2 of Modern Robotics by Lynch and 
 
 <br />
 
-[Click here to access my GitHub code](https://github.com/YaroKazakov/RL-phd/blob/main/Robotics%20book/Chapter%202%20-%20Topology%20-%20Notes%20and%20Exercises.pdf)
+[Click here to access my GitHub code](https://github.com/YaroKazakov/RL-phd/blob/main/robotics_book/Chapter%202%20-%20Topology%20-%20Notes%20and%20Exercises.pdf)
 
 <br />

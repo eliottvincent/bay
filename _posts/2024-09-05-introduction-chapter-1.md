@@ -15,6 +15,6 @@ In these notes, I dive into the basics of reinforcement learning (RL) and how it
 
 <br />
 
-[Click here to access my GitHub code](https://github.com/YaroKazakov/RL-phd/blob/main/RL%20book/chapter_notes/Chapter1_notes.pdf)
+[Click here to access my GitHub code](https://github.com/YaroKazakov/RL-phd/blob/main/rl_book/chapter_notes/Chapter1_notes.pdf)
 
 <br />
