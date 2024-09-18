@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dynamic Programming (Markov Processes) - Chapter 4 - Sutton and Barto"
-date:   2024-09-14 10:00:40
+date:   2024-09-17 10:00:40
 self_learning: true
 blurb: "A look at an example post using Bay Jekyll theme."
 og_image: /assets/img/learning/swimming.gif
