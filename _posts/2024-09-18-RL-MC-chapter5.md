@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Monte-Carlo Iteration and Control (Q-learning) - Chapter 5 - Sutton and Barto"
+title:  "Monte-Carlo Control (Q-learning) - Chapter 5 - Sutton and Barto"
 date:   2024-09-18 10:00:40
 self_learning: true
 blurb: "A look at an example post using Bay Jekyll theme."
