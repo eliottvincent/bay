@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Understanding Q-learning in Reinforcement Learning"
-date:   2024-09-18 10:00:40
+date:   2024-09-19 10:00:40
 self_learning: true
 blurb: "A look at an example post using Bay Jekyll theme."
-og_image: /assets/img/learning/Q-learning.jpg
+og_image: /assets/img/learning/Q-learning.jpeg
 ---
 
-<img src="{{ "/assets/img/learning/Q-learning.jpg" | absolute_url }}" alt="mode_shape" class="post-pic"/>
+<img src="{{ "/assets/img/learning/Q-learning.jpeg" | absolute_url }}" alt="mode_shape" class="post-pic"/>
 <br />
 <br />
 
