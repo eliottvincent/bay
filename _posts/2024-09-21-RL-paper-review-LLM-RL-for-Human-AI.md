@@ -97,23 +97,23 @@ Regularization has been widely used in RL to encourage exploration (Mnih et al.,
 
 For Q-learning with priors, the authors reference [this](https://www.nature.com/articles/nature14236), which I don't have access to. I assume the authors reference the Q-learning update rule for prior knowledge and prior probabilities.
 
-The $p_{LLM}$ becomes:
+The $$p_{LLM}$$ becomes:
 
-\[
+$$
 a = \epsilon\text{-GREEDY}(Q_\theta + \lambda \log p_{LLM})
-\]
+$$
 
 and the training update rule becomes
 
-\[
+$$
 Q_\theta(\tau_t^i, a_t) \leftarrow r_t + \gamma Q_\theta(\tau_t^{i+1}, a_{t+1}),
-\]
+$$
 
 where
 
-\[
+$$
 a_{t+1}^{'} = \arg\max_{a} \left[ Q(\tau_{t+1}^i, a) + \lambda \log p_{LLM}(\tau_{t+1}^i, a) \right].
-\]
+$$
 
 Note how this algorithm is different from the standard Q-learning:
 
