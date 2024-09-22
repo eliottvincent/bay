@@ -97,5 +97,110 @@ Regularization has been widely used in RL to encourage exploration (Mnih et al.,
 
 For Q-learning with priors, the authors reference [this](https://www.nature.com/articles/nature14236), which I don't have access to. I assume the authors reference the Q-learning update rule for prior knowledge and prior probabilities.
 
+The $p_{LLM}$ becomes:
+
+\[
+a = \epsilon\text{-GREEDY}(Q_\theta + \lambda \log p_{LLM})
+\]
+
+and the training update rule becomes
+
+\[
+Q_\theta(\tau_t^i, a_t) \leftarrow r_t + \gamma Q_\theta(\tau_t^{i+1}, a_{t+1}),
+\]
+
+where
+
+\[
+a_{t+1}^{'} = \arg\max_{a} \left[ Q(\tau_{t+1}^i, a) + \lambda \log p_{LLM}(\tau_{t+1}^i, a) \right].
+\]
+
+Note how this algorithm is different from the standard Q-learning:
+
+\[
+Q(s_t, a_t) \leftarrow Q(s_t, a_t) + \alpha \left( r_t + \gamma \max_{a'} Q(s_{t+1}, a') - Q(s_t, a_t) \right)
+\]
+
+Choosing action using the exploration policy:
+
+\[
+a_t = \epsilon\text{-GREEDY}(Q)
+\]
+
+For PPO (Schulman et al., 2017b;a), we add a KL penalty term to the objective:
+
+\[
+J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta} \left[ R(\tau) + \lambda \text{KL}(\pi_\theta || p_{LLM}) \right].
+\]
+
+The policy loss becomes:
+
+\[
+\mathbb{E}_{\tau \sim \pi_\theta} \left[ \sum_t \left[ - \log \pi_\theta(a_t | \tau_i^t) A_t + \lambda \text{KL}[\pi_\theta(\tau_i^t) || p_{LLM}(\tau_i^t)] \right] \right].
+\]
+
+**COMMENT:** Read the paper on PPO or get a hang of it by reading supplementary material. PPO seems to provide better stability and better transition under the gradient policy ascent than Q-learning.
+
+## Experiment
+
+In this game, we use `instructQ` for Bob, while allowing Alice to use vanilla Q-learning.
+
+**COMMENT:** Why does Alice need to use vanilla Q-learning at all? Doesn't she emulate a human?
+
+We set the instruction for Bob:
+
+
+We map Bob’s observation to text `lang($\tau_i^t$)` by converting Alice’s most recent action (1 through 5) from integer to string.
+Note that the RL policy still observes the last two actions.
+
+For Bob’s actions, we map them to the strings {"0", "1", ..., "5"}, with 0 for quitting and the remaining 1 through 5 for selecting the corresponding ball.
+We combine all these components to create the following prompt:
+
+1. `inst`
+2. My partner selected `lang($\tau_i^t$)`
+3. So should I select
+
+**COMMENT:** It would be interesting to see how prompt-specific this part is.
+
+The authors feed the prompt to an open-sourced GPT-J model with 6 billion parameters and use the prediction loss for the action strings as logits (Ahn et al., 2022).
+
+**COMMENT:** Confirm with Yuchen that this means outputting probabilities of each word? Sometimes GPT-J can output it in the form of logits directly.
+
+They apply `SOFTMAX` to the logits with $\beta = 1$ to get the prior policy $p_{LLM}$. They use tabular Q-learning with no neural network as the state space is small enough, and a regularization weight $\lambda = 0.25$ for `instructQ`. Details on the hyperparameters are in Appendix A.1.
+
+**COMMENT:** A neural network would be better for a more sophisticated problem then? Check with Yuchen.
+
+**COMMENT:** The learning rate was mentioned in the Appendix. It is not in the formula. I guess the author mentioned it for the vanilla Q-learning for Alice? The update rule for the regularized version doesn't include the learning rate, right?
+
+## Result
+
+With `instructQ`, Alice and Bob always (10 out of 10 seeds) converge to the intuitive joint policy.
+
+**COMMENT:** These results are fascinating because the first two tables are constructed based on the Q-learning algorithms that had not been able to identify a human-defined strategy, meaning quitting when Alice says the same number twice. Now I understand the purpose of `instructQ`. The optimality of the first two strategies cannot be defined in human terms as "common sense" or "sensible." The first two strategies are essentially randomly fitted rewards.
+
+![Optimality based on Q-learning and InstructQ](score_table.png){width=80%}
+
+## Hanabi
+
+The idea is the same as before, but the environment is more complex.
+
+Q-learning and PPO are as good as the `instructQ` policies in terms of collected reward!
+
+The downside of vanilla Q-learning and PPO is the lack of interpretability and the inability for humans to enjoy the optimal strategy.
+
+**SUGGESTION:** Try a better language model first.
+
+**SUGGESTION:** Different question style? What can we do instead of YES/NO questions?
+
+We pre-compute the logits for all $\text{lang}(\tau^i_t)$ and $\text{lang}(a_t)$ pairs and cache them before training RL.
+
+**COMMENT:** Discuss this idea with Yuchen.
+
+The LLM prior policy only needs to provide coarse guidance to bias the RL agent to converge to desired equilibria. Second, we do not want the RL agent to suffer from the inherent biases of the LLM because they can lead to sub-optimal outcomes.
+
+**COMMENT:** Discuss this too. How coarse is coarse? How well would it converge to the policy if the priors were more detailed?
+
+
+
 
 [Click here to access my GitHub pdf](https://github.com/YaroKazakov/RL-phd/blob/main/paper_reviews/Paper_review_LLM_RL_Hu_Sadigh.pdf)
