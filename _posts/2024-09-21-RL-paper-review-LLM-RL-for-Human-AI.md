@@ -171,7 +171,7 @@ With instructQ, Alice and Bob always (10 out of 10 seeds) converge to the intuit
 **COMMENT:** These results are fascinating because the first two tables are constructed based on the Q-learning algorithms that had not been able to identify a human-defined strategy, meaning quitting when Alice says the same number twice. Now I understand the purpose of a human-defined policy. The optimality of the first two strategies cannot be defined in human terms as "common sense" or "sensible." The first two strategies are essentially randomly fitted rewards.
 
 <figure style="text-align: center;">
-  <img src="{{ "/assets/img/learning/score_table.png" | absolute_url }}" alt="Score Table" class="post-pic" style="max-width: 80%; height: auto;"/>
+  <img src="{{ "/assets/img/learning/score_table.png" | absolute_url }}" alt="Score Table" class="post-pic" style="max-width: 65%; height: auto;"/>
   <figcaption>Optimality based on Q-learning and InstructQ</figcaption>
 </figure>
 
