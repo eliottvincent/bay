@@ -117,47 +117,40 @@ $$
 
 Note how this algorithm is different from the standard Q-learning:
 
-\[
+$$
 Q(s_t, a_t) \leftarrow Q(s_t, a_t) + \alpha \left( r_t + \gamma \max_{a'} Q(s_{t+1}, a') - Q(s_t, a_t) \right)
-\]
+$$
 
 Choosing action using the exploration policy:
 
-\[
+$$
 a_t = \epsilon\text{-GREEDY}(Q)
-\]
+$$
 
 For PPO (Schulman et al., 2017b;a), we add a KL penalty term to the objective:
 
-\[
+$$
 J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta} \left[ R(\tau) + \lambda \text{KL}(\pi_\theta || p_{LLM}) \right].
-\]
+$$
 
 The policy loss becomes:
 
-\[
+$$
 \mathbb{E}_{\tau \sim \pi_\theta} \left[ \sum_t \left[ - \log \pi_\theta(a_t | \tau_i^t) A_t + \lambda \text{KL}[\pi_\theta(\tau_i^t) || p_{LLM}(\tau_i^t)] \right] \right].
-\]
+$$
 
 **COMMENT:** Read the paper on PPO or get a hang of it by reading supplementary material. PPO seems to provide better stability and better transition under the gradient policy ascent than Q-learning.
 
 ## Experiment
-
-In this game, we use `instructQ` for Bob, while allowing Alice to use vanilla Q-learning.
+In this game, we use instructQ for Bob, while allowing Alice to use vanilla Q-learning.
 
 **COMMENT:** Why does Alice need to use vanilla Q-learning at all? Doesn't she emulate a human?
 
-We set the instruction for Bob:
+The authors map Bob’s observation to text $$lang($\tau_i^t$)$$ by converting Alice’s most recent action (1 through 5) from integer to string.
+Note that the RL policy still observes the last two actions. For Bob’s actions, they map them to the strings {"0", "1", ..., "5"}, with 0 for quitting and the remaining 1 through 5 for selecting the corresponding ball. They combine all these components to create the following prompt:
 
-
-We map Bob’s observation to text `lang($\tau_i^t$)` by converting Alice’s most recent action (1 through 5) from integer to string.
-Note that the RL policy still observes the last two actions.
-
-For Bob’s actions, we map them to the strings {"0", "1", ..., "5"}, with 0 for quitting and the remaining 1 through 5 for selecting the corresponding ball.
-We combine all these components to create the following prompt:
-
-1. `inst`
-2. My partner selected `lang($\tau_i^t$)`
+1. `inst
+2. My partner selected $$lang($\tau_i^t$)$$
 3. So should I select
 
 **COMMENT:** It would be interesting to see how prompt-specific this part is.
@@ -166,7 +159,7 @@ The authors feed the prompt to an open-sourced GPT-J model with 6 billion parame
 
 **COMMENT:** Confirm with Yuchen that this means outputting probabilities of each word? Sometimes GPT-J can output it in the form of logits directly.
 
-They apply `SOFTMAX` to the logits with $\beta = 1$ to get the prior policy $p_{LLM}$. They use tabular Q-learning with no neural network as the state space is small enough, and a regularization weight $\lambda = 0.25$ for `instructQ`. Details on the hyperparameters are in Appendix A.1.
+They apply SOFTMAX to the logits with $\beta = 1$ to get the prior policy $p_{LLM}$. They use tabular Q-learning with no neural network as the state space is small enough, and a regularization weight $\lambda = 0.25$ for `instructQ`. Details on the hyperparameters are in Appendix A.1.
 
 **COMMENT:** A neural network would be better for a more sophisticated problem then? Check with Yuchen.
 
