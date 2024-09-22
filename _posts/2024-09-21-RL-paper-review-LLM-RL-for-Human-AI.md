@@ -41,7 +41,7 @@ If we exclude LLMs, one would typically produce diverse policies and then train 
 2. In real-world coordination, humans often communicate and negotiate to agree on conventions or equilibria for collaboration.
 
 <figure>
-  <img src="{{ "/assets/img/learning/alice_bob.png.gif" | absolute_url }}" alt="Alice-Bob Optimal Strategy as Defined by a Human" class="post-pic"/>
+  <img src="{{ "/assets/img/learning/alice_bob.png" | absolute_url }}" alt="Alice-Bob Optimal Strategy as Defined by a Human" class="post-pic"/>
   <figcaption>Alice-Bob Optimal Strategy as Defined by a Human</figcaption>
 </figure>
 
