@@ -51,47 +51,45 @@ These aspects are often overlooked in multi-agent reinforcement learning (MARL).
 
 # Specifics of the Framework
 
-The authors introduced InstructRL, a framework that enables humans to specify the types of strategies they expect from their AI partners through natural language instructions.\\
-
-They used pretrained large language models to generate a prior policy conditioned on the human instruction and used the prior to regularize the RL objective.\\
-
-We first (1) construct a prior policy by querying large language models (LLMs) based on the (2) instructions and (3) short descriptions of the current observation. So, is the output of the **prior policy a text**?
+The authors introduced InstructRL, a framework that enables humans to specify the types of strategies they expect from their AI partners through natural language instructions. They used pretrained large language models to generate a prior policy conditioned on the human instruction and used the prior to regularize the RL objective. They first (1) construct a prior policy by querying large language models (LLMs) based on the (2) instructions and (3) short descriptions of the current observation.
 
 ## LLM Prior Policy
 
-For instance, in the Say-Select example in Figure 1, we can give the instruction “Select the same number as Alice” to the Bob agent. The description of the current observations could be “Alice said 1.” We then train an RL agent, where its objective is regularized using the generated LLM prior as a reference policy.\\
+For instance, in the Say-Select example in Figure 1, we can give the instruction “Select the same number as Alice” to the Bob agent. The description of the current observations could be “Alice said 1.” We then train an RL agent, where its objective is regularized using the generated LLM prior as a reference policy.
 
-**COMMENT:** Regularization based on a reference policy usually involves applying a penalty for the difference between the proposed policy and the reference.\\
+**COMMENT:** Regularization based on a reference policy usually involves applying a penalty for the difference between the proposed policy and the reference.
 
-We construct the prior policy by letting an LLM predict the probability of possible actions given the observation and the instruction. To do so, we essentially need to evaluate:
+They construct the prior policy by letting an LLM predict the probability of possible actions given the observation and the instruction. To do so, they evaluate:
 
 $$p_{LLM}[lang(a_t)|lang(\tau^{i}{t}), inst]$$
 
-$$p_{LLM}$$ = softmax($$\beta * logit$$), where $$\beta$$ is an optional scaling factor and the logit is a function of the language components, i.e.,
+$$p_{LLM}$$ = softmax($$\beta * logit$$), 
 
-$$\text{logit} = f(inst, lang(\tau), lang(a_t))$$\\
+where $$\beta$$ is an optional scaling factor and the logit is a function of the language components, i.e.,
+
+$$\text{logit} = f(inst, lang(\tau), lang(a_t))$$
 
 For actions that have homogeneous descriptions, such as in Say-Select, the logit function $$f$$ can simply be the prediction loss. A reminder that prediction loss is:
 
 $$ \text{Loss} = -\sum_{i=1}^{n} y_i \cdot \log(\hat{y}_i) $$
 
-Note that we would iterate over the true and observed probabilities of all actions in a given state. We want the loss to approach 0.
+Here one needs to iterateve over the true and observed probabilities of all actions in a given state. We want the loss to approach 0.
 
-**COMMENT/POINT OF IMPROVEMENT:** This is a great idea. Problems may arise when it's difficult to map to $$a_t$$. LLMs are non-deterministic and can hallucinate. While the instructions remain constant, the wording of the observations might change slightly. This paper tries to emulate an interaction between a human and a robot. Suppose, even in simple settings, a human says/prompts: "I'd recommend you pick 1," "Pick one," "One is good," or "Good to go with 1." Are we sure that these minor changes in the wording of the observation won’t cause the model to hallucinate or map us to a different action? This challenge can be overcome with fine-tuning and using more advanced language models, but this prior reliance on the inherently stochastic nature of LLMs can be tricky.\\
+**COMMENT/POINT OF IMPROVEMENT:** This is a great idea. Problems may arise when it's difficult to map to $$a_t$$. LLMs are non-deterministic and can hallucinate. While the instructions remain constant, the wording of the observations might change slightly. This paper tries to emulate an interaction between a human and a robot. Suppose, even in simple settings, a human says/prompts: "I'd recommend you pick 1," "Pick one," "One is good," or "Good to go with 1." Are we sure that these minor changes in the wording of the observation won’t cause the model to hallucinate or map us to a different action? This challenge can be overcome with fine-tuning and using more advanced language models, but this prior reliance on the inherently stochastic nature of LLMs can be tricky.
 
-The authors also mention that: It is easy to convert actions to language descriptions in the games considered in this paper. However, it is worth noting that many environments contain actions that cannot be easily abstracted into language, e.g., in a robotics setting, where the actions are the continuous joint angles of a robot arm.\\
+The authors also mention that: It is easy to convert actions to language descriptions in the games considered in this paper. However, it is worth noting that many environments contain actions that cannot be easily abstracted into language, e.g., in a robotics setting, where the actions are the continuous joint angles of a robot arm.
 
-**COMMENT:** This is true, but even in simpler settings, models can generate language interpretations of actions that do not exist in your $$lang(a_t)$$ space.\\
+**COMMENT:** This is true, but even in simpler settings, models can generate language interpretations of actions that do not exist in your $$lang(a_t)$$ space.
 
-**SUGGESTION:** What if we instead use LLMs to convert back to dictionaries or history lists? That is, a human says/prompts something, and we use function calling to only produce a parameterized probability of possible actions?\\
+**SUGGESTION:** What if we instead use LLMs to convert back to dictionaries or history lists? That is, a human says/prompts something, and we use function calling to only produce a parameterized probability of possible actions?
 
-**SUGGESTION:** Additionally, what if we experiment with the current settings and introduce variable instructions?\\
+**SUGGESTION:** Additionally, what if we experiment with the current settings and introduce variable instructions?
 
-**SUGGESTION:** The authors suggest that in real-world scenarios that require grounding in the physical environment, we may use image captioning models. Instead of words, we could experiment with descriptive languages of the scenes or extend the framework to allow humans to specify instructions in video format.\\
+**SUGGESTION:** The authors suggest that in real-world scenarios that require grounding in the physical environment, we may use image captioning models. Instead of words, we could experiment with descriptive languages of the scenes or extend the framework to allow humans to specify instructions in video format.
 
 
 **SUGGESTION:**  
-"The LLM prior $$p_{LLM}$$ itself is not sufficient to solve complex tasks. For example, a moderate-sized LM with roughly 6B parameters cannot figure out when to quit in Say-Select in Figure 1, and even the largest LM to date cannot play Hanabi." Why use a 6B model for this task? A larger model can definitely follow human instructions. **Offer this to Yuchen.**
+"The LLM prior $$p_{LLM}$$ itself is not sufficient to solve complex tasks. For example, a moderate-sized LM with roughly 6B parameters cannot figure out when to quit in Say-Select in Figure 1, and even the largest LM to date cannot play Hanabi." Why use a 6B model for this task? A larger model can definitely follow human instructions. **Discuss with Yuchen.**
 
 ## Regularization
 
