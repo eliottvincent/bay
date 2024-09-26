@@ -83,7 +83,7 @@ Note how similar this is to **Q-learning**.
 ## Convergence of SARSA
 SARSA for finite-state and finite-action MDPs converges to the optimal action-value $$Q(s, a) \to Q^*(s, a)$$ under the following conditions:
 
-1. The policy sequence $$\pi_t(a|s)$$ satisfies the **GLIE** (Greedy in the Limit with Infinite Exploration) condition.
+1. The policy sequence $$\pi(t)(a|s)$$ satisfies the **GLIE** (Greedy in the Limit with Infinite Exploration) condition.
 2. The step-sizes $$\alpha_t$$ satisfy the **Robbins-Monro** sequence:
    
    $$
