@@ -9,6 +9,7 @@ og_image: /assets/img/learning/algo_comp.jpeg
 
 <img src="{{ "/assets/img/learning/algo_comp.jpeg" | absolute_url }}" alt="mode_shape" class="post-pic"/>
 <br />
+Picture by [Sagi Shaier](https://towardsdatascience.com/introduction-to-reinforcement-learning-rl-part-6-temporal-difference-td-learning-2a12f0aba9f9)
 <br />
 
 # Lecture 6 - Monte Carlo and TD Control
