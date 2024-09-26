@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Blackjack Policy Evaluation"
-date:   2024-09-25 10:00:40
+title:  "Blackjack Policy Evaluation using First-visit Monte Carlo Sampling"
+date:   2024-09-26 10:00:40
 self_learning: true
 blurb: "A look at an example post using Bay Jekyll theme."
 og_image: /assets/img/learning/BlackjackPlanes.png
