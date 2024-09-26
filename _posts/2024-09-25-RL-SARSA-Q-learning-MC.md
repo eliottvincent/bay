@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TD (SARSA, Q-learning), MC-control - CS234 Lecture 4/Chapter 6"
+title:  "Model-free Control (TD, MC) - CS234 Lecture 4/Chapter 6"
 date:   2024-09-25 10:00:40
 self_learning: true
 blurb: "A look at an example post using Bay Jekyll theme."
