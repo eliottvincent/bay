@@ -4,10 +4,10 @@ title:  "TD (SARSA, Q-learning), MC-control - CS234 Lecture 4/Chapter 6"
 date:   2024-09-25 10:00:40
 self_learning: true
 blurb: "A look at an example post using Bay Jekyll theme."
-og_image: /assets/img/learning/algo-comp.jpeg
+og_image: /assets/img/learning/algo_comp.jpeg
 ---
 
-<img src="{{ "/assets/img/learning/algo-comp.jpeg" | absolute_url }}" alt="mode_shape" class="post-pic"/>
+<img src="{{ "/assets/img/learning/algo_comp.jpeg" | absolute_url }}" alt="mode_shape" class="post-pic"/>
 <br />
 <br />
 
