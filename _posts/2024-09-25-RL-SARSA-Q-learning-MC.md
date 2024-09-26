@@ -13,7 +13,7 @@ og_image: /assets/img/learning/algo_comp.jpeg
 
 # Lecture 6 - Monte Carlo and TD Control
 
-## Control in MC and TD
+## 1. Control in MC and TD
 We aim to find how good a policy is and learn the best policy without having a model of the environment.
 
 - **Assumptions:**
@@ -27,7 +27,7 @@ We aim to find how good a policy is and learn the best policy without having a m
 ### Off-policy learning
 - Learn to estimate and evaluate a policy using experience gathered from following a different policy.
 
-### Policy Iteration Recap
+### 2. Policy Iteration Recap
 The standard Policy Iteration requires a model of the environment (dynamics + reward). Without this model, we can try **on-policy MC control**:
 
 1. Initialize $$G(s,a) = 0$$, $$N(s,a) = 0$$, $$Q^{\pi}(s,a) = 0$$
@@ -49,10 +49,10 @@ The standard Policy Iteration requires a model of the environment (dynamics + re
 
 **$$\epsilon$$-greedy** ensures exploration by adding randomness when selecting an action at $$s$$.
 
-## Temporal Difference (TD) Control
+## 3. Temporal Difference (TD) Control
 Unlike Monte Carlo (MC), TD updates are made based on the next tuple only, without needing to wait until the episode ends to calculate rewards. Also, you **don’t have to wait until the end to change how you're acting in the world**.
 
-## SARSA
+## 3.1 SARSA
 The **SARSA** (State Action Reward Next State Action) algorithm:
 
 1. Initialize an $$\epsilon$$-greedy policy randomly. Set $$t=0$$, and $$s_0$$ as the initial state.
@@ -91,7 +91,7 @@ SARSA for finite-state and finite-action MDPs converges to the optimal action-va
 
    For example, $$\alpha_t = 1/T$$ satisfies this condition.
 
-## Q-learning
+## 3.2 Q-learning
 The only difference between **SARSA** and **Q-learning** is in the update rule:
 
 $$
@@ -109,7 +109,7 @@ $$
 ### Convergence:
 Depends on the learning rate $$\alpha$$.
 
-### Final Summary:
+### 4. Final Summary:
 - **Q-learning** is **off-policy** TD Control.
 - **SARSA** is **on-policy** TD Control.
 
