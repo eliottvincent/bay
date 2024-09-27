@@ -31,9 +31,9 @@ This game can be represented as a finite Markov Decision Process (MDP) where:
 
 ### States
 States are defined by three variables:
-- The player’s current sum ($S_p$) ranging from 12 to 21.
-- The dealer’s showing card ($S_d$) ranging from Ace to 10.
-- The count of usable aces ($A_u$), indicating whether the player has an ace that can be counted as 11.
+- The player’s current sum ($$S_p$$) ranging from 12 to 21.
+- The dealer’s showing card ($$S_d$$) ranging from Ace to 10.
+- The count of usable aces ($$A_u$$), indicating whether the player has an ace that can be counted as 11.
 
 The total number of states is calculated as:
 $$
@@ -46,10 +46,10 @@ Rewards are assigned as follows:
 - -1 for a loss.
 - 0 for a draw.
 
-The rewards are provided only at the end of each game, leading to the return for each state being equal to the terminal reward. In this scenario, there is no discounting of future rewards, so we have $\gamma = 1$.
+The rewards are provided only at the end of each game, leading to the return for each state being equal to the terminal reward. In this scenario, there is no discounting of future rewards, so we have $$\gamma = 1$$.
 
 ## Policy Definition
-In this implementation, we define a simple policy where the player sticks if their sum is 20 or 21, and otherwise hits. The goal is to estimate the state-value function ($V(s)$) for this policy using Monte Carlo methods.
+In this implementation, we define a simple policy where the player sticks if their sum is 20 or 21, and otherwise hits. The goal is to estimate the state-value function ($$V(s)$$) for this policy using Monte Carlo methods.
 
 ## Monte Carlo Estimation
 To estimate the state-value function, we simulate many games of blackjack under the defined policy and average the returns following each state. The state-value function can be represented mathematically as:
@@ -57,8 +57,8 @@ $$
 V(s) = \frac{1}{N(s)} \sum_{i=1}^{N(s)} G_i
 $$
 where:
-- $N(s)$ is the number of visits to state $s$.
-- $G_i$ is the return following the $i$-th visit to state $s$.
+- $$N(s)$$ is the number of visits to state $$s$$.
+- $$G_i$$ is the return following the $$i$$-th visit to state $$s$$.
 
 ## Implementation
 The following code simulates the blackjack game using the Monte Carlo method to compute the state-value function for the player's sum, the dealer's showing card, and the usability of an ace.
@@ -66,4 +66,4 @@ The following code simulates the blackjack game using the Monte Carlo method to 
 ## Conclusion
 Estimating the state-value function for blackjack using Monte Carlo methods provides valuable insights into optimal decision-making in the game. Through simulation, we can understand the value of different states and improve strategies for better outcomes.
 
-[Click here to access my GitHub pdf](https://github.com/YaroKazakov/RL-phd/blob/main/stanford_cs234/cs234_Lecture1_notes.pdf)
+[Click here to access my GitHub pdf](https://github.com/YaroKazakov/RL-phd/blob/main/rl_book/code/Blackjack_with_MC_evaluation.ipynb)
