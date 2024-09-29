@@ -50,7 +50,7 @@ For TD methods like SARSA, the TD error is defined as:
 
 $$\delta_t = r_t + \gamma Q(s_{t+1}, a_{t+1}) - Q(s_t, a_t)$$
 
-Again, when $$\( r_t = 0 \)$$ due to sparse rewards, the TD error remains small, leading to minimal changes in $$\( Q(s_t, a_t) \)$$. The agent continues to take actions without significantly updating its action values, slowing down learning.
+Again, when $$ r_t = 0 $$ due to sparse rewards, the TD error remains small, leading to minimal changes in $$Q(s_t, a_t)$$. The agent continues to take actions without significantly updating its action values, slowing down learning.
 
 ### Solution 1 - Reward Shaping
 
@@ -67,10 +67,10 @@ $$
 
 Here:
 
-- \( \gamma \) is the discount factor.
-- \( \Phi(s) \) represents a potential function that defines the value of being in state \( s \).
+- $$ \gamma $$ is the discount factor.
+- $$ \Phi(s) $$ represents a potential function that defines the value of being in state \( s \).
 
-The critical result from **Ng et al. (1999)** was that potential-based reward shaping ensures **policy invariance**, meaning the optimal policy under the shaped reward \( R'(s, a, s') \) is the same as under the original reward \( R(s, a, s') \). This property allows shaping to speed up learning by providing more frequent reward signals, while guaranteeing the agent still converges to the correct policy.
+The critical result from **Ng et al. (1999)** was that potential-based reward shaping ensures **policy invariance**, meaning the optimal policy under the shaped reward $$R'(s, a, s')$$ is the same as under the original reward $$R(s, a, s')$$. This property allows shaping to speed up learning by providing more frequent reward signals, while guaranteeing the agent still converges to the correct policy.
 
 #### Proof of Policy Invariance:
 The policy invariance result is derived from the fact that the potential-based reward shaping does not change the Bellman equations that govern the optimal policy. To see why this is true, consider the action-value function for the shaped reward \( Q'(s, a) \):
@@ -91,6 +91,32 @@ $$
 Q'(s, a) = Q(s, a) + \Phi(s_0) - \gamma^T \Phi(s_T)
 $$
 
-Since \( \Phi(s_0) \) is const
+Since $$\Phi(s_0)$$ is const.
+
+#### Reward Shaping Examples
+
+**1. Grid-World:**
+- **Description:** The agent navigates a maze to reach a goal, but only receives a reward upon reaching the goal, slowing learning due to sparse feedback.
+- **Shaping Function:** 
+  $$ \Phi(s) = -d(s, s_{goal}) $$
+  where \( d(s, s_{goal}) \) is the Manhattan distance to the goal.
+- **Shaped Reward:**
+  $$ R'(s, a, s') = R(s, a, s') + \gamma \Phi(s') - \Phi(s) $$
+- **Result:** The agent learned faster due to frequent intermediate rewards as it moved closer to the goal.
+
+**2. Mountain Car:**
+- **Description:** The agent must drive an underpowered car up a steep hill using momentum, but only receives a reward when it reaches the top, making exploration difficult.
+- **Shaping Function:** 
+  $$ \Phi(s) = h(s) $$
+  where \( h(s) \) is the car's height.
+- **Shaped Reward:**
+  $$ R'(s, a, s') = R(s, a, s') + \gamma h(s') - h(s) $$
+- **Result:** The agent learned more efficiently by receiving incremental rewards as it increased its height.
+
+The obvious drawback is the it requires domain knowledge and creativity to design effective shaping functions. In the initial 1999 form the agent could not learn an effective way of learning those functions.
+
+
+### Solution 2 - Inverse Reinfrcement Learning
+
 
 <br />
