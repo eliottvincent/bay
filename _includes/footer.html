@@ -1,113 +1,25 @@
-<footer class="site-footer">
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <h4>CONTACT</h4>
+{% include base_path %}
 
-        <div class="social-links">
-          {% for contact in site.footer.contact %}
-            <div class="social-link contact-links">
+{% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    {% if site.data.ui-text[site.locale].follow_label %}
+      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+    {% endif %}
+    {% if site.author.github %}
+      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    {% endif %}
+    {% if site.author.bitbucket %}
+      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+    {% endif %}
+    {% if site.atom_feed.hide != true %}
+    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+    {% endif %}
+  </ul>
+</div>
+{% endif %}
 
-              {% assign contact_icon_path = "/assets/img/icons/" | append: contact.type | downcase | append: ".png" | absolute_url %}
-              <img
-                src="{{ contact_icon_path }}"
-                alt="{{ contact.type }}"
-              />
-
-              {% if contact.type == "email" %}
-                {% if contact.cloak != false %}
-                  {% assign email_parts = contact.value | split: "@" %}
-                  {% assign user = email_parts[0] %}
-                  {% assign domain = email_parts[1] | split: "." %}
-                  {% assign domain_name = domain[0] %}
-                  {% assign domain_tld = domain[1] %}
-
-                  {% assign reversed_user = user | split: "" | reverse | join: "" %}
-                  {% assign reversed_domain_name = domain_name | split: "" | reverse | join: "" %}
-                  {% assign reversed_domain_tld = domain_tld | split: "" | reverse | join: "" %}
-                  <span
-                    data-resu="{{ reversed_user }}"
-                    data-eman-niamod="{{ reversed_domain_name }}"
-                    data-dlt-niamod="{{ reversed_domain_tld }}"
-                    id="{{ contact.type }}-link"
-                    class="link email-link-cloaked"
-                  >
-                    {{ contact.name }}
-                  </span>
-                {% else %}
-                  <a href="mailto:{{ contact.value }}" id="{{ contact.type }}-link">
-                    {{ contact.value }}
-                  </a>
-                {% endif %}
-              {% else %}
-                <a href="{{ contact.link }}" id="{{ contact.type }}-link">
-                  {% if contact.value and contact.value != "" and contact.value != nil %}
-                    {{ contact.value }}
-                  {% else %}
-                    {{ contact.name }}
-                  {% endif %}
-                </a>
-              {% endif %}
-            </div>
-
-          {% endfor %}
-        </div>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {% if site.footer.follow and site.footer.follow.size > 0 %}
-          <h4>FOLLOW</h4>
-
-          <div class="social-links follow-links">
-            {% for follow in site.footer.follow %}
-              <div class="social-link">
-
-                {% assign follow_icon_path = "/assets/img/icons/" | append: follow.name | downcase | append: ".png" | absolute_url %}
-                <img
-                  src="{{ follow_icon_path }}"
-                  alt="{{ follow.name | downcase }}"
-                />
-                <a href="{{ follow.link }}">
-                  {% if follow.value and follow.value != "" and follow.value != nil %}
-                    {{ follow.value }}
-                  {% else %}
-                    {{ follow.name }}
-                  {% endif %}
-                </a>
-              </div>
-
-            {% endfor %}
-          </div>
-        {% endif %}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        {% if site.footer.startup and site.footer.startup.size > 0 %}
-          <h4>STARTUP</h4>
-
-          <div class="social-links startup-links">
-            {% for startup in site.footer.startup %}
-              <div class="social-link">
-
-                {% assign startup_icon_path = "/assets/img/icons/" | append: startup.name | downcase | append: ".png" | absolute_url %}
-                <img
-                  src="{{ startup_icon_path }}"
-                  alt="{{ startup.name | downcase }}"
-                />
-                <a href="{{ startup.link }}">
-                  {% if startup.value and startup.value != "" and startup.value != nil %}
-                    {{ startup.value }}
-                  {% else %}
-                    {{ startup.name }}
-                  {% endif %}
-                </a>
-              </div>
-
-            {% endfor %}
-          </div>
-        {% endif %}
-      </div>
-
-    </div>
-  </div>
-</footer>
+<div class="page__footer-copyright">
+  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated {{ "now" | date: '%Y-%m-%d' %}}
+</div>

@@ -1,35 +1,41 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@charset "utf-8";
+/*
+ *    Minimal Mistakes Jekyll Theme
+ *
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
+ *
+*/
 
-// Our variables
-$base-url: "{{ site.baseurl }}";
+@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "variables";
+@import "mixins";
+@import "vendor/susy/susy";
 
-$base-font-family: Charter, Georgia, Helvetica, Arial, sans-serif;
-$base-font-size: 14px;
-$small-font-size: $base-font-size * 0.875;
-$base-line-height: 1.7;
+@import "reset";
+@import "base";
 
-$spacing-unit: 30px;
+@import "utilities";
+@import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
+@import "footer";
+@import "syntax";
 
-$text-color: #111;
-$background-color: #fdfdfd;
-$brand-color: #2a7ae2;
+@import "forms";
 
-$grey-color: #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark: darken($grey-color, 25%);
+@import "page";
+@import "archive";
+@import "sidebar";
 
-$on-mobile: 500px;
-$on-laptop: 800px;
-
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import "base", "layout", "site", "work", "blog", "post", "404";
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/brands";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
