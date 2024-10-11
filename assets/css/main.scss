@@ -25,6 +25,11 @@ $grey-color-dark: darken($grey-color, 25%);
 $on-mobile: 500px;
 $on-laptop: 800px;
 
+.work-bubble {
+  width: 300px;
+  height: auto; /* 비율 유지 */
+}
+
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;

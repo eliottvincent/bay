@@ -15,41 +15,27 @@ header:
       slug: /
     - name: Work
     - name: Blog
-
 footer:
   show_powered_by: true
   contact:
     - type: email
       name: Email
-      value: yourmail@domain.com
-    - type: wechat
-      value: YourWeChatUsername
-      link: "#"
+      value: 0914eagle@gmail.com
   follow:
-    - type: twitter
-      name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - type: facebook
-      name: Facebook
-      link: http://facebook.com/YourFacebookUsername
+    - type: cv
+      name: CV
+      link: https://drive.google.com/file/d/1skzwuDNmJSPovhdJ0UhI16O1MnuGQUJn/view?usp=sharing
     - type: linkedin
       name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
+      link: https://www.linkedin.com/in/heejae-chon-3391b7273/
     - type: github
       name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - type: dribbble
-      name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - type: rss
-      name: RSS
-      link: /feed.xml
+      link: https://github.com/0914eagle
 
 # Build settings
 markdown: kramdown
 sass:
-    style: :compressed
+  style: :compressed
 plugins:
   - jekyll-feed
 
