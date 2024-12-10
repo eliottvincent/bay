@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.1.5](https://github.com/eliottvincent/bay/compare/v1.1.4...v1.1.5) (2024-12-10)
+
+### Bug Fixes
+
+- Increase overall width
+
 ### [1.1.4](https://github.com/eliottvincent/bay/compare/v1.1.3...v1.1.4) (2024-09-01)
 
 ### Bug Fixes
