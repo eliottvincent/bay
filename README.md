@@ -17,7 +17,8 @@ Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliot
     2. [Footer](#footer)
     3. [Home page](#home-page)
     4. [Blog page](#blog-page)
-5. [Development instructions](#development)
+5. [GitHub Pages](#github-pages)
+6. [Development instructions](#development)
 
 
 ### Installation
@@ -66,7 +67,7 @@ jekyll serve
 
 The website will look somewhat empty at first. That's normal. Follow the next instructions to complete the header and footer components, and the home and blog pages.
 
-### Header
+#### Header
 Open the `_config.yml` file and add the following:
 ```yml
 header:
@@ -78,7 +79,7 @@ header:
 ```
 Re-run `jekyll serve` to see the header updated.
 
-### Footer
+#### Footer
 Open the `_config.yml` file and add the following:
 ```yml
 footer:
@@ -113,7 +114,7 @@ footer:
 ```
 Re-run `jekyll serve` to see the footer updated.
 
-### Home page
+#### Home page
 Create (or edit) the `index.markdown` file and add the following:
 ```yml
 ---
@@ -128,7 +129,7 @@ profile_picture:
 </p>
 ```
 
-### Blog page
+#### Blog page
 Create `blog.markdown` file and add the following:
 ```yml
 ---
@@ -144,6 +145,16 @@ This is an example of a "Blog" page, displaying a list of posts.
 
 Your website is ready!
 
+
+### GitHub Pages
+
+You can deploy your website to GitHub Pages, but you cannot use the 1-click GitHub Pages build and deploy system. The issue is that the Bay theme relies on Jekyll 4.3+ (which uses a more modern Sass processor), whereas the GitHub Pages build system uses an older version of Jekyll.
+
+However, it's fairly easy to build and deploy your website with GitHub Actions, yet use GitHub Pages to host it.
+
+Further explanations and instructions can be found on the official [Jekyll website](https://jekyllrb.com/docs/continuous-integration/github-actions/).
+
+You can also refer to the [`.github/workflows/deploy.yml`](https://github.com/eliottvincent/bay/blob/master/.github/workflows/deploy.yml) file in this repository.
 
 ### Development
 
