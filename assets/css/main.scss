@@ -4,7 +4,9 @@
 
 @charset "utf-8";
 
-@use "variables";
+@use "variables" with (
+  $base-url: "{{ site.baseurl }}"
+);
 @use "mixins";
 @use "extends";
 

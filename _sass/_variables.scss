@@ -1,6 +1,6 @@
 @use "sass:color";
 
-$base-url: "{{ site.baseurl }}";
+$base-url: "" !default;
 
 $base-font-family: Charter, Georgia, Helvetica, Arial, sans-serif;
 $base-font-size: 14px;
