@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "bay_jekyll_theme"
-  spec.version       = "1.1.5"
+  spec.version       = "1.2.0"
   spec.authors       = ["Eliott Vincent"]
   spec.email         = ["hello@eliottvincent.com"]
 
@@ -14,6 +14,6 @@ Gem::Specification.new do |spec|
     f.match(%r{^((_includes|_layouts|_sass|assets)/|(LICENSE|README|CHANGELOG)((\.(txt|md|markdown|js|css)|$)))}i)
   end
 
-  spec.add_development_dependency "jekyll", "~> 4.0"
+  spec.add_development_dependency "jekyll", "~> 4.3.4"
   spec.add_development_dependency "bundler", "~> 2.0"
 end
