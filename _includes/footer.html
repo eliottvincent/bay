@@ -32,20 +32,20 @@
                     id="{{ contact.type }}-link"
                     class="link email-link-cloaked"
                   >
-                    {{ contact.name }}
+                    {{- contact.name -}}
                   </span>
                 {% else %}
                   <a href="mailto:{{ contact.value }}" id="{{ contact.type }}-link">
-                    {{ contact.value }}
+                    {{- contact.value -}}
                   </a>
                 {% endif %}
               {% else %}
                 <a href="{{ contact.link }}" id="{{ contact.type }}-link">
-                  {% if contact.value and contact.value != "" and contact.value != nil %}
+                  {%- if contact.value and contact.value != "" and contact.value != nil -%}
                     {{ contact.value }}
-                  {% else %}
+                  {%- else -%}
                     {{ contact.name }}
-                  {% endif %}
+                  {%- endif -%}
                 </a>
               {% endif %}
             </div>
@@ -68,11 +68,11 @@
                   alt="{{ follow.name | downcase }}"
                 />
                 <a href="{{ follow.link }}">
-                  {% if follow.value and follow.value != "" and follow.value != nil %}
+                  {%- if follow.value and follow.value != "" and follow.value != nil -%}
                     {{ follow.value }}
-                  {% else %}
+                  {%- else -%}
                     {{ follow.name }}
-                  {% endif %}
+                  {%- endif -%}
                 </a>
               </div>
 

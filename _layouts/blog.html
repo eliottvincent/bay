@@ -13,16 +13,13 @@
 
           <p class="blog-post-list">
             {% for post in site.posts %}
-
               {% if post.draft != true %}
                 <span class="blog-post-date">{{ post.date | date: "%-m/%-d/%y" }}</span>
                 <a href="{{ post.url | replace:".html","" | prepend: site.baseurl }}" class="blog-post-title">
-                  {{ post.title }}
+                  {{- post.title -}}
                 </a>
                 <br />
-
               {% endif %}
-
             {% endfor %}
           </p>
         </div>
@@ -30,7 +27,6 @@
     </div>
 
     {% include footer.html %}
-
     {% include foot.html %}
   </body>
 </html>

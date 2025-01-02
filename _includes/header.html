@@ -16,7 +16,7 @@
           {% endif %}
           {% assign page_link = page_link | absolute_url %}
           <a class="page-link" href="{{ page_link }}">
-            {{ page.name }}
+            {{- page.name -}}
           </a>
         {% endfor %}
       </div>
