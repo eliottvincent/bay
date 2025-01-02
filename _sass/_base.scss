@@ -189,7 +189,7 @@ pre {
  */
 .wrapper {
   position: relative;
-  max-width: -webkit-calc(760px - (variables.$spacing-unit * 2));
+  max-width: -webkit-calc(760px - (#{variables.$spacing-unit} * 2));
   max-width: calc(760px - (variables.$spacing-unit * 2));
   margin-right: auto;
   margin-left: auto;
@@ -199,7 +199,7 @@ pre {
   @extend %clearfix;
 
   @include mixins.media-query(variables.$on-laptop) {
-    max-width: -webkit-calc(800px - variables.$spacing-unit);
+    max-width: -webkit-calc(800px - (#{variables.$spacing-unit}));
     max-width: calc(800px - variables.$spacing-unit);
     padding-right: calc(variables.$spacing-unit / 2);
     padding-left: calc(variables.$spacing-unit / 2);
