@@ -5,6 +5,7 @@
   float: right;
   width: 202px;
   border: #ccc 1px solid;
+  border-radius: 3px;
   margin-left: 20px;
 
   @include mixins.media-query(variables.$on-mobile) {

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.2.1](https://github.com/eliottvincent/bay/compare/v1.2.0...v1.2.1) (2025-01-02)
+
+### Improvements
+
+- Add slight border radius to pictures
+
 ### [1.2.0](https://github.com/eliottvincent/bay/compare/v1.1.5...v1.2.0) (2025-01-02)
 
 ### Features
