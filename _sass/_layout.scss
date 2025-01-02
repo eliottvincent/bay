@@ -6,9 +6,9 @@
  * Site header
  */
 .site-header {
+  position: relative;
   border-bottom: 1px solid variables.$color-grey-light;
   min-height: 56px;
-
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -16,9 +16,6 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
-  // Positioning context for the mobile navigation icon
-  position: relative;
 }
 
 .site-title {
