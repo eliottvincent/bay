@@ -1,5 +1,8 @@
+@use "variables" as variables;
+@use "mixins" as mixins;
+
 .post-header {
-  margin-bottom: $spacing-unit;
+  margin-bottom: variables.$spacing-unit;
 }
 
 .post-title {
@@ -7,9 +10,9 @@
   letter-spacing: -1px;
   line-height: 1.2;
 
-  font-family: $base-font-family;
+  font-family: variables.$base-font-family;
 
-  @include media-query($on-mobile) {
+  @include mixins.media-query(variables.$on-mobile) {
     font-size: 34px;
   }
 }
@@ -19,12 +22,12 @@
   letter-spacing: -1px;
   line-height: 1;
   color: #777;
-  font-family: $base-font-family;
+  font-family: variables.$base-font-family;
   font-style: oblique;
   position: relative;
   top: -0.3em;
 
-  @include media-query($on-mobile) {
+  @include mixins.media-query(variables.$on-mobile) {
     font-size: 24px;
   }
 }
@@ -35,12 +38,12 @@
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
+  margin-bottom: variables.$spacing-unit;
   width: 100%;
   h2 {
     font-size: 32px;
 
-    @include media-query($on-mobile) {
+    @include mixins.media-query(variables.$on-mobile) {
       font-size: 28px;
     }
   }
@@ -48,7 +51,7 @@
   h3 {
     font-size: 26px;
 
-    @include media-query($on-mobile) {
+    @include mixins.media-query(variables.$on-mobile) {
       font-size: 22px;
     }
   }
@@ -56,7 +59,7 @@
   h4 {
     font-size: 20px;
 
-    @include media-query($on-mobile) {
+    @include mixins.media-query(variables.$on-mobile) {
       font-size: 18px;
     }
   }

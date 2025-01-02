@@ -1,14 +1,18 @@
+@use "variables" as variables;
+@use "mixins" as mixins;
+@use "extends";
+
 /**
  * Site header
  */
 .site-header {
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid variables.$color-grey-light;
   min-height: 56px;
 
   padding-top: 10px;
   padding-bottom: 10px;
 
-  @include media-query($on-mobile) {
+  @include mixins.media-query(variables.$on-mobile) {
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -29,7 +33,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: variables.$color-grey-dark;
   }
 }
 
@@ -40,15 +44,15 @@
   z-index: 10;
   float: right;
   line-height: 56px;
-  background-color: $background-color;
+  background-color: variables.$color-background;
 
   .menu-icon {
     display: none;
   }
 
   .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
+    color: variables.$color-text;
+    line-height: variables.$base-line-height;
 
     // Gaps between nav items, but not on the first one
     &:not(:first-child) {
@@ -56,12 +60,12 @@
     }
   }
 
-  @include media-query($on-mobile) {
+  @include mixins.media-query(variables.$on-mobile) {
     position: absolute;
     top: 12px;
     right: 24px;
 
-    border: 1px solid $grey-color-light;
+    border: 1px solid variables.$color-grey-light;
     border-radius: 5px;
     text-align: right;
 
@@ -75,14 +79,14 @@
       padding-top: 4px;
       text-align: center;
 
-      background: $background-color url($base-url + '/assets/img/menu.png') 6px 4px no-repeat;
+      background: variables.$color-background url(variables.$base-url + '/assets/img/menu.png') 6px 4px no-repeat;
       background-size: 26px 26px;
     }
 
     .menu {
       clear: both;
       display: none;
-      background-color: $background-color;
+      background-color: variables.$color-background;
       min-width: 10em;
       padding-bottom: 5px;
     }
@@ -99,17 +103,17 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  border-top: 1px solid variables.$color-grey-light;
+  padding: variables.$spacing-unit 0;
 
-  @include media-query($on-mobile) {
+  @include mixins.media-query(variables.$on-mobile) {
     padding-top: 10px;
   }
 }
 
 .footer-heading {
   font-size: 18px;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc(variables.$spacing-unit / 2);
 }
 
 .contact-list,
@@ -120,23 +124,23 @@
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: $grey-color;
-  margin-left: -$spacing-unit / 2;
+  color: variables.$color-grey;
+  margin-left: calc(-1 * variables.$spacing-unit / 2);
 
   @extend %clearfix;
 }
 
 .footer-col {
   float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+  margin-bottom: calc(variables.$spacing-unit / 2);
+  padding-left: calc(variables.$spacing-unit / 2);
 }
 
 .footer-col-1,
 .footer-col-2,
 .footer-col-3 {
-  width: -webkit-calc(33% - (#{$spacing-unit} / 2));
-  width: calc(33% - (#{$spacing-unit} / 2));
+  width: -webkit-calc(33% - (variables.$spacing-unit / 2));
+  width: calc(33% - (variables.$spacing-unit / 2));
 }
 
 .follow-links > .social-link {
@@ -146,10 +150,10 @@
 .powered-by {
   text-align: end;
   font-size: 13px !important;
-  color: $grey-color;
+  color: variables.$color-grey;
 }
 
-@include media-query($on-mobile) {
+@include mixins.media-query(variables.$on-mobile) {
   .footer-col {
     float: none;
     width: 100%;
@@ -164,7 +168,7 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: variables.$spacing-unit 0;
 }
 
 .page-heading {

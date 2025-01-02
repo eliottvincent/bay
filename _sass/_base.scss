@@ -1,3 +1,7 @@
+@use "variables" as variables;
+@use "mixins" as mixins;
+@use "extends";
+
 /**
  * Reset some basic elements
  */
@@ -26,12 +30,12 @@ figure {
  * Basic styling
  */
 body {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  font-family: variables.$base-font-family;
+  font-size: variables.$base-font-size;
+  line-height: variables.$base-line-height;
   font-weight: 300;
-  color: $text-color;
-  background-color: $background-color;
+  color: variables.$color-text;
+  background-color: variables.$color-background;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -52,7 +56,7 @@ ol,
 dl,
 figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc(variables.$spacing-unit / 2);
 }
 
 /**
@@ -72,7 +76,7 @@ figure > img {
 }
 
 figcaption {
-  font-size: $small-font-size;
+  font-size: variables.$small-font-size;
 }
 
 /**
@@ -80,7 +84,7 @@ figcaption {
  */
 ul,
 ol {
-  margin-left: $spacing-unit;
+  margin-left: variables.$spacing-unit;
 }
 
 li {
@@ -111,22 +115,22 @@ h4 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: variables.$color-brand;
   text-decoration: none;
 
   &:hover {
-    color: $text-color;
+    color: variables.$color-text;
     text-decoration: underline;
   }
 }
 
 span.link {
   cursor: pointer;
-  color: $brand-color;
+  color: variables.$color-brand;
   text-decoration: none;
 
   &:hover {
-    color: $text-color;
+    color: variables.$color-text;
     text-decoration: underline;
   }
 }
@@ -142,9 +146,9 @@ strong {
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
+  color: variables.$color-grey;
+  border-left: 4px solid variables.$color-grey-light;
+  padding-left: calc(variables.$spacing-unit / 2);
   font-size: 100%;
   letter-spacing: -0.5px;
   font-style: italic;
@@ -160,7 +164,7 @@ blockquote {
 pre,
 code {
   font-size: 15px;
-  border: 1px solid $grey-color-light;
+  border: 1px solid variables.$color-grey-light;
   border-radius: 3px;
   background-color: #eef;
 }
@@ -184,34 +188,23 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(760px - (#{$spacing-unit} * 2));
-  max-width:         calc(760px - (#{$spacing-unit} * 2));
+  max-width: -webkit-calc(760px - (variables.$spacing-unit * 2));
+  max-width: calc(760px - (variables.$spacing-unit * 2));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding-right: variables.$spacing-unit;
+  padding-left: variables.$spacing-unit;
 
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(800px - (#{$spacing-unit}));
-    max-width:         calc(800px - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+  @include mixins.media-query(variables.$on-laptop) {
+    max-width: -webkit-calc(800px - variables.$spacing-unit);
+    max-width: calc(800px - variables.$spacing-unit);
+    padding-right: calc(variables.$spacing-unit / 2);
+    padding-left: calc(variables.$spacing-unit / 2);
   }
 
   position: relative;
-}
-
-/**
- * Clearfix
- */
-%clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
 
 /**
@@ -225,7 +218,7 @@ pre {
     vertical-align: middle;
 
     path {
-      fill: $grey-color;
+      fill: variables.$color-grey;
     }
   }
 }
