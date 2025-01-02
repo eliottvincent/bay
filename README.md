@@ -125,7 +125,7 @@ profile_picture:
 ---
 
 <p>
-  Welcome to mysite!
+  Welcome to my site!
 </p>
 ```
 
