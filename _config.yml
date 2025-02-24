@@ -4,25 +4,24 @@
 title: Bay Jekyll Theme
 description: Bay is a minimal Jekyll Theme.
 baseurl: "/bay"
-url: "https://eliottvincent.github.io"
-og_image: /assets/img/profile-pic.jpg
+url: "https://chengu03.github.io"
+og_image: /assets/piture.JPEG
 google_analytics: "UA-121636368-3"
 
 header:
   pages:
     - name: Home
       slug: /
-    - name: Work
-    - name: Blog
+    
 
 footer:
   show_powered_by: true
   contact:
     - type: email
-      name: Email
-      value: yourmail@domain.com
+      name: chengusanye@gmail.com
+      value: chengusanye@gmail.com
     - type: wechat
-      value: YourWeChatUsername
+      value: Chengy_ustc
       link: "#"
   follow:
     - type: twitter
