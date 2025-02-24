@@ -1,14 +1,11 @@
 ---
 layout: home
 profile_picture:
-  src: /assets/img/profile-pic.jpg
+  src: /assets/piture.JPEG
   alt: website picture
 ---
 
 <p>
-  Welcome! This site serves as an example for the Bay Jekyll theme. Bay is a very simple and minimal theme, directly inspired by Dan Grover's <a href="http://dangrover.com">website</a>.
+ My name is Yu Cheng. I am a fourth-year undergraduate student major in Statistics in the University of Science and Technology of China(USTC). I am extremely fortunate to be advised by <strong><a href="https://science.oregonstate.edu/directory/yuan-jiang" target="_blank">Dr. Yuan Jiang</a></strong> in Oregon State University and <strong><a href="https://bs.ustc.edu.cn/english/profile.php?id=352" target="_blank">Dr. Canhong Wen</a></strong> in USTC.
 </p>
-
-<p>
-  You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
 </p>
