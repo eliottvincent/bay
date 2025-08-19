@@ -11,6 +11,8 @@ gem "csv"
 gem "logger"
 gem "base64"
 
+gem 'bay_jekyll_theme', '~> 1.2', '>= 1.2.2'
+
 # Plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"
