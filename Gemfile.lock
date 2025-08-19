@@ -178,7 +178,7 @@ PLATFORMS
 
 DEPENDENCIES
   base64
-  bay_jekyll_theme
+  bay_jekyll_theme (~> 1.2, >= 1.2.2)
   csv
   jekyll (~> 4.3.4)
   jekyll-feed (~> 0.17)
