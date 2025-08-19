@@ -8,7 +8,7 @@ description: THis is Yan's website.
 baseurl: ""
 url: "https://ly671122.github.io"
 
-# theme: bay_jekyll_theme
+remote_theme: eliottvincent/bay
 
 header:
   pages:
