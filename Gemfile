@@ -10,7 +10,7 @@ gem "jekyll", "~> 4.3.4"
 gem "csv"
 gem "logger"
 gem "base64"
-gem "bay_jekyll_theme"
+gem 'bay_jekyll_theme', '~> 1.2', '>= 1.2.2'
 
 # Plugins
 group :jekyll_plugins do
