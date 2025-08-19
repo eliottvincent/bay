@@ -6,6 +6,11 @@ source "https://rubygems.org"
 #     bundle exec jekyll serve
 gem "jekyll", "~> 4.3.4"
 
+# Ruby 3.4 需要显式添加
+gem "csv"
+gem "logger"
+gem "base64"
+
 # Plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"
@@ -19,4 +24,4 @@ install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
 end
 
 # Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
+# gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
