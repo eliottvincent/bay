@@ -2,11 +2,12 @@
   clear: both;
   overflow: hidden;
   padding-bottom: 3em;
+  text-align: justify;
 }
 
-.work-bubble {
-  float: left;
-  padding-right: 20px;
-  width: 100px;
-  height: 100px;
+.abstract-text {
+  font-size: 12px;   /* 调整字号 */
+  text-align: justify;  /* 两端对齐 */
+  display: block;    /* 让 abstract 独占一行更好看 */
+  margin-top: 0.3em; /* 和上面的文字稍微隔开 */
 }

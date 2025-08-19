@@ -15,6 +15,7 @@ header:
     - name: Curriculum Vitae
       slug: /cv
     - name: Research
+      slug: /research
 
 footer:
   show_powered_by: true
@@ -22,13 +23,13 @@ footer:
     - type: email
       name: Email
       value: yourmail@domain.com
-  follow:
-    - type: linkedin
-      name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
-    - type: github
-      name: GitHub
-      link: http://github.com/YourGitHubUsername
+#  follow:
+#    - type: linkedin
+#      name: LinkedIn
+#      link: http://linkedin.com/in/YourLinkedInUsername
+#    - type: github
+#      name: GitHub
+#      link: http://github.com/YourGitHubUsername
 
 # Build settings
 markdown: kramdown
