@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.2.4](https://github.com/eliottvincent/bay/compare/v1.2.3...v1.2.4) (2026-04-19)
+
+### Improvements
+
+- Cleanup README.md
+
 ### [1.2.3](https://github.com/eliottvincent/bay/compare/v1.2.2...v1.2.3) (2026-04-19)
 
 ### Improvements

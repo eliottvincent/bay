@@ -11,6 +11,7 @@ Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliot
 
 
 ## Table of contents
+
 1. [Installation](#installation)
 2. Website sections
     1. [Header](#header)
@@ -22,7 +23,6 @@ Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliot
 
 
 ### Installation
-
 
 The easiest solution is to [fork this repo](https://github.com/eliottvincent/bay/fork).
 If you want to start from a clean website, follow the steps below:
@@ -68,6 +68,7 @@ jekyll serve
 The website will look somewhat empty at first. That's normal. Follow the next instructions to complete the header and footer components, and the home and blog pages.
 
 #### Header
+
 Open the `_config.yml` file and add the following:
 ```yml
 header:
@@ -80,6 +81,7 @@ header:
 Re-run `jekyll serve` to see the header updated.
 
 #### Footer
+
 Open the `_config.yml` file and add the following:
 ```yml
 footer:
@@ -115,6 +117,7 @@ footer:
 Re-run `jekyll serve` to see the footer updated.
 
 #### Home page
+
 Create (or edit) the `index.markdown` file and add the following:
 ```yml
 ---
@@ -130,8 +133,9 @@ profile_picture:
 ```
 
 #### Blog page
-Create `blog.markdown` file and add the following:
+
 ```yml
+Create `blog.markdown` file and add the following:
 ---
 layout: blog
 title: Blog
@@ -159,15 +163,11 @@ You can also refer to the [`.github/workflows/deploy.yml`](https://github.com/el
 ### Development
 
 #### Run development instance (with hot-reload)
+
 ```sh
 bundle exec jekyll serve
 ```
 
 #### Build and publish the gem
-```sh
-gem build bay_jekyll_theme.gemspec
-```
 
-```sh
-gem push bay_jekyll_theme-1.x.x.gem
-```
+Simply push and tag a new version, Github Actions will handle the rest.
