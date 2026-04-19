@@ -148,7 +148,7 @@ Your website is ready!
 
 ### GitHub Pages
 
-You can deploy your website to GitHub Pages, but you cannot use the 1-click GitHub Pages build and deploy system. The issue is that the Bay theme relies on Jekyll 4.3+ (which uses a more modern Sass processor), whereas the GitHub Pages build system uses an older version of Jekyll.
+You can deploy your website to GitHub Pages, but you cannot use the 1-click GitHub Pages build-and-deploy system. The issue is that the Bay theme relies on Jekyll 4.3+ (which uses a more modern Sass processor), whereas the GitHub Pages build system uses an older version of Jekyll.
 
 However, it's fairly easy to build and deploy your website with GitHub Actions, yet use GitHub Pages to host it.
 
