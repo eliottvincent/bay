@@ -1,13 +1,13 @@
 <header class="site-header">
   <div class="wrapper">
-    <a class="site-title" href="{{ "/" | relative_url }}">
+    <a class="site-header__title" href="{{ "/" | relative_url }}">
       <img src="{{ "/assets/img/title.png" | relative_url }}" alt="{{ site.title }}" />
     </a>
 
     <nav class="site-nav">
-      <a href="#" class="menu-icon"></a>
+      <a href="#" class="site-nav__toggle" data-js="menu-toggle" aria-label="Toggle navigation"></a>
 
-      <div class="menu">
+      <div class="site-nav__menu" data-js="menu">
         {% for page in site.header.pages %}
           {% if page.slug and page.slug != "" and page.slug != nil %}
             {% assign page_link = page.slug %}
@@ -15,7 +15,7 @@
             {% assign page_link = "/" | append: page.name | downcase %}
           {% endif %}
           {% assign page_link = page_link | relative_url %}
-          <a class="page-link" href="{{ page_link }}">
+          <a class="site-nav__link" href="{{ page_link }}">
             {{- page.name -}}
           </a>
         {% endfor %}
