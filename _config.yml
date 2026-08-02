@@ -12,9 +12,12 @@ header:
   pages:
     - name: Home
       slug: /
-    - name: Work
-    - name: Interests
-      slug: /interests/
+    - name: Work (Timeline)
+      slug: /work/
+    - name: Work (Editorial)
+      slug: /work-editorial/
+    - name: Collection
+      slug: /collection/
     - name: Blog
 
 footer:

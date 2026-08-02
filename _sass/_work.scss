@@ -1,0 +1,223 @@
+@use "variables" as variables;
+
+.work {
+  &__intro {
+    color: variables.$color-text;
+    margin-bottom: calc(variables.$spacing-unit * 1.5);
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__section {
+    margin-bottom: calc(variables.$spacing-unit * 2);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__section-heading {
+    border-bottom: 1px solid variables.$color-grey-light;
+    color: variables.$color-grey-dark;
+    font-family: variables.$heading-font-family;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    margin-bottom: variables.$spacing-unit;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  &__image {
+    background-color: variables.$color-background;
+    border-radius: 2px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+.work--timeline {
+  .work__item {
+    border-bottom: 1px solid variables.$color-grey-light;
+    display: grid;
+    gap: calc(variables.$spacing-unit * 0.8);
+    grid-template-columns: 90px 1fr;
+    margin-bottom: calc(variables.$spacing-unit * 1.5);
+    padding-bottom: calc(variables.$spacing-unit * 1.5);
+
+    &:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .work__date {
+    color: variables.$color-grey;
+    font-family: variables.$heading-font-family;
+    font-size: variables.$small-font-size;
+    line-height: 1.9;
+    padding-top: 2px;
+  }
+
+  .work__title {
+    color: variables.$color-text;
+    display: block;
+    font-family: variables.$heading-font-family;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  .work__description {
+    color: variables.$color-text;
+    margin-bottom: 14px;
+  }
+
+  .work__link {
+    border-bottom: 1px solid currentColor;
+    color: variables.$color-brand;
+    font-family: variables.$base-font-family;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    padding-bottom: 1px;
+
+    .work__link-arrow {
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      .work__link-arrow {
+        transform: translateX(3px);
+      }
+    }
+  }
+
+  .work__image {
+    aspect-ratio: 16 / 9;
+    border: 1px solid variables.$color-grey-light;
+    margin-top: 18px;
+  }
+}
+
+.work--editorial {
+  .work__section-heading {
+    border-bottom: 0;
+    margin-bottom: calc(variables.$spacing-unit * 1.2);
+    padding-bottom: 0;
+  }
+
+  .work__item {
+    display: grid;
+    gap: calc(variables.$spacing-unit * 0.8);
+    grid-template-columns: 1fr;
+    margin-bottom: calc(variables.$spacing-unit * 1.8);
+    padding-top: variables.$spacing-unit;
+
+    &--has-image {
+      grid-template-columns: 1fr 1.6fr;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .work__meta {
+    padding-top: 16px;
+    position: relative;
+
+    &::before {
+      background: variables.$color-text;
+      content: "";
+      height: 1px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 24px;
+    }
+  }
+
+  .work__title {
+    color: variables.$color-text;
+    display: block;
+    font-family: variables.$heading-font-family;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin-bottom: 8px;
+  }
+
+  .work__description {
+    color: variables.$color-grey-dark;
+    font-size: 13.5px;
+    line-height: 1.65;
+    margin-bottom: 12px;
+  }
+
+  .work__footer {
+    align-items: center;
+    color: variables.$color-grey;
+    display: flex;
+    font-family: variables.$heading-font-family;
+    font-size: 10.5px;
+    gap: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    .work__footer-dot {
+      background: variables.$color-grey;
+      border-radius: 50%;
+      display: inline-block;
+      height: 3px;
+      width: 3px;
+    }
+
+    a {
+      border-bottom: 1px solid variables.$color-grey-light;
+      color: variables.$color-grey-dark;
+
+      &:hover {
+        border-color: variables.$color-text;
+        color: variables.$color-text;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .work__image {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .work--timeline,
+  .work--editorial {
+    .work__item,
+    .work__item--has-image {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .work--timeline .work__date {
+    margin-bottom: 4px;
+  }
+
+  .work--editorial .work__meta::before {
+    width: 18px;
+  }
+}
