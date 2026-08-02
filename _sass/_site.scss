@@ -1,7 +1,7 @@
 @use "variables" as variables;
 @use "mixins" as mixins;
 
-.profile-pic {
+.home__profile-image {
   float: right;
   width: 202px;
   border: #ccc 1px solid;
@@ -15,20 +15,20 @@
   }
 }
 
-.footer-col {
+.site-footer__column {
   font-size: 12px;
 
-  h4 {
+  .site-footer__heading {
     margin-bottom: 0;
     margin-top: 0;
     line-height: 30px;
   }
 
-  .social-links {
+  .site-footer__links {
     display: flex;
     flex-wrap: wrap;
 
-    .social-link {
+    .site-footer__item {
       display: flex;
       width: 100%;
       align-items: flex-start;
@@ -36,13 +36,12 @@
       margin-top: 6.5px;
       margin-bottom: 10px;
 
-      img {
+      .site-footer__icon {
         width: 16px;
         height: 16px;
       }
 
-      span,
-      a {
+      .site-footer__link {
         margin-left: 6px;
         word-break: break-all;
       }
@@ -55,7 +54,7 @@
   }
 }
 
-#wechat-widget {
+.wechat-widget {
   display: none;
   position: absolute;
   background: #fff;
@@ -74,7 +73,7 @@
     margin-bottom: 14px;
   }
 
-  #qr-code {
+  &__qr-code {
     width: 160px;
     height: 160px;
     border: none;

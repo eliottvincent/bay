@@ -12,13 +12,13 @@
           {{ content }}
 
           {% for item in page.items %}
-          <div class="collection-item">
+          <div class="collection__item">
             <img
               src="{{ item.image.src | absolute_url }}"
               alt="{{ item.image.alt }}"
-              class="collection-image"
+              class="collection__image"
             />
-            <span class="collection-text">
+            <span class="collection__text">
               <strong>{{ item.title }}</strong>
               &mdash;
               {{ item.description }}
