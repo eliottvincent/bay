@@ -10,7 +10,7 @@
   letter-spacing: -1px;
   line-height: 1.2;
 
-  font-family: variables.$base-font-family;
+  font-family: variables.$heading-font-family;
 
   @include mixins.media-query(variables.$on-mobile) {
     font-size: 34px;
@@ -76,7 +76,7 @@
 
 .post-languages {
   font-size: 13px;
-  font-family: Helvetica, sans-serif;
+  font-family: variables.$base-font-family;
   margin-top: 30px;
   margin-bottom: 20px;
 
@@ -97,7 +97,7 @@ div.footnotes {
   text-align: center;
   padding: 1em;
   margin-bottom: 2em;
-  font-family: Helvetica, sans-serif;
+  font-family: variables.$base-font-family;
 
   border-radius: 5px;
 
