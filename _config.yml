@@ -13,6 +13,8 @@ header:
     - name: Home
       slug: /
     - name: Work
+    - name: Interests
+      slug: /interests/
     - name: Blog
 
 footer:
