@@ -1,15 +1,16 @@
 <footer class="site-footer">
   <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <h4>CONTACT</h4>
+    <div class="site-footer__wrapper">
+      <div class="site-footer__column site-footer__column--contact">
+        <h4 class="site-footer__heading">CONTACT</h4>
 
-        <div class="social-links">
+        <div class="site-footer__links site-footer__links--contact">
           {% for contact in site.footer.contact %}
-            <div class="social-link contact-links">
+            <div class="site-footer__item">
 
               {% assign contact_icon_path = "/assets/img/icons/" | append: contact.type | downcase | append: ".png" | relative_url %}
               <img
+                class="site-footer__icon"
                 src="{{ contact_icon_path }}"
                 alt="{{ contact.type }}"
               />
@@ -29,18 +30,18 @@
                     data-resu="{{ reversed_user }}"
                     data-eman-niamod="{{ reversed_domain_name }}"
                     data-dlt-niamod="{{ reversed_domain_tld }}"
-                    id="{{ contact.type }}-link"
-                    class="link email-link-cloaked"
+                    data-js="email-link-cloaked"
+                    class="link site-footer__link"
                   >
                     {{- contact.name -}}
                   </span>
                 {% else %}
-                  <a href="mailto:{{ contact.value }}" id="{{ contact.type }}-link">
+                  <a class="site-footer__link" href="mailto:{{ contact.value }}">
                     {{- contact.value -}}
                   </a>
                 {% endif %}
               {% else %}
-                <a href="{{ contact.link }}" id="{{ contact.type }}-link">
+                <a class="site-footer__link" href="{{ contact.link }}"{% if contact.type == "wechat" %} data-js="wechat-link"{% endif %}>
                   {%- if contact.value and contact.value != "" and contact.value != nil -%}
                     {{ contact.value }}
                   {%- else -%}
@@ -54,20 +55,21 @@
         </div>
       </div>
 
-      <div class="footer-col footer-col-2">
+      <div class="site-footer__column site-footer__column--follow">
         {% if site.footer.follow and site.footer.follow.size > 0 %}
-          <h4>FOLLOW</h4>
+          <h4 class="site-footer__heading">FOLLOW</h4>
 
-          <div class="social-links follow-links">
+          <div class="site-footer__links site-footer__links--follow">
             {% for follow in site.footer.follow %}
-              <div class="social-link">
+              <div class="site-footer__item">
 
                 {% assign follow_icon_path = "/assets/img/icons/" | append: follow.name | downcase | append: ".png" | relative_url %}
                 <img
+                  class="site-footer__icon"
                   src="{{ follow_icon_path }}"
                   alt="{{ follow.name | downcase }}"
                 />
-                <a href="{{ follow.link }}" target="_blank" rel="noopener noreferrer">
+                <a class="site-footer__link" href="{{ follow.link }}" target="_blank" rel="noopener noreferrer">
                   {%- if follow.value and follow.value != "" and follow.value != nil -%}
                     {{ follow.value }}
                   {%- else -%}
@@ -82,9 +84,9 @@
       </div>
 
       {% if site.footer.show_powered_by == true %}
-        <div class="footer-col footer-col-3 powered-by">
+        <div class="site-footer__column site-footer__column--meta site-footer__powered-by">
           <p>
-            powered by <a href="https://github.com/eliottvincent/bay" target="_blank" rel="noopener noreferrer">Bay</a> | <span id="year"></span>
+            powered by <a href="https://github.com/eliottvincent/bay" target="_blank" rel="noopener noreferrer">Bay</a> | <span data-js="footer-year"></span>
           </p>
         </div>
       {% endif %}
