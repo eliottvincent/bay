@@ -22,22 +22,18 @@
                 {% if item.date_from or item.date_to %}
                   <span class="work__footer-dot" aria-hidden="true"></span>
                 {% endif %}
-                {% assign work_link_url = item.link.url %}
-                {% assign work_link_prefix = work_link_url | slice: 0, 2 %}
-                {% assign work_link_anchor = work_link_url | slice: 0, 1 %}
-                {% unless work_link_url contains "://" or work_link_prefix == "//" or work_link_anchor == "#" or work_link_url contains "mailto:" or work_link_url contains "tel:" %}
-                  {% assign work_link_url = work_link_url | relative_url %}
-                {% endunless %}
-                <a href="{{ work_link_url | escape }}">{{ item.link.label | escape }}</a>
+                {% capture work_link_url %}{% include resolve-url.html url=item.link.url %}{% endcapture %}
+                <a href="{{ work_link_url | strip | escape }}">{{ item.link.label | escape }}</a>
               {% endif %}
             </div>
           {% endif %}
         </div>
 
         {% if item.image.src %}
+          {% capture work_image_url %}{% include resolve-url.html url=item.image.src %}{% endcapture %}
           <div class="work__image">
             <img
-              src="{{ item.image.src | absolute_url | escape }}"
+              src="{{ work_image_url | strip | escape }}"
               alt="{{ item.image.alt | default: item.title | escape }}"
             />
           </div>

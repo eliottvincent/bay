@@ -8,8 +8,9 @@
     <div class="page-content">
       <div class="wrapper">
         <div class="home">
+          {% capture profile_image_url %}{% include resolve-url.html url=page.profile_picture.src %}{% endcapture %}
           <img
-            src="{{ page.profile_picture.src | absolute_url }}"
+            src="{{ profile_image_url | strip | escape }}"
             alt="{{ page.profile_picture.alt }}"
             class="home__profile-image"
           />

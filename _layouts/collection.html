@@ -13,8 +13,9 @@
 
           {% for item in page.items %}
           <div class="collection__item">
+            {% capture collection_image_url %}{% include resolve-url.html url=item.image.src %}{% endcapture %}
             <img
-              src="{{ item.image.src | absolute_url }}"
+              src="{{ collection_image_url | strip | escape }}"
               alt="{{ item.image.alt }}"
               class="collection__image"
             />
