@@ -11,11 +11,11 @@
           {% if item.date_from or item.date_to or item.link %}
             <div class="work__footer">
               {% if item.date_from and item.date_to %}
-                <span>{{ item.date_from | escape }} – {{ item.date_to | escape }}</span>
+                <span class="work__date">{{ item.date_from | escape }} – {{ item.date_to | escape }}</span>
               {% elsif item.date_from %}
-                <span>{{ item.date_from | escape }}</span>
+                <span class="work__date">{{ item.date_from | escape }}</span>
               {% elsif item.date_to %}
-                <span>{{ item.date_to | escape }}</span>
+                <span class="work__date">{{ item.date_to | escape }}</span>
               {% endif %}
 
               {% if item.link %}

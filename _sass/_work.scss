@@ -33,6 +33,15 @@
     text-transform: uppercase;
   }
 
+  &__date {
+    color: variables.$color-grey;
+    font-family: variables.$heading-font-family;
+    font-size: variables.$small-font-size;
+    letter-spacing: normal;
+    line-height: 1.9;
+    text-transform: none;
+  }
+
   &__image {
     background-color: variables.$color-background;
     border-radius: 2px;
@@ -64,10 +73,6 @@
   }
 
   .work__date {
-    color: variables.$color-grey;
-    font-family: variables.$heading-font-family;
-    font-size: variables.$small-font-size;
-    line-height: 1.9;
     padding-top: 2px;
   }
 
