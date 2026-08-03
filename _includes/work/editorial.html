@@ -22,7 +22,7 @@
                 {% if item.date_from or item.date_to %}
                   <span class="work__footer-dot" aria-hidden="true"></span>
                 {% endif %}
-                {% capture work_link_url %}{% include resolve-url.html url=item.link.url %}{% endcapture %}
+                {% capture work_link_url %}{% include helpers/resolve-url.html url=item.link.url %}{% endcapture %}
                 <a href="{{ work_link_url | strip | escape }}">{{ item.link.label | escape }}</a>
               {% endif %}
             </div>
@@ -30,7 +30,7 @@
         </div>
 
         {% if item.image.src %}
-          {% capture work_image_url %}{% include resolve-url.html url=item.image.src %}{% endcapture %}
+          {% capture work_image_url %}{% include helpers/resolve-url.html url=item.image.src %}{% endcapture %}
           <div class="work__image">
             <img
               src="{{ work_image_url | strip | escape }}"

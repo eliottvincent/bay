@@ -19,14 +19,14 @@
           <p class="work__description">{{ item.description | escape }}</p>
 
           {% if item.link %}
-            {% capture work_link_url %}{% include resolve-url.html url=item.link.url %}{% endcapture %}
+            {% capture work_link_url %}{% include helpers/resolve-url.html url=item.link.url %}{% endcapture %}
             <a class="work__link" href="{{ work_link_url | strip | escape }}">
               {{ item.link.label | escape }} <span class="work__link-arrow" aria-hidden="true">→</span>
             </a>
           {% endif %}
 
           {% if item.image.src %}
-            {% capture work_image_url %}{% include resolve-url.html url=item.image.src %}{% endcapture %}
+            {% capture work_image_url %}{% include helpers/resolve-url.html url=item.image.src %}{% endcapture %}
             <div class="work__image">
               <img
                 src="{{ work_image_url | strip | escape }}"
