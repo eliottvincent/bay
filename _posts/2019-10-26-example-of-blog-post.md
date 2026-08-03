@@ -3,10 +3,10 @@ layout: post
 title: "Post example"
 date: 2019-10-26 10:00:40
 blurb: "A look at an example post using Bay Jekyll theme."
-og_image: /assets/img/content/post-example/Banner.jpg
+og_image: /assets/img/content/post-example/banner.jpg
 ---
 
-<img src="{{ "/assets/img/content/post-example/Banner.jpg" | absolute_url }}" alt="bay" class="post__image"/>
+<img src="{{ "/assets/img/content/post-example/banner.jpg" | relative_url }}" alt="bay" class="post__image"/>
 <br />
 <br />
 
