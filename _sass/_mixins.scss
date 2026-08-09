@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin image-frame {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}

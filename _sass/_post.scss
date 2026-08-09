@@ -66,8 +66,7 @@
 }
 
 .post__image {
-  border: #999 1px solid;
-  border-radius: 4px;
+  @include mixins.image-frame;
 }
 
 .magnify {

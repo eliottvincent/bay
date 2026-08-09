@@ -1,4 +1,5 @@
 @use "variables" as variables;
+@use "mixins" as mixins;
 
 .work {
   &__intro {
@@ -43,9 +44,9 @@
   }
 
   &__image {
+    @include mixins.image-frame;
+
     background-color: variables.$color-background;
-    border-radius: 2px;
-    overflow: hidden;
 
     img {
       display: block;
@@ -114,7 +115,6 @@
 
   .work__image {
     aspect-ratio: 16 / 9;
-    border: 1px solid variables.$color-grey-light;
     margin-top: 18px;
   }
 }
