@@ -24,8 +24,23 @@
             </h1>
 
             {% if page.subtitle %}<h1 class="post__subtitle">{{ page.subtitle }}</h1>{% endif %}
-            <p class="post__meta"><span class="post__date">{{ page.date | date: "%B %-d, %Y" }}
-            </span>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            {% assign show_post_date = page.date %}
+            {% if page.show_date == false %}
+              {% assign show_post_date = false %}
+            {% endif %}
+            {% if show_post_date or page.author or page.meta %}
+              <p class="post__meta">
+                {% if show_post_date %}
+                  <span class="post__date">{{ page.date | date: "%B %-d, %Y" }}</span>
+                {% endif %}
+                {% if page.author %}
+                  {% if show_post_date %} • {% endif %}{{ page.author }}
+                {% endif %}
+                {% if page.meta %}
+                  {% if show_post_date or page.author %} • {% endif %}{{ page.meta }}
+                {% endif %}
+              </p>
+            {% endif %}
           </header>
 
           <article class="post__content">
