@@ -9,13 +9,13 @@
       <div class="wrapper">
         <div class="post">
 
-          <header class="post-header">
+          <header class="post__header">
 
             {% if page.draft %}
               {% include draft-banner.html %}
             {% endif %}
 
-            <h1 class="post-title">
+            <h1 class="post__title">
             {% if page.headline_formatted_title %}
               {{ page.headline_formatted_title | newline_to_br }}
             {% else %}
@@ -23,12 +23,27 @@
             {% endif %}
             </h1>
 
-            {% if page.subtitle %}<h1 class="post-subtitle">{{ page.subtitle }}</h1>{% endif %}
-            <p class="post-meta"><span class="post-date">{{ page.date | date: "%B %-d, %Y" }}
-            </span>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            {% if page.subtitle %}<h1 class="post__subtitle">{{ page.subtitle }}</h1>{% endif %}
+            {% assign show_post_date = page.date %}
+            {% if page.show_date == false %}
+              {% assign show_post_date = false %}
+            {% endif %}
+            {% if show_post_date or page.author or page.meta %}
+              <p class="post__meta">
+                {% if show_post_date %}
+                  <span class="post__date">{{ page.date | date: "%B %-d, %Y" }}</span>
+                {% endif %}
+                {% if page.author %}
+                  {% if show_post_date %} • {% endif %}{{ page.author }}
+                {% endif %}
+                {% if page.meta %}
+                  {% if show_post_date or page.author %} • {% endif %}{{ page.meta }}
+                {% endif %}
+              </p>
+            {% endif %}
           </header>
 
-          <article class="post-content">
+          <article class="post__content">
             {{ content }}
           </article>
 

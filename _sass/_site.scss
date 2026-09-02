@@ -1,11 +1,11 @@
 @use "variables" as variables;
 @use "mixins" as mixins;
 
-.profile-pic {
+.home__profile-image {
+  @include mixins.image-frame;
+
   float: right;
   width: 202px;
-  border: #ccc 1px solid;
-  border-radius: 3px;
   margin-left: 20px;
 
   @include mixins.media-query(variables.$on-mobile) {
@@ -15,20 +15,20 @@
   }
 }
 
-.footer-col {
+.site-footer__column {
   font-size: 12px;
 
-  h4 {
+  .site-footer__heading {
     margin-bottom: 0;
     margin-top: 0;
     line-height: 30px;
   }
 
-  .social-links {
+  .site-footer__links {
     display: flex;
     flex-wrap: wrap;
 
-    .social-link {
+    .site-footer__item {
       display: flex;
       width: 100%;
       align-items: flex-start;
@@ -36,13 +36,12 @@
       margin-top: 6.5px;
       margin-bottom: 10px;
 
-      img {
+      .site-footer__icon {
         width: 16px;
         height: 16px;
       }
 
-      span,
-      a {
+      .site-footer__link {
         margin-left: 6px;
         word-break: break-all;
       }
@@ -55,11 +54,12 @@
   }
 }
 
-#wechat-widget {
+.wechat-widget {
   display: none;
   position: absolute;
   background: #fff;
   border: #ddd 1px solid;
+  border-radius: 4px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 
   padding: 24px;
@@ -68,13 +68,13 @@
   p {
     font-size: 11px;
     line-height: 16px;
-    font-family: Helvetica, sans-serif;
+    font-family: variables.$base-font-family;
     width: 170px;
     margin: 0 auto;
     margin-bottom: 14px;
   }
 
-  #qr-code {
+  &__qr-code {
     width: 160px;
     height: 160px;
     border: none;

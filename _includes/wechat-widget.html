@@ -6,11 +6,15 @@
 {% endfor %}
 
 {% if wechat_username %}
-  <div id="wechat-widget">
+  <div class="wechat-widget" data-js="wechat-widget">
     <p>
       Find me on WeChat with the ID <strong>{{ wechat_username }}</strong>, or scan my QR code:
     </p>
 
-    <img src="{{ "/assets/img/wechat-qr-code.png" | absolute_url }}" alt="QR code" id="qr-code" />
+    <img
+      class="wechat-widget__qr-code"
+      src="{{ "/assets/img/wechat-qr-code.png" | relative_url }}"
+      alt="QR code"
+    />
   </div>
 {% endif %}

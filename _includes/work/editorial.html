@@ -1,0 +1,44 @@
+{% for section in include.sections %}
+  <section class="work__section">
+    <h2 class="work__section-heading">{{ section.title | escape }}</h2>
+
+    {% for item in section.items %}
+      <article class="work__item{% if item.image.src %} work__item--has-image{% endif %}{% if item.link %} work__item--linked{% endif %}">
+        <div class="work__meta">
+          <h3 class="work__title">{{ item.title | escape }}</h3>
+          <p class="work__description">{{ item.description | escape }}</p>
+
+          {% if item.date_from or item.date_to or item.link %}
+            <div class="work__footer">
+              {% if item.date_from and item.date_to %}
+                <span class="work__date">{{ item.date_from | escape }} – {{ item.date_to | escape }}</span>
+              {% elsif item.date_from %}
+                <span class="work__date">{{ item.date_from | escape }}</span>
+              {% elsif item.date_to %}
+                <span class="work__date">{{ item.date_to | escape }}</span>
+              {% endif %}
+
+              {% if item.link %}
+                {% if item.date_from or item.date_to %}
+                  <span class="work__footer-dot" aria-hidden="true"></span>
+                {% endif %}
+                {% capture work_link_url %}{% include helpers/resolve-url.html url=item.link.url %}{% endcapture %}
+                <a class="work__link" href="{{ work_link_url | strip | escape }}">{{ item.link.label | escape }}</a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+
+        {% if item.image.src %}
+          {% capture work_image_url %}{% include helpers/resolve-url.html url=item.image.src %}{% endcapture %}
+          <div class="work__image">
+            <img
+              src="{{ work_image_url | strip | escape }}"
+              alt="{{ item.image.alt | default: item.title | escape }}"
+            />
+          </div>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </section>
+{% endfor %}

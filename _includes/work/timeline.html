@@ -1,0 +1,41 @@
+{% for section in include.sections %}
+  <section class="work__section">
+    <h2 class="work__section-heading">{{ section.title | escape }}</h2>
+
+    {% for item in section.items %}
+      <article class="work__item{% if item.link %} work__item--linked{% endif %}">
+        <div class="work__date">
+          {% if item.date_from and item.date_to %}
+            {{ item.date_from | escape }} – {{ item.date_to | escape }}
+          {% elsif item.date_from %}
+            {{ item.date_from | escape }}
+          {% elsif item.date_to %}
+            {{ item.date_to | escape }}
+          {% endif %}
+        </div>
+
+        <div class="work__body">
+          <h3 class="work__title">{{ item.title | escape }}</h3>
+          <p class="work__description">{{ item.description | escape }}</p>
+
+          {% if item.link %}
+            {% capture work_link_url %}{% include helpers/resolve-url.html url=item.link.url %}{% endcapture %}
+            <a class="work__link" href="{{ work_link_url | strip | escape }}">
+              {{ item.link.label | escape }} <span class="work__link-arrow" aria-hidden="true">→</span>
+            </a>
+          {% endif %}
+
+          {% if item.image.src %}
+            {% capture work_image_url %}{% include helpers/resolve-url.html url=item.image.src %}{% endcapture %}
+            <div class="work__image">
+              <img
+                src="{{ work_image_url | strip | escape }}"
+                alt="{{ item.image.alt | default: item.title | escape }}"
+              />
+            </div>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </section>
+{% endfor %}
