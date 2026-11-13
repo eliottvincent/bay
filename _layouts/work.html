@@ -7,25 +7,25 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="work">
-          <h1 class="page-heading">{{ page.title }}</h1>
-          {{ content }}
+        {% assign work_variant = page.variant | default: "timeline" %}
+        {% unless work_variant == "editorial" %}
+          {% assign work_variant = "timeline" %}
+        {% endunless %}
 
-          {% for item in page.items %}
-          <div class="work-item">
-            <img
-              src="{{ item.image.src | absolute_url }}"
-              alt="{{ item.image.alt }}"
-              class="work-bubble"
-            />
-            <span class="work-text">
-              <strong>{{ item.title }}</strong>
-              &mdash;
-              {{ item.description }}
-            </span>
-          </div>
-          {% endfor %}
-        </div>
+        <main class="work work--{{ work_variant }}">
+          <h1 class="page-heading">{{ page.title }}</h1>
+
+          {% assign intro = content | strip %}
+          {% unless intro == empty %}
+            <div class="work__intro">{{ content }}</div>
+          {% endunless %}
+
+          {% if work_variant == "editorial" %}
+            {% include work/editorial.html sections=page.sections %}
+          {% else %}
+            {% include work/timeline.html sections=page.sections %}
+          {% endif %}
+        </main>
       </div>
     </div>
 

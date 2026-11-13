@@ -1,0 +1,8 @@
+{%- assign resolved_url = include.url -%}
+{%- assign resolved_url_prefix = resolved_url | slice: 0, 2 -%}
+{%- assign resolved_url_anchor = resolved_url | slice: 0, 1 -%}
+{%- if resolved_url contains "://" or resolved_url_prefix == "//" or resolved_url_anchor == "#" or resolved_url contains "mailto:" or resolved_url contains "tel:" or resolved_url contains "data:" -%}
+  {{- resolved_url -}}
+{%- else -%}
+  {{- resolved_url | relative_url -}}
+{%- endif -%}

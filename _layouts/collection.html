@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="collection">
+          <h1 class="page-heading">{{ page.title }}</h1>
+          {{ content }}
+
+          {% for item in page.items %}
+          <div class="collection__item">
+            {% capture collection_image_url %}{% include helpers/resolve-url.html url=item.image.src %}{% endcapture %}
+            <img
+              src="{{ collection_image_url | strip | escape }}"
+              alt="{{ item.image.alt }}"
+              class="collection__image"
+            />
+            <span class="collection__text">
+              <strong>{{ item.title }}</strong>
+              &mdash;
+              {{ item.description }}
+            </span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+    {% include foot.html %}
+  </body>
+</html>

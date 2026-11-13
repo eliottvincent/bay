@@ -1,23 +1,23 @@
 @use "variables" as variables;
 @use "mixins" as mixins;
 
-.post-header {
+.post__header {
   margin-bottom: variables.$spacing-unit;
 }
 
-.post-title {
+.post__title {
   font-size: 40px;
   letter-spacing: -1px;
   line-height: 1.2;
 
-  font-family: variables.$base-font-family;
+  font-family: variables.$heading-font-family;
 
   @include mixins.media-query(variables.$on-mobile) {
     font-size: 34px;
   }
 }
 
-.post-subtitle {
+.post__subtitle {
   font-size: 26px;
   letter-spacing: -1px;
   line-height: 1;
@@ -32,12 +32,12 @@
   }
 }
 
-.post-meta .post-date {
+.post__meta .post__date {
   text-transform: uppercase;
   font-size: 120%;
 }
 
-.post-content {
+.post__content {
   margin-bottom: variables.$spacing-unit;
   width: 100%;
   h2 {
@@ -65,18 +65,17 @@
   }
 }
 
-.post-pic {
-  border: #999 1px solid;
-  border-radius: 4px;
+.post__image {
+  @include mixins.image-frame;
 }
 
 .magnify {
   cursor: zoom-in;
 }
 
-.post-languages {
+.post__languages {
   font-size: 13px;
-  font-family: Helvetica, sans-serif;
+  font-family: variables.$base-font-family;
   margin-top: 30px;
   margin-bottom: 20px;
 
@@ -97,7 +96,7 @@ div.footnotes {
   text-align: center;
   padding: 1em;
   margin-bottom: 2em;
-  font-family: Helvetica, sans-serif;
+  font-family: variables.$base-font-family;
 
   border-radius: 5px;
 

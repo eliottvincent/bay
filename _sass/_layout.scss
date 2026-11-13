@@ -18,7 +18,7 @@
   }
 }
 
-.site-title {
+.site-header__title {
   font-size: 26px;
   line-height: 56px;
   letter-spacing: -1px;
@@ -43,11 +43,11 @@
   line-height: 56px;
   background-color: variables.$color-background;
 
-  .menu-icon {
+  &__toggle {
     display: none;
   }
 
-  .page-link {
+  &__link {
     color: variables.$color-text;
     line-height: variables.$base-line-height;
 
@@ -66,7 +66,7 @@
     border-radius: 5px;
     text-align: right;
 
-    .menu-icon {
+    .site-nav__toggle {
       display: block;
       float: right;
       border-radius: 5px;
@@ -80,7 +80,7 @@
       background-size: 26px 26px;
     }
 
-    .menu {
+    .site-nav__menu {
       clear: both;
       display: none;
       background-color: variables.$color-background;
@@ -88,7 +88,7 @@
       padding-bottom: 5px;
     }
 
-    .page-link {
+    .site-nav__link {
       font-size: 16px;
       display: block;
       padding: 6px 16px;
@@ -108,18 +108,7 @@
   }
 }
 
-.footer-heading {
-  font-size: 18px;
-  margin-bottom: calc(variables.$spacing-unit / 2);
-}
-
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0;
-}
-
-.footer-col-wrapper {
+.site-footer__wrapper {
   font-size: 15px;
   color: variables.$color-grey;
   margin-left: calc(-1 * variables.$spacing-unit / 2);
@@ -127,36 +116,36 @@
   @extend %clearfix;
 }
 
-.footer-col {
+.site-footer__column {
   float: left;
   margin-bottom: calc(variables.$spacing-unit / 2);
   padding-left: calc(variables.$spacing-unit / 2);
 }
 
-.footer-col-1,
-.footer-col-2,
-.footer-col-3 {
+.site-footer__column--contact,
+.site-footer__column--follow,
+.site-footer__column--meta {
   width: -webkit-calc(33% - (#{variables.$spacing-unit} / 2));
   width: calc(33% - (variables.$spacing-unit / 2));
 }
 
-.follow-links > .social-link {
+.site-footer__links--follow > .site-footer__item {
   flex: 0 50%;
 }
 
-.powered-by {
+.site-footer__powered-by {
   text-align: end;
   font-size: 13px !important;
   color: variables.$color-grey;
 }
 
 @include mixins.media-query(variables.$on-mobile) {
-  .footer-col {
+  .site-footer__column {
     float: none;
     width: 100%;
   }
 
-  .powered-by {
+  .site-footer__powered-by {
     text-align: start;
   }
 }

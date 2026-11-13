@@ -1,8 +1,9 @@
 /**
  * Menu
  */
-$("a.menu-icon").on("click", function(event) {
-  var w = $(".menu");
+$('[data-js="menu-toggle"]').on("click", function(event) {
+  event.preventDefault();
+  var w = $('[data-js="menu"]');
 
   w.css({
     display: (w.css("display") === "none")
@@ -15,14 +16,14 @@ $("a.menu-icon").on("click", function(event) {
  * Footer year
  */
 $(document).ready(function() {
-  $("#year").text(new Date().getFullYear());
+  $('[data-js="footer-year"]').text(new Date().getFullYear());
 });
 
 /**
  * Footer email
  */
 $(document).ready(function() {
-  $(".email-link-cloaked").on("click", function(event) {
+  $('[data-js="email-link-cloaked"]').on("click", function(event) {
     const _link = event.target;
 
     const _user = reverseString(_link.getAttribute("data-resu"));
@@ -44,7 +45,7 @@ function reverseString(str) {
  * Moves WeChat widget
  */
 function moveWidget(event) {
-  var w = $("#wechat-widget");
+  var w = $('[data-js="wechat-widget"]');
 
   w.css({
     left: event.pageX - 25,
@@ -52,16 +53,16 @@ function moveWidget(event) {
   });
 }
 
-$("a#wechat-link").on("mouseenter", function(event) {
-  $("#wechat-widget").css({ display: "block" });
+$('[data-js="wechat-link"]').on("mouseenter", function(event) {
+  $('[data-js="wechat-widget"]').css({ display: "block" });
 
   moveWidget(event);
 });
 
-$("a#wechat-link").on("mousemove", function(event) {
+$('[data-js="wechat-link"]').on("mousemove", function(event) {
   moveWidget(event);
 });
 
-$("a#wechat-link").on("mouseleave", function(event) {
-  $("#wechat-widget").css({ display: "none" });
+$('[data-js="wechat-link"]').on("mouseleave", function(event) {
+  $('[data-js="wechat-widget"]').css({ display: "none" });
 });
