@@ -43,6 +43,15 @@
     text-transform: none;
   }
 
+  &__title {
+    color: variables.$color-text;
+    display: block;
+    font-family: variables.$heading-font-family;
+    font-size: 15.5px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
   &__description {
     color: variables.$color-grey-dark;
     margin-bottom: 14px;
@@ -104,11 +113,6 @@
   }
 
   .work__title {
-    color: variables.$color-text;
-    display: block;
-    font-family: variables.$heading-font-family;
-    font-size: 17px;
-    font-weight: 500;
     margin-bottom: 4px;
   }
 
@@ -176,12 +180,6 @@
   }
 
   .work__title {
-    color: variables.$color-text;
-    display: block;
-    font-family: variables.$heading-font-family;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.01em;
     margin-bottom: 8px;
   }
 
