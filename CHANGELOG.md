@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+### [2.0.0](https://github.com/eliottvincent/bay/compare/v1.2.5...v2.0.0) (2026-11-13)
+
+### Breaking Changes
+
+- Replace the former `work` layout with `collection`
+
+### Features
+
+- Add new `work` layout with `timeline` and `editorial` variants
+
 ### [1.2.5](https://github.com/eliottvincent/bay/compare/v1.2.4...v1.2.5) (2026-05-08)
 
 ### Improvements

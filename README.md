@@ -5,7 +5,7 @@
 
 Bay is a simple theme for Jekyll. [[view live]](https://eliottvincent.github.io/bay)
 
-Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliottvincent.com](http://eliottvincent.com/).
+Current theme used at [elio.tt](http://elio.tt/).
 
 ![](/screenshot.png)
 
@@ -17,9 +17,12 @@ Inspired by [dangrover.com](http://dangrover.com/). Current theme used at [eliot
     1. [Header](#header)
     2. [Footer](#footer)
     3. [Home page](#home-page)
-    4. [Blog page](#blog-page)
-5. [GitHub Pages](#github-pages)
-6. [Development instructions](#development)
+    4. [Collection page](#collection-page)
+    5. [Work page](#work-page)
+    6. [Blog page](#blog-page)
+3. [Migrating from Bay 1.x](#migrating-from-bay-1x)
+4. [GitHub Pages](#github-pages)
+5. [Development instructions](#development)
 
 
 ### Installation
@@ -132,6 +135,80 @@ profile_picture:
 </p>
 ```
 
+#### Collection page
+
+Create `collection.md` to display a simple image-and-text collection:
+
+```yml
+---
+layout: collection
+title: Collection
+slug: /collection
+permalink: /collection/
+items:
+  - title: Collection item
+    image:
+      src: /assets/img/collection/example.jpg
+      alt: A camera
+    description: A short description of the item.
+---
+
+This is an optional introduction.
+```
+
+#### Work page
+
+Create `work.md` with the `work` layout. The `variant` can be `timeline`
+(the default) or `editorial`:
+
+```yml
+---
+layout: work
+title: Work
+slug: /work
+permalink: /work/
+variant: timeline
+sections:
+  - title: Work
+    items:
+      - date_from: "2023"
+        date_to: Now
+        title: Example project
+        description: A short description of the project.
+        image:
+          src: /assets/img/work/example-project/image.jpg
+          alt: Example project
+        link:
+          label: Read more
+          url: /work/example-project/
+---
+
+A selection of things I have built.
+```
+
+Dates render as a range when both `date_from` and `date_to` are present, or
+as a single date when only one is set. Links and images are optional. An image
+is rendered only when `image.src` is supplied, using a 16:9 timeline or 4:3
+editorial frame. Group each project's images under `assets/img/work/<project-slug>/`.
+
+When `link` is supplied, its anchor covers the entire item. Items without `link` remain
+noninteractive. Store linked detail pages as regular Markdown pages under
+`work/`:
+
+```md
+---
+layout: post
+title: Example project
+permalink: /work/example-project/
+---
+
+Detailed project content.
+```
+
+This generates `/work/example-project/` without additional `_config.yml`
+setup. Work details use the `post` layout without appearing in the Blog
+listing or feed.
+
 #### Blog page
 
 ```yml
@@ -148,6 +225,27 @@ This is an example of a "Blog" page, displaying a list of posts.
 
 
 Your website is ready!
+
+### Migrating from Bay 1.x
+
+Bay 2.0 replaces the former `work` layout with `collection` and moves the example
+page from `/work/` to `/collection/`. Update existing pages from
+`layout: work` to `layout: collection`, change their route if needed, and move
+their images from `assets/img/work/` to `assets/img/collection/`.
+
+The `work` layout now owns `/work/` and uses the section-based schema shown
+above. The example site exposes both variants alongside the collection:
+
+```yml
+header:
+  pages:
+    - name: Collection
+      slug: /collection/
+    - name: Work (Timeline)
+      slug: /work/
+    - name: Work (Editorial)
+      slug: /work-editorial/
+```
 
 
 ### GitHub Pages
