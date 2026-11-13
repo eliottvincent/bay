@@ -75,6 +75,23 @@
     position: relative;
   }
 
+  &__link {
+    color: variables.$color-brand;
+    font-family: variables.$base-font-family;
+    font-size: 12.5px;
+    letter-spacing: 0.03em;
+    text-transform: none;
+
+    &:hover {
+      color: variables.$color-brand;
+    }
+  }
+
+  &__link-arrow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
   &__link::after {
     content: "";
     inset: 0;
@@ -114,25 +131,6 @@
 
   .work__title {
     margin-bottom: 4px;
-  }
-
-
-  .work__link {
-    color: variables.$color-brand;
-    font-family: variables.$base-font-family;
-    font-size: 12px;
-    letter-spacing: 0.04em;
-
-    .work__link-arrow {
-      display: inline-block;
-      transition: transform 0.2s ease;
-    }
-
-    &:hover {
-      .work__link-arrow {
-        transform: translateX(3px);
-      }
-    }
   }
 
   .work__image {
@@ -201,13 +199,6 @@
       width: 3px;
     }
 
-    .work__link {
-      color: variables.$color-grey-dark;
-
-      &:hover {
-        color: variables.$color-text;
-      }
-    }
   }
 
   .work__image {
