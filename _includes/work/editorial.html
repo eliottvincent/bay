@@ -23,7 +23,9 @@
                   <span class="work__footer-dot" aria-hidden="true"></span>
                 {% endif %}
                 {% capture work_link_url %}{% include helpers/resolve-url.html url=item.link.url %}{% endcapture %}
-                <a class="work__link" href="{{ work_link_url | strip | escape }}">{{ item.link.label | escape }}</a>
+                <a class="work__link" href="{{ work_link_url | strip | escape }}">
+                  {{ item.link.label | escape }} <span class="work__link-arrow" aria-hidden="true">→</span>
+                </a>
               {% endif %}
             </div>
           {% endif %}
