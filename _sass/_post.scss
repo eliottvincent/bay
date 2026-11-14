@@ -40,6 +40,7 @@
 .post__content {
   margin-bottom: variables.$spacing-unit;
   width: 100%;
+
   h2 {
     font-size: 32px;
 
@@ -62,6 +63,13 @@
     @include mixins.media-query(variables.$on-mobile) {
       font-size: 18px;
     }
+  }
+
+  figcaption {
+    color: variables.$color-grey;
+    font-size: inherit;
+    font-style: italic;
+    text-align: center;
   }
 }
 
