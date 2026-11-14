@@ -14,7 +14,7 @@
 
           {% if item.link %}
             {% capture work_link_url %}{% include helpers/resolve-url.html url=item.link.url %}{% endcapture %}
-            <a class="work__link" href="{{ work_link_url | strip | escape }}">
+            <a class="work__link" href="{{ work_link_url | strip | escape }}" {% include helpers/external-link-attributes.html url=item.link.url %}>
               {{ item.link.label | escape }} <span class="work__link-arrow" aria-hidden="true">→</span>
             </a>
           {% endif %}

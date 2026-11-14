@@ -1,0 +1,8 @@
+{%- assign link_prefix = include.url | slice: 0, 2 -%}
+{%- if include.url contains "://" or link_prefix == "//" -%}
+  {%- assign link_host = include.url | split: "/" | slice: 2 | first | downcase -%}
+  {%- assign site_host = site.url | split: "/" | slice: 2 | first | downcase -%}
+  {%- unless link_host == site_host -%}
+    target="_blank" rel="noopener noreferrer"
+  {%- endunless -%}
+{%- endif -%}
