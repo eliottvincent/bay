@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+### [2.0.2](https://github.com/eliottvincent/bay/compare/v2.0.1...v2.0.2) (2026-11-14)
+
+### Features
+
+- Support optional `date_from` and `date_to` fields below Post titles
+- Add style to figure captions
+
+### Improvements
+
+- Apply the image style to all images in Post content
+
 ### [2.0.1](https://github.com/eliottvincent/bay/compare/v2.0.0...v2.0.1) (2026-11-14)
 
 ### Bug Fixes
