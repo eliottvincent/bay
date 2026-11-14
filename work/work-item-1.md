@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Work item 1
+date_from: "2023"
+date_to: Now
 permalink: /work/work-item-1/
 blurb: A detailed example for a Work item.
 og_image: /assets/img/work/work-item-1/banner.jpg

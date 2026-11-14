@@ -5,13 +5,7 @@
     {% for item in section.items %}
       <article class="work__item{% if item.link %} work__item--linked{% endif %}">
         <div class="work__date">
-          {% if item.date_from and item.date_to %}
-            {{ item.date_from | escape }} – {{ item.date_to | escape }}
-          {% elsif item.date_from %}
-            {{ item.date_from | escape }}
-          {% elsif item.date_to %}
-            {{ item.date_to | escape }}
-          {% endif %}
+          {% include helpers/format-date.html date_from=item.date_from date_to=item.date_to %}
         </div>
 
         <div class="work__body">

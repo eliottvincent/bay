@@ -199,6 +199,8 @@ noninteractive. Store linked detail pages as regular Markdown pages under
 ---
 layout: post
 title: Example project
+date_from: "2023"
+date_to: Now
 permalink: /work/example-project/
 ---
 
@@ -208,6 +210,10 @@ Detailed project content.
 This generates `/work/example-project/` without additional `_config.yml`
 setup. Work details use the `post` layout without appearing in the Blog
 listing or feed.
+
+Optional `date_from` and `date_to` fields display the project period below the
+title. Either field can be used alone. When neither is supplied, the Post layout
+shows the usual publication `date`, if present.
 
 #### Blog page
 

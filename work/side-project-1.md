@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Side project 1
+date_from: "2024"
+date_to: Now
 permalink: /work/side-project-1/
 blurb: A detailed example for a side project.
 og_image: /assets/img/work/side-project-1/banner.jpg

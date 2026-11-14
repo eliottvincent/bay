@@ -1,0 +1,9 @@
+{%- if include.date_from and include.date_to -%}
+  {{- include.date_from | escape }} – {{ include.date_to | escape -}}
+{%- elsif include.date_from -%}
+  {{- include.date_from | escape -}}
+{%- elsif include.date_to -%}
+  {{- include.date_to | escape -}}
+{%- elsif include.date -%}
+  {{- include.date | date: "%B %-d, %Y" -}}
+{%- endif -%}

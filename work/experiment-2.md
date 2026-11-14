@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Experiment 2
+date_from: "2024"
 permalink: /work/experiment-2/
 blurb: A detailed example for an experiment.
 ---
