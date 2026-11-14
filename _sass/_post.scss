@@ -65,6 +65,7 @@
   }
 }
 
+.post__content img,
 .post__image {
   @include mixins.image-frame;
 }
