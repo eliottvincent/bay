@@ -174,6 +174,7 @@ sections:
       - date_from: "2023"
         date_to: Now
         title: Example project
+        subtitle: Software Engineer
         description: A short description of the project.
         image:
           src: /assets/img/work/example-project/image.jpg

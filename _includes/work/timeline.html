@@ -9,7 +9,12 @@
         </div>
 
         <div class="work__body">
-          <h3 class="work__title">{{ item.title | escape }}</h3>
+          <div class="work__heading">
+            <h3 class="work__title">{{ item.title | escape }}</h3>
+            {% if item.subtitle and item.subtitle != empty %}
+              <span class="work__subtitle">{{ item.subtitle | escape }}</span>
+            {% endif %}
+          </div>
           <p class="work__description">{{ item.description | escape }}</p>
 
           {% if item.link %}

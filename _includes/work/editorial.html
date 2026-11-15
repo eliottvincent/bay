@@ -5,7 +5,12 @@
     {% for item in section.items %}
       <article class="work__item{% if item.image.src %} work__item--has-image{% endif %}{% if item.link %} work__item--linked{% endif %}">
         <div class="work__meta">
-          <h3 class="work__title">{{ item.title | escape }}</h3>
+          <div class="work__heading">
+            <h3 class="work__title">{{ item.title | escape }}</h3>
+            {% if item.subtitle and item.subtitle != empty %}
+              <span class="work__subtitle">{{ item.subtitle | escape }}</span>
+            {% endif %}
+          </div>
           <p class="work__description">{{ item.description | escape }}</p>
 
           {% if item.date_from or item.date_to or item.link %}

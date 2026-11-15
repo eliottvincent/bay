@@ -10,6 +10,7 @@ sections:
       - date_from: "2023"
         date_to: Now
         title: Work item 1
+        subtitle: Software Engineer
         description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -33,6 +34,7 @@ sections:
       - date_from: "2024"
         date_to: Now
         title: Side project 1
+        subtitle: Open-source project
         description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -51,6 +53,7 @@ sections:
     items:
       - date_from: "2025"
         title: Experiment 1
+        subtitle: Creative coding
         description: >-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
