@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+### [2.0.3](https://github.com/eliottvincent/bay/compare/v2.0.2...v2.0.3) (2026-11-15)
+
+### Features
+
+- Support optional Work item subtitles in both Timeline and Editorial variants
+
+### Improvements
+
+- Open external Work item links in a new tab
+- Preserve the original casing of Post dates
+
 ### [2.0.2](https://github.com/eliottvincent/bay/compare/v2.0.1...v2.0.2) (2026-11-14)
 
 ### Features
