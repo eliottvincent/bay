@@ -76,6 +76,15 @@
   &__description {
     color: variables.$color-grey-dark;
     margin-bottom: 14px;
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      position: relative;
+      z-index: 1;
+    }
   }
 
   &__image {

@@ -11,7 +11,7 @@
               <span class="work__subtitle">{{ item.subtitle | escape }}</span>
             {% endif %}
           </div>
-          <p class="work__description">{{ item.description | escape }}</p>
+          <div class="work__description">{{ item.description | markdownify }}</div>
 
           {% if item.date_from or item.date_to or item.link %}
             <div class="work__footer">

@@ -15,7 +15,7 @@
               <span class="work__subtitle">{{ item.subtitle | escape }}</span>
             {% endif %}
           </div>
-          <p class="work__description">{{ item.description | escape }}</p>
+          <div class="work__description">{{ item.description | markdownify }}</div>
 
           {% if item.link %}
             {% capture work_link_url %}{% include helpers/resolve-url.html url=item.link.url %}{% endcapture %}

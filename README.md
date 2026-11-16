@@ -175,7 +175,9 @@ sections:
         date_to: Now
         title: Example project
         subtitle: Software Engineer
-        description: A short description of the project.
+        description: >-
+          A short description with **bold text** and a
+          [link](https://example.com).
         image:
           src: /assets/img/work/example-project/image.jpg
           alt: Example project
